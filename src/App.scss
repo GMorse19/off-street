@@ -1,5 +1,26 @@
+@import "~bootstrap/scss/bootstrap";
+
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1 {
+  background-image: url('/debris.jpg');
+}
+
+.img2 {
+  background-image: url('/Flags/RedLine/FireFlagCutOut.jpg');
+}
+
+.img3 {
+  background-image: url('/Flags/RedWhite&Blue/FlagCutOut.png');
 }
 
 .App-logo {

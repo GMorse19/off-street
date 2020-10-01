@@ -1,5 +1,19 @@
 # Off Street Carpentry
 
+## Install
+
+**npm:** `npm install`
+
+**Sass:** `npm install node-sass`
+
+**React Bootstrap:** `npm install react-bootstrap bootstrap`
+
+**react-router-dom:** `npm install react-router-dom`
+
+[React-Burger-Menu](https://github.com/negomi/react-burger-menu): `npm install react-burger-menu --save`
+
+**react-scroll-parallax:** `npm i react-scroll-parallax --save`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
