@@ -3,6 +3,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import SignUp from './ConnectForm'
+import { stock } from '../../helpers/images/Stock/stockArray'
 
 import './Connect.scss'
 
@@ -12,8 +13,8 @@ const Connect = () => (
       <Row className='row'>
         <Col className='cream' xs={12} md={6}>
           <div>
-            <img className='carpenter' src='./carpenter.jpg' alt='carpenter' />
-            <img className='carpenter' src='./carpenter.jpg' alt='carpenter' />
+            <img className='carpenter' src={stock.stock.workShop} alt='carpenter' />
+            <img className='carpenter' src={stock.stock.workShop} alt='carpenter' />
           </div>
         </Col>
         <Col className='black' xs={12} md={6}>

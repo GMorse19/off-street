@@ -3,6 +3,10 @@ import { Parallax } from 'react-scroll-parallax'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import ProductDescription from './ProductDescription/ProductDescription'
+
+import { flag } from '../../helpers/images/Flags/flagsArray'
+import { item } from '../../helpers/images/Items/itemsArray'
+import { logo } from '../../helpers/images/Logos/logosArray'
 import content from './ProductDescription/Content'
 
 import './Products.scss'
@@ -15,7 +19,7 @@ const Products = () => (
         <Col>
           <div className='image-wrapper'>
             <div className='image-div'>
-              <img className='flag-image' src='./Flags/RedWhite&Blue/FlagCutOut.png' alt='Stars and Stripes' />
+              <img className='flag-image' src={flag.standard.cutout} alt='American Flag' />
             </div>
 
             <ProductDescription
@@ -24,7 +28,7 @@ const Products = () => (
             />
 
               <Parallax className="custom-class" y={[-90, 100]} tagOuter="figure">
-                <img className='home-logo-gallery' alt='logo' src='./Logo/OSLogo.png'/>
+                <img className='home-logo-gallery' alt='logo' src={logo[1]}/>
               </Parallax>
           </div>
         </Col>
@@ -35,16 +39,16 @@ const Products = () => (
         <Col>
           <div className='image-wrapper'>
             <div className='image-div'>
-              <img className='flag-image' src='./old-boards.jpg' alt='Chalk Board' />
+              <img className='flag-image' src={flag.random.oldBoards} alt='Boards under American Flag' />
             </div>
-            
+
             <ProductDescription
               title={content.two.title}
               description={content.two.description}
             />
 
           <Parallax className="custom-class" y={[-90, 100]} tagOuter="figure">
-            <img className='home-logo-gallery' alt='logo' src='./Logo/OSLogo.png'/>
+            <img className='home-logo-gallery' alt='logo' src={logo[1]}/>
           </Parallax>
           </div>
         </Col>
@@ -55,7 +59,7 @@ const Products = () => (
         <Col>
           <div className='image-wrapper'>
             <div className='image-div'>
-              <img className='flag-image' src='./Chalk.png' alt='Chalk Board' />
+              <img className='flag-image' src={item.chalkBoard.cutout} alt='Chalk Board' />
             </div>
 
             <ProductDescription
@@ -64,7 +68,7 @@ const Products = () => (
             />
 
           <Parallax className="custom-class" y={[-90, 100]} tagOuter="figure">
-            <img className='home-logo-gallery' alt='logo' src='./Logo/OSLogo.png'/>
+            <img className='home-logo-gallery' alt='logo' src={logo[1]}/>
           </Parallax>
           </div>
         </Col>
@@ -75,7 +79,7 @@ const Products = () => (
         <Col>
           <div className='image-wrapper'>
             <div className='image-div'>
-              <img className='flag-image' src='./birdHouse.jpg' alt='Bird House' />
+              <img className='flag-image' src={item.birdHouse.front} alt='Bird House' />
             </div>
 
             <ProductDescription
@@ -84,7 +88,7 @@ const Products = () => (
             />
 
           <Parallax className="custom-class" y={[-90, 100]} tagOuter="figure">
-            <img className='home-logo-gallery' alt='logo' src='./Logo/OSLogo.png'/>
+            <img className='home-logo-gallery' alt='logo' src={logo[1]}/>
           </Parallax>
           </div>
         </Col>

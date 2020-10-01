@@ -2,8 +2,11 @@ import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
 import { Parallax } from 'react-scroll-parallax'
 
+import { flag } from '../../helpers/images/Flags/flagsArray'
+import { logo } from '../../helpers/images/Logos/logosArray'
+import { item } from '../../helpers/images/Items/itemsArray'
+
 import './Intro.scss'
-// import oldboards from './old-boards.jpg'
 
 const Intro = () => (
   <div className='intro-container'>
@@ -14,7 +17,7 @@ const Intro = () => (
           <Col className='margin-top' xs={12} md={6}>
             <Parallax className="custom-class" y={[30, -20]} tagOuter="figure">
               <div className='image-div'>
-                <img className='flag-image' src='./logo192.png' alt='old boards and flag' />
+                <img className='flag-image' src={flag.random.oldBoards} alt='old boards and flag' />
               </div>
             </Parallax>
           </Col>
@@ -41,7 +44,7 @@ const Intro = () => (
           <Col className='margin-top' xs={12} md={6}>
             <Parallax className="custom-class" y={[-60, 60]} tagOuter="figure">
               <div className='image-div'>
-                <img className='flag-image' src='./old-boards.jpg' alt='Chalk Board' />
+                <img className='flag-image' src={item.chalkBoard.cutout} alt='Chalk Board' />
               </div>
             </Parallax>
           </Col>
@@ -61,7 +64,7 @@ const Intro = () => (
           <Col xs={12} md={6}>
             <Parallax scrollAxis='horizontal' className="custom-class" x={[-50, 30]} tagOuter="figure">
               <div className='image-div-about'>
-                <img className='flag-image' src='./old-boards.jpg' alt='Chalk Board' />
+                <img className='flag-image' src={flag.blackAndWhite.front} alt='Black and White Flag' />
               </div>
             </Parallax>
           </Col>
@@ -78,9 +81,9 @@ const Intro = () => (
             </Parallax>
           </Col>
           <Col className='margin-top margin-bottom' xs={12} md={6}>
-            <Parallax className="custom-class" y={[-90, 100]} tagOuter="figure">
+            <Parallax className="custom-class" y={[-50, 50]} tagOuter="figure">
               <div className='image-div'>
-                <img className='flag-image2' src='./FireFlagCutOut.jpg' alt='Stars and Stripes' />
+                <img className='flag-image2' src={item.birdHouse.front} alt='Bird House' />
               </div>
             </Parallax>
           </Col>

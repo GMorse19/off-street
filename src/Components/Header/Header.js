@@ -2,6 +2,8 @@ import React from 'react'
 
 import { slide as Menu } from 'react-burger-menu'
 
+import { icon } from '../../helpers/images/Icons/iconsArray'
+
 import './Header.scss'
 
 const handleScroll = (id) => {
@@ -11,7 +13,7 @@ const handleScroll = (id) => {
 const Header = () => (
     <div className='header'>
         <button className='burger-menu'><img
-          src='burger.png'
+          src={icon.button.burger}
           alt='logo'
           className='logo'
         />

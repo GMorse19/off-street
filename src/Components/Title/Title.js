@@ -4,9 +4,7 @@ import { Parallax } from 'react-scroll-parallax'
 
 import './Title.scss'
 
-import { logo } from '../../helpers/images/logosArray'
-
-// const logo = process.env.PUBLIC_URL + '/Logo/OSlogo.png';
+import { logo } from '../../helpers/images/Logos/logosArray'
 
 const Title = () => (
   <div>
