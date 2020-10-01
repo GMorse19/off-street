@@ -1,0 +1,74 @@
+.home-page-div {
+
+}
+
+.image-div {
+  margin: 30%;
+}
+
+.image-wrapper {
+  background-color: #e3e1e1;
+  display: flex;
+  height: 100%;
+  width: 50vw;
+  transition: background-color 1s;
+  position: relative;
+  float: right;
+}
+
+.image-wrapper:hover {
+  background-color: #f3edbe;
+  .flag-image {
+    width: 21vw;
+  }
+}
+
+.info-div {
+  position: absolute;
+  margin-top: 25%;
+  width: 20vw;
+  right: 40vw;
+  text-align: left;
+}
+
+.info-image {
+  position: absolute;
+  left: 30vw;
+  width: 20vw;
+}
+
+.info-section {
+  background-color: #fbf9ea;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.4), 20px 6px 20px 20px rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 1000px) {
+  .home-logo {
+    margin-top: 10px;
+  }
+
+  .info-div {
+    font-size: 10px;
+    top: 40vh;
+    width: 60vw;
+    right: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-logo {
+    margin-top: 10px;
+  }
+
+  .info-div {
+    font-size: 10px;
+    top: 20vh;
+    width: 60vw;
+    right: 5px;
+  }
+
+  .title-div {
+    margin-top: 15px;
+    margin-bottom: 20vh;
+  }
+}

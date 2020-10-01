@@ -1,0 +1,75 @@
+.full-width {
+  background-color: #f3edbe;
+  padding: 5%;
+}
+
+.image-div-about {
+  padding: 5%;
+}
+
+.intro-container {
+  background-color: #e3e1e1;
+}
+
+.intro-para {
+  font-size: 45px;
+  padding-top: 15%;
+  text-shadow: 9px 9px 26px #000;
+}
+
+.margin-bottom{
+  margin-bottom: 20vh;
+}
+
+.margin-top{
+  margin-top: 40vh;
+}
+
+.para-margin-left {
+  margin-left: -300px;
+}
+
+.para-margin-right {
+  margin-right: -300px;
+}
+
+.row-padding {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media screen and (max-width: 1000px) {
+  .intro-para {
+    font-size: 15px;
+  }
+
+  .para-margin-left {
+    margin-left: 0;
+  }
+
+  .para-margin-right {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .intro-para {
+    font-size: 15px;
+  }
+
+  .margin-bottom{
+    margin-bottom: 1vh;
+  }
+
+  .margin-top{
+    margin-top: 2vh;
+  }
+
+  .para-margin-left {
+    margin-left: 0;
+  }
+
+  .para-margin-right {
+    margin-right: 0;
+  }
+}

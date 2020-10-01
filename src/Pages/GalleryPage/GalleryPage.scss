@@ -1,0 +1,77 @@
+.gallery {
+  height: 50vh;
+  width: 50vw;
+  background-color: #e3e1e1;
+}
+
+.flag-image2 {
+  box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.4), 0 26px 29px 0 rgba(0, 0, 0, 0.19);
+  width: 20vw;
+  transition: width 1s;
+}
+
+.flag-image2:hover {
+  width: 21vw;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia;
+}
+
+#container .box {
+  width: 100vw;
+  height: 100vh;
+  display: inline-block;
+  position: relative;
+}
+
+#container .box > div {
+  width: 50vw;
+  height: 100vh;
+  font-size: 96px;
+  color: #FFF;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  margin: -50px 0 0 -50px;
+  line-height: .7;
+  font-weight: bold;
+}
+
+#container {
+  padding: 5%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  background-color: #e3e1e1;
+  position: absolute;
+  width: 100vh;
+  height: 100vw;
+}
+
+#container2 {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.padding {
+  margin-left: 5vw;
+}
+
+.one {
+  margin-left: 30vw;
+}
+.two {
+  margin-right: 70vw;
+}
+.three {
+  margin-left: 50vw;
+}
+.four {
+  margin-left: 60vw;
+  margin-bottom: 5vh;
+}
