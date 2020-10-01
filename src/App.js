@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, BrowserRouter } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 import './App.scss';
@@ -30,11 +30,8 @@ class App extends React.Component{
     window.addEventListener('scroll', this.listenScrollEvent)
   }
 
-  routerBaseName = process.env.PUBLIC_URL
-
   render() {
   return (
-    <BrowserRouter basename={this.routerBaseName}>
       <ParallaxProvider>
         <div className={this.state.background}>
           <Header />
@@ -42,22 +39,21 @@ class App extends React.Component{
                 <Route exact path='/' render={() => (
                   <HomePage />
                 )} />
-                <Route  basename={this.routerBaseName} path='/about' render={() => (
+                <Route path='/about' render={() => (
                   <AboutPage />
                 )} />
-                <Route  basename={this.routerBaseName} path='/gallery' render={() => (
+                <Route path='/gallery' render={() => (
                   <GalleryPage />
                 )} />
-                <Route  path='/contact' render={() => (
+                <Route path='/contact' render={() => (
                   <ContactPage />
                 )} />
-                <Route  path='/shop' render={() => (
+                <Route path='/shop' render={() => (
                   <ShopPage />
                 )} />
             </div>
         </div>
       </ParallaxProvider>
-    </BrowserRouter>
   )
 }
 }
