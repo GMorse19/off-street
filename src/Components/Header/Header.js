@@ -19,11 +19,11 @@ const Header = () => (
         />
         </button>
         <Menu className='menu'>
-          <a onClick={handleScroll} href='/'>Home</a>
-          <a href='/about'>About</a>
-          <a href='/shop'>Shop</a>
-          <a href='/contact'>Contact</a>
-          <a href='/gallery'>Gallery</a>
+          <a onClick={handleScroll} href={`${process.env.PUBLIC_URL}/`}>Home</a>
+          <a href={`${process.env.PUBLIC_URL}/about`}>About</a>
+          <a href={`${process.env.PUBLIC_URL}/shop`}>Shop</a>
+          <a href={`${process.env.PUBLIC_URL}/contact`}>Contact</a>
+          <a href={`${process.env.PUBLIC_URL}/gallery`}>Gallery</a>
         </Menu>
     </div>
 )
