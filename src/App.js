@@ -42,16 +42,16 @@ class App extends React.Component{
                 <Route exact path='/' render={() => (
                   <HomePage />
                 )} />
-                <Route path='/about' render={() => (
+                <Route exact path='/about' render={() => (
                   <AboutPage />
                 )} />
-                <Route path='/gallery' render={() => (
+                <Route exact path='/gallery' render={() => (
                   <GalleryPage />
                 )} />
-                <Route path='/contact' render={() => (
+                <Route exact path='/contact' render={() => (
                   <ContactPage />
                 )} />
-                <Route path='/shop' render={() => (
+                <Route exact path='/shop' render={() => (
                   <ShopPage />
                 )} />
             </div>
