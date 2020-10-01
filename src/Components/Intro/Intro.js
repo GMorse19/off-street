@@ -3,6 +3,7 @@ import { Container, Col, Row } from 'react-bootstrap'
 import { Parallax } from 'react-scroll-parallax'
 
 import './Intro.scss'
+// import oldboards from './old-boards.jpg'
 
 const Intro = () => (
   <div className='intro-container'>
@@ -13,7 +14,7 @@ const Intro = () => (
           <Col className='margin-top' xs={12} md={6}>
             <Parallax className="custom-class" y={[30, -20]} tagOuter="figure">
               <div className='image-div'>
-                <img className='flag-image' src='./old-boards.jpg' alt='old boards and flag' />
+                <img className='flag-image' src='./logo192.png' alt='old boards and flag' />
               </div>
             </Parallax>
           </Col>
@@ -79,7 +80,7 @@ const Intro = () => (
           <Col className='margin-top margin-bottom' xs={12} md={6}>
             <Parallax className="custom-class" y={[-90, 100]} tagOuter="figure">
               <div className='image-div'>
-                <img className='flag-image2' src='./Flags/RedLine/FireFlagCutOut.jpg' alt='Stars and Stripes' />
+                <img className='flag-image2' src='./FireFlagCutOut.jpg' alt='Stars and Stripes' />
               </div>
             </Parallax>
           </Col>
