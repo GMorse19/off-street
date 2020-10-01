@@ -1,0 +1,52 @@
+.flag-image {
+  box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.4), 0 26px 29px 0 rgba(0, 0, 0, 0.19);
+  left: 15%;
+  top: 15%;
+  width: 20vw;
+  transition: width 1s;
+}
+
+.fire-flag-div {
+  margin-top: 500px;
+}
+
+.home-logo-gallery {
+  width: 100px;
+}
+
+.intro {
+  padding-top: 25px;
+  text-align: left;
+  width: 50vw;
+  background-color: #FFF;
+  z-index: 10000;
+}
+
+.rows {
+  padding-top: 40vh;
+}
+
+.shop-container {
+  margin-top: 10vh;
+  padding: 0 0 30vh 5vw;
+}
+
+.shop-page {
+  float: left;
+}
+
+@media screen and (max-width: 1000px) {
+  .rows {
+    padding-top: 30vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-logo-gallery {
+    width: 50px;
+  }
+
+  .rows {
+    padding-top: 30vh;
+  }
+}

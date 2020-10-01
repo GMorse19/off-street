@@ -1,0 +1,47 @@
+.home-logo {
+  margin-top: 10vh;
+}
+
+.logo-div {
+  margin-top: 5vh;
+}
+
+.logo-container {
+
+}
+
+.title {
+  font-size: 100px;
+  font-style: oblique;
+}
+
+.title-div {
+  color: #f3edbe;
+  margin-top: 60vh;
+  margin-bottom: 30vh;
+  text-shadow: 3px 3px 0 #000;
+}
+
+@media screen and (max-width: 1000px) {
+  .home-logo {
+    width: 50vh;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-logo {
+    width: 50vw;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .title-div {
+    margin-top: 5vh;
+  }
+}
