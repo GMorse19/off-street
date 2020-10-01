@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -14,9 +14,9 @@ import { BrowserRouter } from 'react-router-dom'
 const routerBaseName = process.env.PUBLIC_URL
 
 const appJsx = (
-  <BrowserRouter basename={routerBaseName}>
+  <HashRouter basename={routerBaseName}>
     <App />
-  </BrowserRouter>
+  </HashRouter>
 )
 
 ReactDOM.render(appJsx, document.getElementById('root'));
