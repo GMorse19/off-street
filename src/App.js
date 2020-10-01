@@ -30,9 +30,11 @@ class App extends React.Component{
     window.addEventListener('scroll', this.listenScrollEvent)
   }
 
+  routerBaseName = process.env.PUBLIC_URL
+
   render() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={this.routerBaseName}>
       <ParallaxProvider>
         <div className={this.state.background}>
           <Header />
