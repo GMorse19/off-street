@@ -1,12 +1,11 @@
 import React from 'react'
-import { Parallax } from 'react-scroll-parallax'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import ProductDescription from './ProductDescription/ProductDescription'
 
 import { flag } from '../../helpers/images/Flags/flagsArray'
 import { item } from '../../helpers/images/Items/itemsArray'
-import { logo } from '../../helpers/images/Logos/logosArray'
+import LogoFloat from '../LogoFloat/LogoFloat'
 import content from './ProductDescription/Content'
 
 import './Products.scss'
@@ -27,9 +26,10 @@ const Products = () => (
               description={content.one.description}
             />
 
-              <Parallax className="custom-class" y={[-90, 100]} tagOuter="figure">
-                <img className='home-logo-gallery' alt='logo' src={logo[1]}/>
-              </Parallax>
+              <LogoFloat
+                left='90'
+                right='-100'
+              />
           </div>
         </Col>
         <Col></Col>
@@ -47,9 +47,10 @@ const Products = () => (
               description={content.two.description}
             />
 
-          <Parallax className="custom-class" y={[-90, 100]} tagOuter="figure">
-            <img className='home-logo-gallery' alt='logo' src={logo[1]}/>
-          </Parallax>
+            <LogoFloat
+              left='-90'
+              right='100'
+            />
           </div>
         </Col>
         <Col></Col>
@@ -67,9 +68,10 @@ const Products = () => (
               description={content.three.description}
             />
 
-          <Parallax className="custom-class" y={[-90, 100]} tagOuter="figure">
-            <img className='home-logo-gallery' alt='logo' src={logo[1]}/>
-          </Parallax>
+            <LogoFloat
+              left='90'
+              right='-100'
+            />
           </div>
         </Col>
         <Col></Col>
@@ -87,9 +89,10 @@ const Products = () => (
               description={content.four.description}
             />
 
-          <Parallax className="custom-class" y={[-90, 100]} tagOuter="figure">
-            <img className='home-logo-gallery' alt='logo' src={logo[1]}/>
-          </Parallax>
+            <LogoFloat
+              left='-90'
+              right='100'
+            />
           </div>
         </Col>
         <Col></Col>
