@@ -6,15 +6,17 @@ import './Title.scss'
 
 import { logo } from '../../helpers/images/Logos/logosArray'
 
-const Title = () => (
+const Title = (props) => (
   <div>
   <Container className='logo-container'>
     <Row>
       <Col>
-        <Parallax className="custom-class logo-div" y={[-80, 80]} tagOuter="figure">
+        <Parallax className="custom-class logo-div" y={[-50, 50]} tagOuter="figure">
           <img className='home-logo' width='300px' src={logo[1]} alt='rustic'/>
         </Parallax>
+        <h1 className='page-heading'>{props.heading}</h1>
       </Col>
+
       <Col>
         <Parallax className="custom-class" y={[-50, 50]} tagOuter="figure">
           <div className='title-div'>

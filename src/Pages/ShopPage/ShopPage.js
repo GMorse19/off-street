@@ -9,7 +9,9 @@ import './ShopPage.scss'
 
 const ShopPage = () => (
   <div className=''>
-    <Title />
+    <Title
+      heading='Shop'
+    />
     <Products />
     <Connect />
     <Footer />

@@ -9,7 +9,9 @@ import './AboutPage.scss'
 
 const AboutPage = () => (
   <div className=''>
-    <Title />
+    <Title
+      heading='About'
+    />
     <Intro />
     <Connect />
     <Footer />

@@ -1,5 +1,22 @@
+.page-heading {
+  color: #f3edbe;
+  font-size: 200px;
+  font-style: italic;
+  position: absolute;
+  padding-bottom: 50vh;
+  text-shadow: 3px 3px 0 #000;
+  // z-index: 10000;
+}
+
+// position: absolute;
+// margin-top: 25%;
+// width: 20vw;
+// right: 40vw;
+// text-align: left;
+
 .home-logo {
   margin-top: 10vh;
+  z-index: 100000;
 }
 
 .logo-div {
