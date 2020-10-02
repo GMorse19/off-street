@@ -6,9 +6,9 @@ import { icon } from '../../helpers/images/Icons/iconsArray'
 
 import './Header.scss'
 
-const handleScroll = (id) => {
-    console.log('scroll')
-}
+// const handleScroll = (id) => {
+//     console.log('scroll')
+// }
 
 const Header = () => (
     <div className='header'>
@@ -19,10 +19,10 @@ const Header = () => (
         />
         </button>
         <Menu className='menu'>
-          <a onClick={handleScroll} href='#/'>Home</a>
+          <a href='#/'>Home</a>
           <a href='#about'>About</a>
-          <a href={`${process.env.PUBLIC_URL}#shop`}>Shop</a>
-          <a href={`${process.env.PUBLIC_URL}#contact`}>Contact</a>
+          <a href='#shop'>Shop</a>
+          <a href='#contact'>Contact</a>
           <a href='#gallery'>Gallery</a>
         </Menu>
     </div>
