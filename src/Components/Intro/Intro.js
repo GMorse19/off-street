@@ -3,7 +3,6 @@ import { Container, Col, Row } from 'react-bootstrap'
 import { Parallax } from 'react-scroll-parallax'
 
 import { flag } from '../../helpers/images/Flags/flagsArray'
-import { logo } from '../../helpers/images/Logos/logosArray'
 import { item } from '../../helpers/images/Items/itemsArray'
 
 import './Intro.scss'
