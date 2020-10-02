@@ -11,10 +11,10 @@ import { HashRouter } from 'react-router-dom'
 //   </React.StrictMode>,
 //   document.getElementById('root')
 // );
-const routerBaseName = process.env.PUBLIC_URL
+// const routerBaseName = process.env.PUBLIC_URL
 
 const appJsx = (
-  <HashRouter basename={routerBaseName}>
+  <HashRouter>
     <App />
   </HashRouter>
 )
