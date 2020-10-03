@@ -1,11 +1,6 @@
-.gallery {
-  height: 50vh;
-  width: 50vw;
-  background-color: #e3e1e1;
-}
-
 .flag-image2 {
   box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.4), 0 26px 29px 0 rgba(0, 0, 0, 0.19);
+  margin: 10vh;
   width: 20vw;
   transition: width 1s;
 }
@@ -20,23 +15,8 @@ body {
 }
 
 #container .box {
-  width: 100vw;
   height: 100vh;
-  display: inline-block;
-  position: relative;
-}
-
-#container .box > div {
-  width: 50vw;
-  height: 100vh;
-  font-size: 96px;
-  color: #FFF;
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  margin: -50px 0 0 -50px;
-  line-height: .7;
-  font-weight: bold;
+  display: inline-flex;
 }
 
 #container {
@@ -63,15 +43,14 @@ body {
 }
 
 .one {
-  margin-left: 30vw;
+  margin-top: 50vh;
 }
 .two {
-  margin-right: 70vw;
+  margin-top: 20vh;
 }
 .three {
-  margin-left: 50vw;
+  margin-top: 35vh;
 }
 .four {
-  margin-left: 60vw;
-  margin-bottom: 5vh;
+  margin-top: 55vh;
 }
