@@ -6,10 +6,6 @@ import { icon } from '../../helpers/images/Icons/iconsArray'
 
 import './Header.scss'
 
-// const handleScroll = (id) => {
-//     console.log('scroll')
-// }
-
 const Header = () => (
     <div className='header'>
         <button className='burger-menu'><img
