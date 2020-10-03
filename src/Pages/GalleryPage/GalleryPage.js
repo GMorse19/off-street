@@ -1,11 +1,10 @@
 import React from 'react'
 
-import { test } from '../../helpers/images/Flags/testArray'
+import { itemGallery } from '../../helpers/images/Items/itemGallery'
 
 import './GalleryPage.scss'
 
-const flagJsx = test.map(flag => (
-
+const flagJsx = itemGallery.map(flag => (
     <div key={flag.id} className='box'>
       {
         <div>

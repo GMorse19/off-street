@@ -1,4 +1,4 @@
-export const test = [{
+export const itemGallery = [{
   type: 'standard',
   id: 1,
   class: 'one flag-image2',
