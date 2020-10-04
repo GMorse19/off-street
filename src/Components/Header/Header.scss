@@ -5,6 +5,10 @@ a {
   color: #fff;
 }
 
+a:hover {
+  color: #f3edbe;
+}
+
 .burger-menu {
   margin: 5px;
   width: 50px;
@@ -24,6 +28,10 @@ a {
   :focus {
     outline: none;
   }
+}
+
+.menu-link {
+  font-size: 30px;
 }
 
 .header {

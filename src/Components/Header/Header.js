@@ -40,11 +40,11 @@ class Header extends React.Component {
           isOpen={this.state.menuOpen}
           onStateChange={(state) => this.handleChange(state)}
         >
-          <a onClick={() => this.closeMenu()} href='#/'>Home</a>
-          <a onClick={() => this.closeMenu()} href='#about'>About</a>
-          <a onClick={() => this.closeMenu()} href='#shop'>Shop</a>
-          <a onClick={() => this.closeMenu()} href='#contact'>Contact</a>
-          <a onClick={() => this.closeMenu()} href='#gallery'>Gallery</a>
+          <a className='menu-link' onClick={() => this.closeMenu()} href='#/'>Home</a>
+          <a className='menu-link' onClick={() => this.closeMenu()} href='#about'>About</a>
+          <a className='menu-link' onClick={() => this.closeMenu()} href='#shop'>Shop</a>
+          <a className='menu-link' onClick={() => this.closeMenu()} href='#contact'>Contact</a>
+          <a className='menu-link' onClick={() => this.closeMenu()} href='#gallery'>Gallery</a>
         </Menu>
     </div>
   )
