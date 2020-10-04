@@ -5,14 +5,7 @@
   position: absolute;
   padding-bottom: 50vh;
   text-shadow: 3px 3px 0 #000;
-  // z-index: 10000;
 }
-
-// position: absolute;
-// margin-top: 25%;
-// width: 20vw;
-// right: 40vw;
-// text-align: left;
 
 .home-logo {
   margin-top: 10vh;
@@ -41,7 +34,11 @@
 
 @media screen and (max-width: 1000px) {
   .home-logo {
-    width: 50vh;
+    width: 50vw;
+  }
+
+  .page-heading {
+    font-size: 100px;
   }
 
   .title {
@@ -52,6 +49,11 @@
 @media screen and (max-width: 500px) {
   .home-logo {
     width: 50vw;
+  }
+
+  .page-heading {
+    font-size: 100px;
+    margin-top: 20vh;
   }
 
   .title {

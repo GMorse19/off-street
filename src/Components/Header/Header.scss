@@ -5,6 +5,10 @@ a {
   color: #fff;
 }
 
+a:hover {
+  color: #f3edbe;
+}
+
 .burger-menu {
   margin: 5px;
   width: 50px;
@@ -19,11 +23,16 @@ a {
 
 .menu {
   background-color: #555;
+  padding-bottom: 20vh;
   width: 10px;
   border: none;
   :focus {
     outline: none;
   }
+}
+
+.menu-link {
+  font-size: 30px;
 }
 
 .header {
