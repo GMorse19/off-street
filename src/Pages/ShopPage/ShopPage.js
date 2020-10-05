@@ -7,15 +7,24 @@ import Title from '../../Components/Title/Title'
 
 import './ShopPage.scss'
 
-const ShopPage = () => (
-  <div className=''>
-    <Title
-      heading='Shop'
-    />
-    <Products />
-    <Connect />
-    <Footer />
-  </div>
-)
+class ShopPage extends React.Component {
+
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
+  render () {
+    return(
+      <div className=''>
+        <Title
+          heading='Shop'
+        />
+        <Products />
+        <Connect />
+        <Footer />
+      </div>
+    )
+  }
+}
 
 export default ShopPage
