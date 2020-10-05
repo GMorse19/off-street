@@ -7,7 +7,14 @@ import Title from '../../Components/Title/Title'
 
 import './HomePage.scss'
 
-const HomePage = () => (
+class HomePage extends React.Component {
+  
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
+  render () {
+    return (
       <div className='home-page-div'>
         <Title />
         <Products />
@@ -15,5 +22,7 @@ const HomePage = () => (
         <Footer />
       </div>
     )
+  }
+}
 
 export default HomePage

@@ -9,7 +9,7 @@ import content from './ProductDescription/Content'
 import './Products.scss'
 
 const Products = () => (
-  <div className='info-section' id='shop'>
+  <div className='info-section'>
     <Container className='shop-container'>
 
       <ProductContainer

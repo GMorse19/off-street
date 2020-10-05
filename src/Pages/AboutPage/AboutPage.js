@@ -7,15 +7,25 @@ import Footer from '../../Components/Footer/Footer'
 
 import './AboutPage.scss'
 
-const AboutPage = () => (
-  <div className=''>
-    <Title
-      heading='About'
-    />
-    <Intro />
-    <Connect />
-    <Footer />
-  </div>
-)
+class AboutPage extends React.Component {
+  
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
+  render () {
+    return (
+
+      <div className=''>
+        <Title
+          heading='About'
+        />
+        <Intro />
+        <Connect />
+        <Footer />
+      </div>
+    )
+  }
+}
 
 export default AboutPage
