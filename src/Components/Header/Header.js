@@ -29,16 +29,11 @@ class Header extends React.Component {
   render () {
     return(
     <div className='header'>
-        <button className='burger-menu'><img
-          src={icon.button.burger}
-          alt='logo'
-          className='logo'
-        />
-        </button>
         <Menu
           className='menu'
           isOpen={this.state.menuOpen}
           onStateChange={(state) => this.handleChange(state)}
+          width={ '100vw' }
         >
           <a className='menu-link' onClick={() => this.closeMenu()} href='#/'>Home</a>
           <a className='menu-link' onClick={() => this.closeMenu()} href='#about'>About</a>
@@ -46,6 +41,12 @@ class Header extends React.Component {
           <a className='menu-link' onClick={() => this.closeMenu()} href='#contact'>Contact</a>
           <a className='menu-link' onClick={() => this.closeMenu()} href='#gallery'>Gallery</a>
         </Menu>
+        <button className='burger-menu'><img
+          src={icon.button.burger}
+          alt='logo'
+          className='logo'
+        />
+        </button>
     </div>
   )
 }
