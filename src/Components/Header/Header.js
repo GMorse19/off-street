@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { slide as Menu } from 'react-burger-menu'
+import { fallDown as Menu } from 'react-burger-menu'
 
 import { icon } from '../../helpers/images/Icons/iconsArray'
 

@@ -24,8 +24,9 @@ a:hover {
 .menu {
   background-color: #555;
   padding-bottom: 20vh;
-  width: 10px;
+  // width: 100% !important;
   border: none;
+  background-color: #000;
   :focus {
     outline: none;
   }
