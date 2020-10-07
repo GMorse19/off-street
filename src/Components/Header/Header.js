@@ -28,13 +28,12 @@ class Header extends React.Component {
   }
 
   closeMenu = () => {
-    this.setState({ menuOpen: false })
+    this.setState({ menuOpen: false, image: 'name' })
   }
 
   toggleMenu = () => {
     this.setState(state => ({ menuOpen: !state.menuOpen }))
   }
-
 
   imageSelector = (event) => {
     return event
@@ -69,7 +68,14 @@ console.log(image)
                   right={30}
                 />
               </div>
-              <div><img src={this.images[`${image}`]} alt={`this.images.${image}`} /></div>
+              <div className='fade-in'>
+                <img
+                  key={image}
+                  className={menuOpen ? 'image-menu fade-in' : 'image-menu-closed fade-in'}
+                  src={this.images[`${image}`]}
+                  alt={image}
+                />
+              </div>
             </Col>
             <Col lg={6} xs={6} className='page-menu'>
             <button
