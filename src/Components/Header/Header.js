@@ -4,7 +4,7 @@ import { fallDown as Menu } from 'react-burger-menu'
 import { Row, Col, Container } from 'react-bootstrap'
 
 import { icon } from '../../helpers/images/Icons/iconsArray'
-import { item } from '../../helpers/images/Items/itemsArray'
+import { stock} from '../../helpers/images/Stock/stockArray'
 import LogoFloat from '../LogoFloat/LogoFloat'
 
 import './Header.scss'
@@ -14,7 +14,7 @@ class Header extends React.Component {
     super(props)
     this.state = {
       menuOpen: false,
-      image: 'name'
+      image: ''
     }
   }
 
@@ -23,12 +23,11 @@ class Header extends React.Component {
   }
 
   hoverButton = (event) => {
-    console.log(event)
     this.setState({ image: event })
   }
 
   closeMenu = () => {
-    this.setState({ menuOpen: false, image: 'name' })
+    this.setState({ menuOpen: false, image: '' })
   }
 
   toggleMenu = () => {
@@ -40,11 +39,11 @@ class Header extends React.Component {
   }
 
    images = {
-     home: item.birdHouse.front,
-     about: item.chalkBoard.cutout,
-     shop: icon.button.burger,
-     contact: item.chalkBoard.cutout,
-     gallery: item.birdHouse.front
+     home: stock.stock.standardFlag,
+     about: stock.stock.workShop,
+     shop: stock.stock.birdHouse,
+     contact: stock.stock.chalkBoard,
+     gallery: stock.stock.oldBoards
    }
 
   render () {
@@ -68,7 +67,7 @@ console.log(image)
                   right={30}
                 />
               </div>
-              <div className='fade-in'>
+              <div className=''>
                 <img
                   key={image}
                   className={menuOpen ? 'image-menu fade-in' : 'image-menu-closed fade-in'}
@@ -85,7 +84,14 @@ console.log(image)
             X
             </button>
               <div className={menuOpen ? 'menu-link-open' : 'menu-link'}>
-                <a name='home' onMouseOver={() => this.hoverButton('home')} onClick={() => this.closeMenu()} href='#/'>Home</a>
+                <a
+                   name='home'
+                   onMouseOver={() => this.hoverButton('home')}
+                   onClick={() => this.closeMenu()}
+                   href='#/'
+                >
+                   Home
+                </a>
                 <a name='about' onMouseOver={() => this.hoverButton('about')} onClick={() => this.closeMenu()} href='#about'>About</a>
                 <a name='shop' onMouseOver={() => this.hoverButton('shop')} onClick={() => this.closeMenu()} href='#shop'>Shop</a>
                 <a name='contact' onMouseOver={() => this.hoverButton('contact')} onClick={() => this.closeMenu()} href='#contact'>Contact</a>
