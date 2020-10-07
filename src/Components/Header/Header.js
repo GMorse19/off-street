@@ -4,6 +4,7 @@ import { fallDown as Menu } from 'react-burger-menu'
 import { Row, Col, Container } from 'react-bootstrap'
 
 import { icon } from '../../helpers/images/Icons/iconsArray'
+import { item } from '../../helpers/images/Items/itemsArray'
 import LogoFloat from '../LogoFloat/LogoFloat'
 
 import './Header.scss'
@@ -34,10 +35,23 @@ class Header extends React.Component {
     this.setState(state => ({ menuOpen: !state.menuOpen }))
   }
 
+
+  imageSelector = (event) => {
+    return event
+  }
+
+   images = {
+     home: item.birdHouse.front,
+     about: item.chalkBoard.cutout,
+     shop: icon.button.burger,
+     contact: item.chalkBoard.cutout,
+     gallery: item.birdHouse.front
+   }
+
   render () {
 
-    const { menuOpen } = this.state
-
+    const { menuOpen, image } = this.state
+console.log(image)
     return(
     <div className='header'>
         <Menu
@@ -55,7 +69,7 @@ class Header extends React.Component {
                   right={30}
                 />
               </div>
-              <div><img src={this.state.image} alt={this.state.image} /></div>
+              <div><img src={this.images[`${image}`]} alt={`this.images.${image}`} /></div>
             </Col>
             <Col lg={6} xs={6} className='page-menu'>
             <button
