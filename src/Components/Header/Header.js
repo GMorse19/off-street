@@ -49,7 +49,7 @@ class Header extends React.Component {
   render () {
 
     const { menuOpen, image } = this.state
-console.log(image)
+    
     return(
     <div className='header'>
         <Menu
