@@ -16,14 +16,47 @@ a:hover {
   border-radius: 20px;
 }
 
+// .bm-burger-button {
+//   color: #FFF;
+//   position: fixed;
+//   width: 36px;
+//   height: 30px;
+//   left: 36px;
+//   top: 36px;
+// }
+
+.close-button {
+  background: none;
+  border: none;
+  float: right;
+  font-size: 20px;
+  padding: 2vh;
+}
+
 .logo {
   height: 20px;
   border-radius: 20px;
 }
 
+.logofloat-padding {
+  padding-top: 25vh;
+}
+
+.logo-menu {
+  background-color: #f3edbe;
+  height: 0vh;
+  padding-top: 5vh;
+   -webkit-transition: height 3s;
+}
+
+.logo-menu-down {
+  height: 100vh;
+  background-color: #f3edbe;
+   -webkit-transition: height 3s;
+}
+
 .menu {
   background-color: #555;
-  // padding-bottom: 20vh;
   border: none;
   :focus {
     outline: none;
@@ -31,7 +64,19 @@ a:hover {
 }
 
 .menu-link {
+  padding-top: 10vh;
+  width: 10vw;
+  height: 100vh;
+  font-size: 0px;
+  -webkit-transition: font-size 2s;
+}
+
+.menu-link-open {
+  padding-top: 10vh;
+  width: 10vw;
+  height: 100vh;
   font-size: 30px;
+  -webkit-transition: font-size 3s;
 }
 
 .header {
