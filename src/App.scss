@@ -57,3 +57,21 @@ html {
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 1000px) {
+  
+}
+
+@media screen and (max-width: 500px) {
+  .img1 {
+    background-size: 135vh !important;
+  }
+
+  .img2 {
+    background-size: 300vh !important;
+  }
+
+  .img3 {
+    background-size: 200vh !important;
+  }
+}
