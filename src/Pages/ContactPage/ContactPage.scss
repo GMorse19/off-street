@@ -1,9 +1,13 @@
+.contact-link-header {
+
+}
+
 .contact-page-link {
   color: blue;
 }
 
 .contact-page-link:hover {
-    color: #857356;
+  color: #857356;
 }
 
 .contact-page {
@@ -27,4 +31,32 @@
   background-size: cover;
   height: 60vh;
   padding: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-link-header {
+
+  }
+
+  .heading-contact {
+    font-size: 50px;
+  }
+
+  .heading-contact-div {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-link-header {
+    font-size: 20px;
+  }
+
+  .heading-contact {
+    font-size: 40px;
+  }
+
+  .heading-contact-div {
+    height: 40vh;
+  }
 }

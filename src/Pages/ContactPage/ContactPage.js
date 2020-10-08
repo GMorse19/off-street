@@ -15,7 +15,7 @@ const ContactPage = () => (
       </Row>
       <Row className='contact-page-info'>
         <Col>
-          <h4>CUSTOMER SERVICE</h4>
+          <h4 className='contact-link-header'>CUSTOMER SERVICE</h4>
             <a className='contact-page-link' href='#/'>Email Customer Service</a>
             <h6>Monday - Friday</h6>
             <h6> 9am - 5pm ET</h6>
@@ -24,12 +24,12 @@ const ContactPage = () => (
             </h6>
         </Col>
         <Col>
-          <h4>OFFICE</h4>
+          <h4 className='contact-link-header'>OFFICE</h4>
           <h6>4567 West Belcherton St.</h6>
           <h6>Boston, MA 014560</h6>
         </Col>
         <Col>
-          <h4>CONNECT WITH US</h4>
+          <h4 className='contact-link-header'>CONNECT WITH US</h4>
           <a className='contact-page-link' href='/'>
             <img src={icon.media.facebook} alt='facebook' width='30px'/>
           </a><br />
