@@ -5,6 +5,7 @@ export const stock = {
     chalkBoard: process.env.PUBLIC_URL + '/Chalk.png',
     standardFlag: process.env.PUBLIC_URL + '/Flags/RedWhite&Blue/FlagCutOut.png',
     oldBoards: process.env.PUBLIC_URL + '/Flags/old-boards.jpg',
-    redLine: process.env.PUBLIC_URL + '/Flags/RedLine/FireFlagCutOut.jpg'
+    redLine: process.env.PUBLIC_URL + '/Flags/RedLine/FireFlagCutOut.jpg',
+    contactBanner: process.env.PUBLIC_URL + '/carp-banner.jpg',
   }
 }

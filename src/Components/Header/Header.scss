@@ -1,4 +1,4 @@
-a {
+.a-link-menu {
   margin: 5px;
   padding: 25px;
   display: inline-block;
@@ -121,5 +121,16 @@ a:hover {
   z-index: 1000;
   :focus {
     outline: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  
+}
+
+@media screen and (max-width: 500px) {
+  .a-link-menu {
+    font-size: 20px;
+    padding-top: 1vh;
   }
 }

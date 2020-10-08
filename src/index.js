@@ -5,14 +5,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter } from 'react-router-dom'
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
-// const routerBaseName = process.env.PUBLIC_URL
-
 const appJsx = (
   <HashRouter>
     <App />

@@ -49,7 +49,7 @@ class Header extends React.Component {
   render () {
 
     const { menuOpen, image } = this.state
-    
+
     return(
     <div className='header'>
         <Menu
@@ -86,16 +86,17 @@ class Header extends React.Component {
               <div className={menuOpen ? 'menu-link-open' : 'menu-link'}>
                 <a
                    name='home'
+                   className='a-link-menu'
                    onMouseOver={() => this.hoverButton('home')}
                    onClick={() => this.closeMenu()}
                    href='#/'
                 >
                    Home
                 </a>
-                <a name='about' onMouseOver={() => this.hoverButton('about')} onClick={() => this.closeMenu()} href='#about'>About</a>
-                <a name='shop' onMouseOver={() => this.hoverButton('shop')} onClick={() => this.closeMenu()} href='#shop'>Shop</a>
-                <a name='contact' onMouseOver={() => this.hoverButton('contact')} onClick={() => this.closeMenu()} href='#contact'>Contact</a>
-                <a name='gallery' onMouseOver={() => this.hoverButton('gallery')} onClick={() => this.closeMenu()} href='#gallery'>Gallery</a>
+                <a name='about' className='a-link-menu' onMouseOver={() => this.hoverButton('about')} onClick={() => this.closeMenu()} href='#about'>About</a>
+                <a name='shop' className='a-link-menu' onMouseOver={() => this.hoverButton('shop')} onClick={() => this.closeMenu()} href='#shop'>Shop</a>
+                <a name='contact' className='a-link-menu' onMouseOver={() => this.hoverButton('contact')} onClick={() => this.closeMenu()} href='#contact'>Contact</a>
+                <a name='gallery' className='a-link-menu' onMouseOver={() => this.hoverButton('gallery')} onClick={() => this.closeMenu()} href='#gallery'>Gallery</a>
               </div>
             </Col>
           </Row>
