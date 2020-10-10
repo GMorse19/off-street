@@ -22,6 +22,7 @@ const ContactPage = () => (
             <h6>Phone#
              <a className='contact-page-link' href='/'> (617)-555-5555</a>
             </h6>
+            <h6>Donate</h6>
         </Col>
         <Col>
           <h4 className='contact-link-header'>OFFICE</h4>

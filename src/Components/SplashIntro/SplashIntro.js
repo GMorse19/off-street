@@ -9,13 +9,13 @@ const SplashIntro = () => (
       <Container fluid>
         <Row>
           <Col>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-             velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-               est laborum."</p>
+            <p>Rescue, Repurpose, and Return.</p>
+            <p>Our mission at Off Street is to <span style={{ color: 'red' }}>
+            rescue</span> forgotten scraps and cutoffs
+            from their inevitable trip to the depths of a dumpster. <span style={{ color: 'red' }}>
+            Re-purpose</span> these forlorn timbers and <span style={{ color: 'red' }}>
+            return</span> a unique hand crafted item with a history. A sort of retirement
+            plan for well worn wood.</p>
           </Col>
         </Row>
       </Container>
