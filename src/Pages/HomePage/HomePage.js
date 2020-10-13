@@ -1,6 +1,6 @@
 import React from 'react'
 
-// import SplashIntro from '../../Components/SplashIntro/SplashIntro'
+import SplashIntro from '../../Components/SplashIntro/SplashIntro'
 import Connect from '../../Components/Connect/Connect'
 import Footer from '../../Components/Footer/Footer'
 import Title from '../../Components/Title/Title'
@@ -21,6 +21,7 @@ class HomePage extends React.Component {
         <Title
           tagline='"Revive, Repurpose, and Reinvent."'
         />
+        <SplashIntro />
         <BestSellers />
         <Connect />
         <Footer />

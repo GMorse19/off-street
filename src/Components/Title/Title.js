@@ -23,14 +23,12 @@ const Title = (props) => (
           </Parallax>
         </Col>
         <Col>
-
             <h1 className='tagline'>{props.tagline}</h1>
             <h1 className='page-heading'>{props.heading}</h1>
             {props.tagline && <Button
               className='splash-shop-button'
               href='#shop'
               >SHOP</Button>}
-
         </Col>
       </Row>
     </Container>
