@@ -13,19 +13,19 @@ const BestSellers = () => (
   <Carousel className='carousel-container'>
 
     <Carousel.Item>
-      <img className='carousel-image' src={flag.standard.cutout} alt='American Flag' height='200vh' />
-      <img className='carousel-image' src={flag.standard.flat} alt='American Flag' height='200vh' />
-      <img className='carousel-image' src={flag.standard.sawdust} alt='American Flag' height='200vh' />
+      <img className='carousel-image' src={flag.standard.cutout} alt='American Flag' />
+      <img className='carousel-image' src={flag.standard.flat} alt='American Flag' />
+      <img className='carousel-image' src={flag.standard.sawdust} alt='American Flag' />
     </Carousel.Item>
     <Carousel.Item>
-    <img className='carousel-image' src={flag.standard.cutout} alt='American Flag' height='200vh' />
-    <img className='carousel-image' src={flag.standard.flat} alt='American Flag' height='200vh' />
-    <img className='carousel-image' src={flag.standard.sawdust} alt='American Flag' height='200vh' />
+    <img className='carousel-image' src={flag.standard.cutout} alt='American Flag' />
+    <img className='carousel-image' src={flag.standard.flat} alt='American Flag' />
+    <img className='carousel-image' src={flag.standard.sawdust} alt='American Flag' />
     </Carousel.Item>
     <Carousel.Item>
-    <img className='carousel-image' src={flag.standard.cutout} alt='American Flag' height='200vh' />
-    <img className='carousel-image' src={flag.standard.flat} alt='American Flag' height='200vh' />
-    <img className='carousel-image' src={flag.standard.sawdust} alt='American Flag' height='200vh' />
+    <img className='carousel-image' src={flag.standard.cutout} alt='American Flag' />
+    <img className='carousel-image' src={flag.standard.flat} alt='American Flag' />
+    <img className='carousel-image' src={flag.standard.sawdust} alt='American Flag' />
     </Carousel.Item>
   </Carousel>
   </div>
