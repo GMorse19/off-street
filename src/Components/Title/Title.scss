@@ -3,12 +3,13 @@
   font-size: 200px;
   font-style: italic;
   position: absolute;
-  padding-bottom: 50vh;
+  padding-top: 25vh;
   text-shadow: 3px 3px 0 #000;
 }
 
 .home-logo {
   margin-top: 10vh;
+  width: 300px;
   z-index: 100000;
 }
 
@@ -20,6 +21,19 @@
 
 }
 
+.splash-shop-button {
+  background-color: #333;
+}
+
+.tagline {
+  color: #f3edbe;
+  font-size: 70px;
+  font-style: italic;
+  // position: absolute;
+  padding-top: 35vh;
+  text-shadow: 3px 3px 0 #000;
+}
+
 .title {
   font-size: 100px;
   font-style: oblique;
@@ -27,14 +41,19 @@
 
 .title-div {
   color: #f3edbe;
-  margin-top: 60vh;
+  // margin-top: 60vh;
   margin-bottom: 30vh;
   text-shadow: 3px 3px 0 #000;
 }
 
+.title-tagline {
+  font-size: 30px;
+}
+
 @media screen and (max-width: 1000px) {
   .home-logo {
-    width: 50vw;
+    width: 20vw;
+    padding-top: 10vh;
   }
 
   .page-heading {
@@ -48,12 +67,13 @@
 
 @media screen and (max-width: 500px) {
   .home-logo {
-    width: 50vw;
+    width: 30vw;
+    padding-top: 2vh;
   }
 
   .page-heading {
     font-size: 100px;
-    margin-top: 20vh;
+    margin-top: 5vh;
   }
 
   .title {

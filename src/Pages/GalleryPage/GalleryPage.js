@@ -15,9 +15,12 @@ const flagJsx = itemGallery.map(flag => (
   ))
 
 const GalleryPage = () => (
-  <div id="container">
-    <div id="container2">
-        {flagJsx}
+  <div className='gallery-background'>
+  <div className='gallery-words'><p>Gallery</p></div>
+    <div id="container">
+      <div id="container2">
+          {flagJsx}
+      </div>
     </div>
   </div>
 
