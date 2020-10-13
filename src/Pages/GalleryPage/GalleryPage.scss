@@ -9,6 +9,32 @@
   width: 21vw;
 }
 
+.gallery-header {
+  padding-top: 50vh;
+  position: fixed;
+}
+
+.gallery-words {
+  left: 5vw;
+  padding-top: 25vh;
+  position: fixed;
+  color: #f3edbe;
+  font-size: 20vh;
+  font-style: italic;
+  text-shadow: 3px 3px 10px #000;
+}
+
+.gallery-background {
+  height: 100vh;
+  position: absolute;
+  background-image: linear-gradient(rgba(243, 237, 190, .9), rgba(227, 225, 225, .75)),
+  url('../../helpers/images/Stock/carp-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+}
+
 body {
   margin: 0;
   font-family: Georgia;
@@ -20,15 +46,16 @@ body {
 }
 
 #container {
+  box-shadow: inset 0 0 150px black;
   padding: 5%;
   overflow-y: scroll;
   overflow-x: hidden;
   transform: rotate(270deg) translateX(-100%);
   transform-origin: top left;
-  background-image: linear-gradient(rgba(243, 237, 190, .9), rgba(227, 225, 225, .75)),
-  url('../../helpers/images/Stock/carp-banner.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: linear-gradient(rgba(243, 237, 190, .9), rgba(227, 225, 225, .75)),
+  // url('../../helpers/images/Stock/carp-banner.jpg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
   position: absolute;
   width: 100vh;
   height: 100vw;
