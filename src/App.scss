@@ -60,7 +60,14 @@ html {
 }
 
 @media screen and (max-width: 1000px) {
+  .img2 {
+    background-size: 300vh !important;
+    background-image: url('./helpers/images/Flags/FlagCutOut2.png');
+  }
 
+  .img3 {
+    background-size: 300vh !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -69,10 +76,11 @@ html {
   }
 
   .img2 {
-    background-size: 200vh !important;
+    background-size: 300vh !important;
+    background-image: url('./helpers/images/Flags/FlagCutOut2.png');
   }
 
   .img3 {
-    background-size: 200vh !important;
+    background-size: 300vh !important;
   }
 }
