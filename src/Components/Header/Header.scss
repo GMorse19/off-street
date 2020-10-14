@@ -125,12 +125,15 @@ a:hover {
 }
 
 @media screen and (max-width: 1000px) {
-
+  .a-link-menu {
+    font-size: 20px;
+    padding: 1vh 0 0 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .a-link-menu {
-    font-size: 20px;
-    padding-top: 1vh;
+    font-size: 30px;
+    padding: 1vh 0 0 0;
   }
 }
