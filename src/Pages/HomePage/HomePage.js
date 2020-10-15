@@ -6,6 +6,9 @@ import Footer from '../../Components/Footer/Footer'
 import Title from '../../Components/Title/Title'
 // import PromoBlurb from '../../Components/PromoBlurb/PromoBlurb'
 import BestSellers from '../../Components/BestSellers/BestSellers'
+import InfoRow from '../../Components/InfoRow/InfoRow'
+
+import { stock } from '../../helpers/images/Stock/stockArray'
 
 import './HomePage.scss'
 
@@ -22,6 +25,15 @@ class HomePage extends React.Component {
           tagline='"Revive, Repurpose, and Reinvent."'
         />
         <SplashIntro />
+        <InfoRow
+          header='Handmade wood burned flags'
+          headerColor='#FFF'
+          headerFont='60px'
+          content='Browse through our extensive list of flags'
+          buttonContent='Flags'
+          href='#shop'
+          backgroundUrl={stock.stock.workShop}
+        />
         <BestSellers />
         <Connect />
         <Footer />
