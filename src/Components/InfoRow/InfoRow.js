@@ -10,25 +10,43 @@ class InfoRow extends React.Component {
 
     this.state = {
       props: props,
-      image: props.backgroundUrl
+      image: props.backgroundUrl,
+      parallax: true
     }
   }
 
+  handleParallax = e => {
+    const windowSize = window.innerWidth;
+    const parallaxBool = windowSize >= 480 ? true : false;
+    console.log(windowSize, parallaxBool)
+    this.setState({ parallax: parallaxBool })
+  };
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleParallax)
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleParallax)
+  }
+
   render () {
-    const { props } = this.state
-    const image = this.state.image
+    const { props, image, parallax } = this.state
+
     return (
-  <div className='wrapper'>
-    <Parallax className="custom-class" y={[-15, 10]} tagOuter="figure">
-      <div className='inforow-div parallax' style={{ color: props.headerColor, backgroundImage: `url(${image})` }}>
-        <h1 style={{ fontSize: props.headerFont }}>{props.header}</h1>
-        <p>{props.content}</p>
-        <Button href={props.href}>{props.buttonContent}</Button>
+      <div className='inforow-wrapper'>
+        <Parallax className="custom-class" y={parallax ? props.y : props.x} tagOuter="figure">
+          <div
+            className='inforow-div parallax'
+            style={{ padding: props.padding, color: props.sectionColor, backgroundImage: `url(${image})` }}
+          >
+            <h1 style={{ color: props.headerColor }}>{props.header}</h1>
+            <p style={{ color: props.contentColor }}>{props.content}</p>
+            <Button href={props.href}>{props.buttonContent}</Button>
+          </div>
+        </Parallax>
       </div>
-    </Parallax>
-  </div>
-)
-}
+    )
+  }
 }
 
 export default InfoRow
