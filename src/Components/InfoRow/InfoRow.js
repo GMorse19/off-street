@@ -11,14 +11,13 @@ class InfoRow extends React.Component {
     this.state = {
       props: props,
       image: props.backgroundUrl,
-      parallax: true
+      parallax: window.innerWidth >= 800 ? true : false
     }
   }
 
   handleParallax = e => {
-    const windowSize = window.innerWidth;
-    const parallaxBool = windowSize >= 480 ? true : false;
-    console.log(windowSize, parallaxBool)
+    const windowSize = window.innerWidth
+    const parallaxBool = windowSize >= 800 ? true : false
     this.setState({ parallax: parallaxBool })
   };
 

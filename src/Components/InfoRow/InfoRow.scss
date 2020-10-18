@@ -43,6 +43,7 @@
 @media screen and (max-width: 1000px) {
   .inforow-div h1 {
     font-size: 40px;
+    padding: 5%;
   }
 
   .inforow-div p {
@@ -58,18 +59,15 @@
 
 @media screen and (max-width: 500px) {
   .inforow-div h1 {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .inforow-div p {
-    font-size: 15px;
-  }
-
-  .inforow-div {
-    padding: 25%;
+    font-size: 12px;
   }
 
   .inforow-wrapper {
-    height: 50vh;
+    height: 30vh;
+    margin-top: 0;
   }
 }
