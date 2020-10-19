@@ -1,5 +1,9 @@
 .splash-intro-container {
-  background-color: #fbf9ea;
+  background-image: linear-gradient(rgba(227, 225, 225, .75), rgba(10, 10, 10, .75)),
+  url('../../helpers/images/Stock/carp-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 100px black;
 }
 
 .splash-intro-para {

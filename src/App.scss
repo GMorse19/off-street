@@ -1,7 +1,18 @@
 @import "~bootstrap/scss/bootstrap";
 
+a:hover {
+  color: #f3edbe;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+.a-link-menu {
+  margin: 5px;
+  padding: 25px;
+  display: inline-block;
+  color: #fff;
 }
 
 .App {
