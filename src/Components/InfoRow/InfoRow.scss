@@ -1,9 +1,14 @@
 .inforow-wrapper {
-  height: 50vh;
+  min-height: 50vh;
+  max-height: 50vh;
   width: 100vw;
   overflow-x: hidden;
   overflow-y: hidden;
   margin-top: -5vh;
+}
+
+.inforow-button {
+  border: none;
 }
 
 .inforow-div {
@@ -49,6 +54,10 @@
   .inforow-div p {
     font-size: 20px;
   }
+
+  .inforow-wrapper {
+    max-height: 100vh;
+  }
 }
 
 @media screen and (max-height: 500px) {
@@ -67,7 +76,7 @@
   }
 
   .inforow-wrapper {
-    height: 30vh;
+    max-height: 20vh;
     margin-top: 0;
   }
 }
