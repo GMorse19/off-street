@@ -13,14 +13,32 @@ import { stock } from '../../helpers/images/Stock/stockArray'
 import './HomePage.scss'
 
 class HomePage extends React.Component {
+  state = {
+    background: 'imgA home-page-div'
+  }
+
+  listenScrollEvent = e => {
+    if (window.scrollY > 1000 && window.scrollY <= 2500) {
+      this.setState({background: 'imgB home-page-div'})
+    } else if (window.scrollY > 2500) {
+      this.setState({background: 'imgC home-page-div'})
+    } else {
+      this.setState({background: 'imgA home-page-div'})
+    }
+  }
 
   componentDidMount() {
     window.scrollTo(0, 0)
+    window.addEventListener('scroll', this.listenScrollEvent)
   }
+
+  // componentDidMount() {
+  //   window.scrollTo(0, 0)
+  // }
 
   render () {
     return (
-      <div className='home-page-div'>
+      <div className={this.state.background}>
         <Title
           tagline='"Revive, Repurpose, and Reinvent."'
         />
@@ -31,7 +49,7 @@ class HomePage extends React.Component {
           headerFont='60px'
           contentColor='#000'
           contentFont='25px'
-          content="Our mission at Off Street is to rescue the forgotten scraps and cutoffs from construction projects and save them from their inevitable trip to the depths of a dumpster. Re-purpose these forlorn timbers and return a quality hand crafted item with it's own unique history. We like to think of it as a sort of retirement plan for forgotten wood"
+          content="Our mission at Off Street is to rescue the forgotten scraps and cutoffs from construction projects and save them from their inevitable trip to the depths of a dumpster. Re-purpose these forlorn timbers and return a quality hand crafted item with it's own unique history."
           buttonColor='#DBC2A0'
           buttonContent='SHOP'
           href='#shop'
