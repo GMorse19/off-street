@@ -1,7 +1,7 @@
 .home-page-div {
   text-align: center;
   box-shadow: inset 0 0 100px black;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -62,6 +62,10 @@
 @media screen and (max-width: 500px) {
   .home-logo {
     margin-top: 10px;
+  }
+
+  .home-page-div {
+    background-size: contain;
   }
 
   .info-div {
