@@ -14,22 +14,30 @@ import './HomePage.scss'
 
 class HomePage extends React.Component {
   state = {
-    background: stock.stock.debris
+    background: stock.stock.debris,
+    windowSize: window.innerWidth >= 800 ? true : false
   }
 
   listenScrollEvent = e => {
     if (window.scrollY > 1000 && window.scrollY <= 2500) {
-      this.setState({background: stock.stock.workShop})
+      this.setState({background: this.state.windowSize ? stock.stock.workShop : stock.stock.workShopSmall })
     } else if (window.scrollY > 2500) {
-      this.setState({background: stock.stock.standardFlag})
+      this.setState({background: this.state.windowSize ? stock.stock.standardFlag : stock.stock.standardFlagSmall })
     } else {
-      this.setState({background: stock.stock.debris})
+      this.setState({background: this.state.windowSize ? stock.stock.debris : stock.stock.debrisSmall })
     }
+  }
+
+  handleResize = () => {
+    // const windowSize = window.innerWidth >= 800 ? true : false
+    // const parallaxBool = windowSize >= 800 ? true : false
+    this.setState({ windowSize: window.innerWidth >= 800 ? true : false })
   }
 
   componentDidMount() {
     window.scrollTo(0, 0)
     window.addEventListener('scroll', this.listenScrollEvent)
+    window.addEventListener('resize', this.handleResize)
   }
 
   // componentDidMount() {
