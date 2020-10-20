@@ -7,5 +7,6 @@ export const stock = {
     oldBoards: process.env.PUBLIC_URL + '/Flags/old-boards.jpg',
     redLine: process.env.PUBLIC_URL + '/Flags/RedLine/FireFlagCutOut.jpg',
     contactBanner: process.env.PUBLIC_URL + '/carp-banner.jpg',
+    debris: process.env.PUBLIC_URL + '/debris.jpg',
   }
 }

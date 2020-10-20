@@ -14,16 +14,16 @@ import './HomePage.scss'
 
 class HomePage extends React.Component {
   state = {
-    background: 'imgA home-page-div'
+    background: stock.stock.debris
   }
 
   listenScrollEvent = e => {
     if (window.scrollY > 1000 && window.scrollY <= 2500) {
-      this.setState({background: 'imgB home-page-div'})
+      this.setState({background: stock.stock.workShop})
     } else if (window.scrollY > 2500) {
-      this.setState({background: 'imgC home-page-div'})
+      this.setState({background: stock.stock.standardFlag})
     } else {
-      this.setState({background: 'imgA home-page-div'})
+      this.setState({background: stock.stock.debris})
     }
   }
 
@@ -37,8 +37,9 @@ class HomePage extends React.Component {
   // }
 
   render () {
+    const { background } = this.state
     return (
-      <div className={this.state.background}>
+      <div className='home-page-div' style={{ backgroundImage: `url(${background})` }}>
         <Title
           tagline='"Revive, Repurpose, and Reinvent."'
         />
