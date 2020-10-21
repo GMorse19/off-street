@@ -29,8 +29,6 @@ class HomePage extends React.Component {
   }
 
   handleResize = () => {
-    // const windowSize = window.innerWidth >= 800 ? true : false
-    // const parallaxBool = windowSize >= 800 ? true : false
     this.setState({ windowSize: window.innerWidth >= 800 ? true : false })
   }
 
@@ -39,10 +37,6 @@ class HomePage extends React.Component {
     window.addEventListener('scroll', this.listenScrollEvent)
     window.addEventListener('resize', this.handleResize)
   }
-
-  // componentDidMount() {
-  //   window.scrollTo(0, 0)
-  // }
 
   render () {
     const { background } = this.state
