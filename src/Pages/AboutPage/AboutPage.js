@@ -2,7 +2,8 @@ import React from 'react'
 
 import Title from '../../Components/Title/Title'
 import InfoRow from '../../Components/InfoRow/InfoRow'
-import Intro from '../../Components/Intro/Intro'
+import InfoColumn from '../../Components/InfoColumn/InfoColumn'
+// import Intro from '../../Components/Intro/Intro'
 import Connect from '../../Components/Connect/Connect'
 import Footer from '../../Components/Footer/Footer'
 
@@ -33,18 +34,45 @@ class AboutPage extends React.Component {
           buttonContent=''
           padding='7%'
         />
+        <InfoColumn
+          name='junk yard'
+          backgroundColor='#000'
+          backgroundColor2='#f3edbe'
+          fontSize2='40px'
+          y={[40,-40]}
+          width='300'
+          image={stock.stock.jobSite}
+          content2='Off Street Carpentry was born from over twenty five years of witnessing continuous waste amongst the building trades.'
+        />
         <InfoRow
-
-          header='Off Street Carpentry was born from over twenty five years of witnessing continuous waste amongst the building trades.'
+          header="Often times on job sites, shorter pieces of wood will be disposed of. They clutter up the work area and are generally moved around so much that they become a nuisance. It's just simply easier to throw them in the dumpster."
           sectionColor='#FFF'
-          headerFont='60px'
+          headerFont='40px'
           content=''
           buttonContent='Flags'
           href=''
           padding='7%'
-          backgroundUrl={stock.stock.workShop}
+          backgroundUrl={stock.stock.junkyard}
         />
-        <Intro />
+        <InfoColumn
+          name2='craft'
+          backgroundColor2='#f3edbe'
+          backgroundColor='#f3edbe'
+          fontSize='40px'
+          width2='300'
+          image2={stock.stock.jobSite}
+          content="Knowing that there could be a better, creative way to make use of this waste, Off Street's founder set out to find different ways to rescue these forlorn timbers."
+        />
+        <InfoRow
+          header="Good old fashioned American entrepreneurship sparked the first product off the line, Ole' Glory herself. The stars and stripes not only began the journey, but it also opened the door for many more creations to come."
+          sectionColor='#FFF'
+          headerFont='40px'
+          content=''
+          buttonContent='Flags'
+          href=''
+          padding='7%'
+          backgroundUrl={stock.stock.standardFlag}
+        />
         <Connect />
         <Footer />
       </div>
