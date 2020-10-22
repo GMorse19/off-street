@@ -38,7 +38,7 @@ class InfoRow extends React.Component {
             className='inforow-div parallax'
             style={{ padding: props.padding, color: props.sectionColor, backgroundImage: `url(${image})`, backgroundColor: props.backgroundColor }}
           >
-            <h1 style={{ color: props.headerColor }}>{props.header}</h1>
+            <h1 style={{ color: props.headerColor, fontSize: props.headerFont }}>{props.header}</h1>
             <p style={{ color: props.contentColor }}>{props.content}</p>
             {props.href && <Button className='inforow-button' style={{ backgroundColor: props.buttonColor }} href={props.href}>{props.buttonContent}</Button>}
           </div>

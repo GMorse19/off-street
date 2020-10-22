@@ -11,5 +11,7 @@ export const stock = {
     contactBanner: process.env.PUBLIC_URL + '/carp-banner.jpg',
     debris: process.env.PUBLIC_URL + '/debris.jpg',
     debrisSmall: process.env.PUBLIC_URL + '/debrisSmall.jpg',
+    junkyard: process.env.PUBLIC_URL + '/junkyard.jpg',
+    jobSite: process.env.PUBLIC_URL + '/jobSite.jpg',
   }
 }
