@@ -12,7 +12,7 @@ class InfoColumn extends React.Component {
 
     this.state = {
       props: props,
-      parallax: true
+      parallax: window.innerWidth >= 800 ? true : false
     }
   }
 
@@ -37,13 +37,13 @@ class InfoColumn extends React.Component {
         <Row>
           <Col style={{ backgroundColor: props.backgroundColor }} className='infocol-col'>
             <Parallax className="custom-class" y={parallax ? props.y : props.x} tagOuter="figure">
-              <img className='flag-image' width={props.width} src={props.image} alt={props.name} />
+              <img className='about-image' width={props.width} src={props.image} alt={props.name} />
               <p style={{ color: props.color, fontSize: props.fontSize }}>{props.content}</p>
             </Parallax>
           </Col>
           <Col style={{ backgroundColor: props.backgroundColor2 }} className='infocol-col'>
           <Parallax className="custom-class" y={parallax ? props.y2 : props.x2} tagOuter="figure">
-            <img className='flag-image' width={props.width2} src={props.image2} alt={props.name2} />
+            <img className='about-image' width={props.width2} src={props.image2} alt={props.name2} />
             <p style={{ color: props.color2, fontSize: props.fontSize2 }}>{props.content2}</p>
             </Parallax>
           </Col>

@@ -1,7 +1,18 @@
+.about-image {
+  box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.4), 0 26px 29px 0 rgba(0, 0, 0, 0.19);
+}
+
 .infocol-col {
-  padding: 10vh;
+  padding: 10vh 2vh 10vh 2vh;
+  text-shadow: 9px 9px 16px #000;
 }
 
 .infocol-container {
   background-color: green;
+}
+
+@media screen and (max-width: 500px) {
+  .infocol-col {
+    padding: 5vh 2vh 5vh 2vh;
+  }
 }
