@@ -45,14 +45,14 @@ class AboutPage extends React.Component {
         />
 
         <InfoColumn
-          name='junk yard'
+          name=''
           backgroundColor='#000'
           backgroundColor2='#f3edbe'
           backgroundUrl={stock.stock.junkyard}
           fontSize2='5vh'
           y={[-20,20]}
           width='300'
-          
+
           content2=<span>Off Street Carpentry was born from over twenty five
           years of witnessing continuous waste amongst the building trades.</span>
         />
