@@ -17,14 +17,14 @@ export const itemGallery = [{
   id: 11,
   class: 'three flag-image2',
   name: 'chalkBoard',
-  src: process.env.PUBLIC_URL + '/Chalk.png'
+  src: process.env.PUBLIC_URL + '/Stock/Chalk.png'
 },
 {
   type: 'item',
   id: 12,
   class: 'one flag-image2',
   name: 'Bird House',
-  src: process.env.PUBLIC_URL + '/birdHouse.jpg'
+  src: process.env.PUBLIC_URL + '/Stock/birdHouse.jpg'
 },
 {
   type: 'standard',
@@ -81,6 +81,41 @@ export const itemGallery = [{
   class: 'three flag-image2',
   name: 'oldboards',
   src: process.env.PUBLIC_URL + '/Flags/old-boards.jpg'
+},
+{
+  type: 'random',
+  id: 11,
+  class: 'three flag-image2',
+  name: 'Block Pumkin',
+  src: process.env.PUBLIC_URL + '/Stock/4x4Pump.jpg'
+},
+{
+  type: 'random',
+  id: 12,
+  class: 'two flag-image2',
+  name: 'Bottle Opener',
+  src: process.env.PUBLIC_URL + '/Stock/BottleOpenerSet.jpg'
+},
+{
+  type: 'random',
+  id: 13,
+  class: 'one flag-image2',
+  name: 'Chalk Board',
+  src: process.env.PUBLIC_URL + '/Stock/ChalkSide.jpg'
+},
+{
+  type: 'random',
+  id: 14,
+  class: 'three flag-image2',
+  name: 'Jock-O-Lantern',
+  src: process.env.PUBLIC_URL + '/Stock/PlyWoodPump.jpg'
+},
+{
+  type: 'random',
+  id: 15,
+  class: 'two flag-image2',
+  name: 'Scrap Wood Table',
+  src: process.env.PUBLIC_URL + '/Stock/TableMashup.jpg'
 }
 
 ]
