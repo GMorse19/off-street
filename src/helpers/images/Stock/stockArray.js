@@ -13,5 +13,6 @@ export const stock = {
     debrisSmall: process.env.PUBLIC_URL + '/debrisSmall.jpg',
     junkyard: process.env.PUBLIC_URL + '/junkyard.jpg',
     jobSite: process.env.PUBLIC_URL + '/jobSite.jpg',
+    woodBg: process.env.PUBLIC_URL + '/wood-bg.jpg',
   }
 }
