@@ -4,7 +4,9 @@ import { itemGallery } from '../../helpers/images/Items/itemGallery'
 
 import './GalleryPage.scss'
 
-const flagJsx = itemGallery.map(flag => (
+const galleryList = itemGallery.sort( () => Math.random() - 0.5)
+
+const flagJsx = galleryList.map(flag => (
     <div key={flag.id} className='box'>
       {
         <div>
