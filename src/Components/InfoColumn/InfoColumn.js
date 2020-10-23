@@ -31,17 +31,19 @@ class InfoColumn extends React.Component {
 
   render () {
     const { props, parallax } = this.state
+    const image = props.backgroundUrl
+    const image2 = props.backgroundUrl2
     return (
     <div>
       <Container fluid className='infocol-container'>
         <Row>
-          <Col style={{ backgroundColor: props.backgroundColor }} className='infocol-col'>
+          <Col style={{ backgroundColor: props.backgroundColor, backgroundImage: `url(${image})` }} className='infocol-col'>
             <Parallax className="custom-class" y={parallax ? props.y : props.x} tagOuter="figure">
               <img className='about-image' width={props.width} src={props.image} alt={props.name} />
               <p style={{ color: props.color, fontSize: props.fontSize }}>{props.content}</p>
             </Parallax>
           </Col>
-          <Col style={{ backgroundColor: props.backgroundColor2 }} className='infocol-col'>
+          <Col style={{ backgroundColor: props.backgroundColor2, backgroundImage: `url(${image2})` }} className='infocol-col'>
           <Parallax className="custom-class" y={parallax ? props.y2 : props.x2} tagOuter="figure">
             <img className='about-image' width={props.width2} src={props.image2} alt={props.name2} />
             <p style={{ color: props.color2, fontSize: props.fontSize2 }}>{props.content2}</p>

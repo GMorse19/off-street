@@ -34,10 +34,11 @@ class AboutPage extends React.Component {
 
         <InfoRow
           href=''
-          backgroundColor='#e3e1e1'
+          backgroundColor='#e7eeed'
+          backgroundUrl={stock.stock.woodBg}
           header=<span>Craftsmen, creators and conservationists.</span>
-          sectionColor='#000'
-          headerFont='6vh'
+          sectionColor='#e7eeed'
+          headerFont='7vh'
           content=<span>Building a cleaner, brighter world one board at a time.</span>
           buttonContent=''
           padding='7%'
@@ -47,22 +48,13 @@ class AboutPage extends React.Component {
           name='junk yard'
           backgroundColor='#000'
           backgroundColor2='#f3edbe'
+          backgroundUrl={stock.stock.junkyard}
           fontSize2='5vh'
           y={[-20,20]}
           width='300'
-          image={stock.stock.jobSite}
+          
           content2=<span>Off Street Carpentry was born from over twenty five
           years of witnessing continuous waste amongst the building trades.</span>
-        />
-
-        <InfoRow
-          sectionColor='#FFF'
-          headerFont='5vh'
-          content=''
-          buttonContent='Flags'
-          href=''
-          padding='7%'
-          backgroundUrl={stock.stock.junkyard}
         />
 
         <InfoColumn
