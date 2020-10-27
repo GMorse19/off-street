@@ -43,7 +43,8 @@ class Header extends React.Component {
      about: stock.stock.workShop,
      shop: stock.stock.birdHouse,
      contact: stock.stock.chalkBoard,
-     gallery: stock.stock.oldBoards
+     gallery: stock.stock.oldBoards,
+     donations: stock.stock.workShop,
    }
 
   render () {
@@ -97,6 +98,7 @@ class Header extends React.Component {
                 <a name='shop' className='a-link-menu' onMouseOver={() => this.hoverButton('shop')} onClick={() => this.closeMenu()} href='#shop'>Shop</a>
                 <a name='contact' className='a-link-menu' onMouseOver={() => this.hoverButton('contact')} onClick={() => this.closeMenu()} href='#contact'>Contact</a>
                 <a name='gallery' className='a-link-menu' onMouseOver={() => this.hoverButton('gallery')} onClick={() => this.closeMenu()} href='#gallery'>Gallery</a>
+                <a name='donations' className='a-link-menu' onMouseOver={() => this.hoverButton('donations')} onClick={() => this.closeMenu()} href='#donations'>Donations</a>
               </div>
             </Col>
           </Row>
