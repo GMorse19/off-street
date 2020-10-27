@@ -16,7 +16,7 @@ const Donations = () => (
     contact us with any questions about what we do and do not accept.
     </p>
 
-    <Button>Contact</Button>
+    <Button variant='secondary' href='#contact'>Contact</Button>
 
   </div>
   <div className='donation-content'>
