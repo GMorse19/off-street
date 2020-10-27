@@ -10,6 +10,7 @@ import HomePage from './Pages/HomePage/HomePage'
 import GalleryPage from './Pages/GalleryPage/GalleryPage'
 import ContactPage from './Pages/ContactPage/ContactPage'
 import ShopPage from './Pages/ShopPage/ShopPage'
+import Donations from './Pages/Donations/Donations'
 
 class App extends React.Component{
   state = {
@@ -50,6 +51,9 @@ class App extends React.Component{
                 )} />
                 <Route path='/shop'  render={() => (
                   <ShopPage />
+                )} />
+                <Route path='/donations'  render={() => (
+                  <Donations />
                 )} />
             </div>
         </div>
