@@ -19,6 +19,9 @@ export const itemGallery = [{
             },{
               src: process.env.PUBLIC_URL + '/Flags/RedWhite&Blue/Flag.jpg',
               id: 3
+            },{
+              src: process.env.PUBLIC_URL + '/Flags/RedWhite&Blue/Flag-flat.jpg',
+              id: 4
             }
            ]
 },
@@ -33,15 +36,31 @@ export const itemGallery = [{
   type: 'item',
   id: '11',
   class: 'three flag-image2',
-  name: 'chalkBoard',
-  src: process.env.PUBLIC_URL + '/Stock/Chalk.png'
+  description: <p>Hand Made chalk board and organizer made with re-purposed
+  Off Street rescue wood.</p>,
+  name: 'Chalk Board',
+  price: '$60.00',
+  src: process.env.PUBLIC_URL + '/Stock/Chalk.png',
+  gallery: [
+    {
+      src: process.env.PUBLIC_URL + '/Stock/ChalkSide.jpg',
+      id: 1
+    }
+  ]
 },
 {
   type: 'item',
   id: '17',
   class: 'one flag-image2',
-  name: 'Bird House',
-  src: process.env.PUBLIC_URL + '/Stock/birdHouse.jpg'
+  description: <p>Hidden compartment bird house. From house keys to adult
+  beverages, hide what ever you like inside this beautifully hand crafted
+  "byrd" house.</p>,
+  name: 'Byrd House',
+  price: '$70.00',
+  src: process.env.PUBLIC_URL + '/Stock/birdHouse.jpg',
+  gallery: [{
+
+  }]
 },
 {
   type: 'standard',
@@ -61,22 +80,35 @@ export const itemGallery = [{
   type: 'fire',
   id: '5',
   class: 'four flag-image2',
-  name: 'front',
-  src: process.env.PUBLIC_URL + '/Flags/RedLine/FireFlag.jpg',
+  description: <p>Honor your fire fighters with this hand crafted, carefully
+  burned fire flag.</p>,
+  name: 'Fire Flag',
+  price: '$40.00',
+  src: process.env.PUBLIC_URL + '/Flags/RedLine/FireFlagCutOut.jpg',
+  gallery: [{
+    src: process.env.PUBLIC_URL + '/Flags/RedLine/FireFlag.jpg',
+    id: 1
+  }]
 },
 {
   type: 'fire',
   id: '6',
   class: 'three flag-image2',
   name: 'cutout',
-  src: process.env.PUBLIC_URL + '/Flags/RedLine/FireFlagCutOut.jpg',
+  src: process.env.PUBLIC_URL + '/Flags/RedLine/FireFlag.jpg',
 },
 {
   type: 'blackAndWhite',
   id: '7',
   class: 'one flag-image2',
+  description: <p>Black and white hand burned flag.</p>,
   name: 'front',
+  price: '$40.00',
   src: process.env.PUBLIC_URL + '/Flags/B&W/B&W.jpg',
+  gallery: [{
+    src: process.env.PUBLIC_URL + '/Flags/B&W/B&W-angle.jpg',
+    id: 1
+  }]
 },
 {
   type: 'blackAndWhite',
@@ -103,15 +135,29 @@ export const itemGallery = [{
   type: 'random',
   id: '16',
   class: 'three flag-image2',
+  description: <p>Halloween jack-o-lantern made from 4x4 block.</p>,
   name: 'Block Pumkin',
-  src: process.env.PUBLIC_URL + '/Stock/4x4Pump.jpg'
+  price: '$10.00',
+  src: process.env.PUBLIC_URL + '/Stock/4x4Pump.jpg',
+  gallery: [
+    {
+
+    }
+  ]
 },
 {
   type: 'random',
   id: '12',
   class: 'two flag-image2',
+  description: <p></p>,
   name: 'Bottle Opener',
-  src: process.env.PUBLIC_URL + '/Stock/BottleOpenerSet.jpg'
+  price: '$50.00',
+  src: process.env.PUBLIC_URL + '/Stock/BottleOpenerSet.jpg',
+  gallery: [
+    {
+
+    }
+  ]
 },
 {
   type: 'random',
@@ -125,15 +171,27 @@ export const itemGallery = [{
   description: <p>One of a kind Pumkin cutout made with scrap plywood.</p>,
   id: '14',
   class: 'three flag-image2',
-  name: 'Jock-O-Lantern',
-  src: process.env.PUBLIC_URL + '/Stock/PlyWoodPump.jpg'
+  name: 'Jack-O-Lantern',
+  price: '$30.00',
+  src: process.env.PUBLIC_URL + '/Stock/PlyWoodPump.jpg',
+  gallery: [
+    {
+
+    }
+  ]
 },
 {
   type: 'random',
   id: '15',
   class: 'two flag-image2',
   name: 'Scrap Wood Table',
-  src: process.env.PUBLIC_URL + '/Stock/TableMashup.jpg'
+  price: '$99.95',
+  src: process.env.PUBLIC_URL + '/Stock/TableMashup.jpg',
+  gallery: [
+    {
+
+    }
+  ]
 }
 
 ]
