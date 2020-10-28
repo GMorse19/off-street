@@ -21,8 +21,8 @@ class ProductDescription extends React.Component {
   render () {
 
     const { src, name, description, price, gallery } = this.state
-
-    const galleryJsx = gallery.map(gallery => (
+    let galleryJsx = []
+    if (gallery) { galleryJsx = gallery.map(gallery => (
       <div key={gallery.id}>
         {
           <div>
@@ -31,7 +31,7 @@ class ProductDescription extends React.Component {
           </div>
         }
       </div>
-    ))
+    ))}
 
     return (
       <div className='product-display'>
