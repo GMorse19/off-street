@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Col, Row } from 'react-bootstrap'
+import { Container, Col, Row, Button } from 'react-bootstrap'
 
 import './ProductDescription.scss'
 
@@ -21,7 +21,9 @@ class ProductDescription extends React.Component {
   render () {
 
     const { src, name, description, price, gallery } = this.state
+
     let galleryJsx = []
+
     if (gallery) { galleryJsx = gallery.map(gallery => (
       <div key={gallery.id}>
         {
@@ -38,7 +40,7 @@ class ProductDescription extends React.Component {
         <Container>
           <Row>
             <Col>
-              <h1>Product Description</h1>
+              <h1>{name}</h1>
             </Col>
           </Row>
           <Row>
@@ -47,9 +49,16 @@ class ProductDescription extends React.Component {
             </Col>
           </Row>
           <Row className="justify-content-md-center description-row">
+            <Col lg={2}>
+              <Button href='#shop'>Purchase</Button>
+            </Col>
+            <Col lg={2}>
+              <Button href='#gallery'>Gallery</Button>
+            </Col>
+          </Row>
+          <Row className="justify-content-md-center description-row">
             <Col lg={10}>
               <div className='product-description'>
-                <h1>{name}</h1>
                 <span>{description}</span>
                 <p>Price: {price}</p>
               </div>
