@@ -2,6 +2,12 @@
   height: 100vh;
 }
 
+#donations ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .donation-header {
   height: 30vh;
   font-size: 5vh;
