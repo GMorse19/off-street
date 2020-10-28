@@ -1,6 +1,5 @@
 import React from 'react'
 
-// import Products from '../../Components/Products/Products'
 import Connect from '../../Components/Connect/Connect'
 import Footer from '../../Components/Footer/Footer'
 import Title from '../../Components/Title/Title'
@@ -25,14 +24,14 @@ class ShopPage extends React.Component {
         />
 
         <InfoRow
-          href=''
           backgroundColor='#e7eeed'
           backgroundUrl={stock.stock.woodBg}
           header=<span>Craftsmen, creators and conservationists.</span>
           sectionColor='#e7eeed'
           headerFont='7vh'
           content=<span>Building a cleaner, brighter world one board at a time.</span>
-          buttonContent=''
+          buttonContent='Shop'
+          href='#item-shop/item'
           padding='7%'
         />
 
@@ -81,7 +80,7 @@ class ShopPage extends React.Component {
           content=''
           image={stock.stock.standardFlag}
           imageName='American Flag'
-          href='#flags'
+          href='#item-shop/standard'
           buttonContent='Shop'
           padding='7%'
           backgroundUrl={stock.stock.oldBoards}

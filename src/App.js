@@ -12,6 +12,7 @@ import ContactPage from './Pages/ContactPage/ContactPage'
 import ShopPage from './Pages/ShopPage/ShopPage'
 import Donations from './Pages/Donations/Donations'
 import ProductDescription from './Pages/ProductDescription/ProductDescription'
+import ItemShop from './Pages/ItemShop/ItemShop'
 
 class App extends React.Component{
   state = {
@@ -58,6 +59,11 @@ class App extends React.Component{
                 )} />
                 <Route path='/description/:id'  render={(props) => (
                   <ProductDescription
+                    props={props}
+                  />
+                )} />
+                <Route path='/item-shop/:id'  render={(props) => (
+                  <ItemShop
                     props={props}
                   />
                 )} />
