@@ -75,17 +75,16 @@ class ShopPage extends React.Component {
         />
 
         <InfoRow
-          header=<span>Good old fashioned American entrepreneurship sparked the
-          first product off the line, Ole' Glory herself. The stars and stripes
-          began the journey, but the possibilities are endless and Off Street's
-          mission is to find a use for all wood.</span>
+          header=<span>Hand made, individually burned and painted wooden flags.</span>
           sectionColor='#FFF'
           headerFont='4vh'
           content=''
-          buttonContent='Flags'
-          href=''
+          image={stock.stock.standardFlag}
+          imageName='American Flag'
+          href='#flags'
+          buttonContent='Shop'
           padding='7%'
-          backgroundUrl={stock.stock.standardFlag}
+          backgroundUrl={stock.stock.oldBoards}
         />
 
         <Connect />
