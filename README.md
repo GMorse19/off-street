@@ -1,6 +1,19 @@
 # Off Street Carpentry
+(Work in progress)
 
 ## Carpentry with a re-purpose
+
+Off Street Carpentry is a project that has been bouncing around in my head
+for a number of years. Having worked on and been around many construction sites,
+I have witnessed first hand how wasteful these job sites can be. Time is often
+of the essence and being conscientious and vigilant about waste is not a top
+priority. The scraps and cutoffs from dimensional lumber add up quickly and end
+up in the dumpster for a one way ride to the transfer station.
+
+I knew these scraps could be useful somehow and decided to make it a mission of
+mine to find ways to put these forlorn scraps and cutoffs to good use.
+
+More to come...
 
 ## Install
 
