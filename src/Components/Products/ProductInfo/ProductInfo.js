@@ -7,11 +7,9 @@ const ProductInfo = (props) => (
   <div className='product-info'>
     <Container>
       <Row>
-      <Col lg={12}><h1>{props.header}</h1></Col>
-        <Col>
-          <h1>{props.props}</h1>
-        </Col>
+        <Col lg={12}><h1>{props.header}</h1></Col>
       </Row>
+        <h1>{props.props}</h1>
     </Container>
   </div>
 )
