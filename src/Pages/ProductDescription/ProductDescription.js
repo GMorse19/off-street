@@ -10,6 +10,8 @@ class ProductDescription extends React.Component {
     super(props)
 
     this.state = {
+      id: props.props.match.params.id,
+      type: itemGallery.find(x => x.id === props.props.match.params.id).type,
       src: itemGallery.find(x => x.id === props.props.match.params.id).src,
       name: itemGallery.find(x => x.id === props.props.match.params.id).name,
       description: itemGallery.find(x => x.id === props.props.match.params.id).description,
@@ -24,7 +26,7 @@ class ProductDescription extends React.Component {
 
   render () {
 
-    const { src, name, description, price, gallery } = this.state
+    const { src, name, description, price, gallery, type } = this.state
 
     let galleryJsx = []
 
@@ -63,6 +65,9 @@ class ProductDescription extends React.Component {
           <Row className="justify-content-md-center description-row">
             <Col lg={2} md={2} sm={6} xs={6}>
               <Button className='product-display-button' href='#shop'>Purchase</Button>
+            </Col>
+            <Col lg={2} md={2} sm={6} xs={6}>
+              <Button className='product-display-button' href={`#item-shop/${type}`}>{type} SHOP</Button>
             </Col>
             <Col lg={2} md={2} sm={6} xs={6}>
               <Button className='product-display-button' href='#gallery'>Gallery</Button>

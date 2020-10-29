@@ -4,21 +4,31 @@
   background: linear-gradient(90deg, rgba(89,89,89,1) 0%, rgba(134,131,105,1) 48%, rgba(227,225,225,1) 89%);
 }
 
+.product-display h1 {
+  text-shadow: 5px 5px 10px #000;
+}
+
 .product-display-button {
   margin: 5%;
+  background-color: rgba(89,89,89,1);
+  border-color: rgba(89,89,89,1);
+  box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.4), 0 26px 29px 0 rgba(0, 0, 0, 0.19);
 }
 
 .product-description {
   color: #000;
   font-size: 20px;
+  text-shadow: 5px 5px 10px #000;
 }
 
 .product-image {
   width: 20vw;
+  box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.4), 0 26px 29px 0 rgba(0, 0, 0, 0.19);
 }
 
 .product-image-jsx {
   width: 20vw;
+  box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.4), 0 26px 29px 0 rgba(0, 0, 0, 0.19);
 }
 
 .description-row {

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Row, Col, Button } from 'react-bootstrap'
 
 import ProductInfo from '../../Components/Products/ProductInfo/ProductInfo'
 
@@ -25,17 +26,22 @@ class ItemShop extends React.Component {
     const itemList = itemGallery.filter( product => product.type === type )
 
     const itemJsx = itemList.map(item => (
-        <div key={item.id} className='itemshop'>
-          {
-            <div className='itemshop-jsx'>
-              <p className='itemshop-title'>{item.name}</p>
-              <a className='itemshop-image' href={`#/description/${item.id}`}>
-                <img width={300} src={item.src} alt={item.name} />
-              </a>
-              {item.description}
-            </div>
-          }
-        </div>
+        <Row className="justify-content-md-center">
+        <Col lg={6}>
+          <div key={item.id} className='itemshop'>
+            {
+              <div className='itemshop-jsx'>
+                <p className='itemshop-title'>{item.name}</p>
+                <a href={`#/description/${item.id}`}>
+                  <img className='itemshop-image' src={item.src} alt={item.name} />
+                </a>
+                <span className='itemshop-description'>{item.description}</span>
+                <Button href={`#/description/${item.id}`} className='itemshop-button'>Purchase</Button>
+              </div>
+            }
+          </div>
+          </Col>
+        </Row>
       ))
 
     return (
