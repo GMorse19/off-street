@@ -80,7 +80,7 @@ class ShopPage extends React.Component {
           content=''
           image={stock.stock.standardFlag}
           imageName='American Flag'
-          href='#item-shop/standard'
+          href='#item-shop/flag'
           buttonContent='Shop'
           padding='7%'
           backgroundUrl={stock.stock.oldBoards}
