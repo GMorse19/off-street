@@ -17,7 +17,7 @@ class HowTo extends React.Component {
     return (
       <div className='how-to'>
         <Video
-          url='./some-link'
+          url='https://youtu.be/3PkN5NJ7Aco'
           header='American Flag Build'
           description='A quick video showing the details behind building an Off Street flag'
         />

@@ -19,8 +19,6 @@ const Video = (props) => (
         <Col lg={{ span: 8, offset: 2 }}>
           <ReactPlayer
             url={props.url}
-            width='100%'
-            height='100%'
             controls={true}
           />
         </Col>
