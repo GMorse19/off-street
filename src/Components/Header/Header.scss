@@ -101,6 +101,12 @@
   -webkit-transition: font-size 2s;
 }
 
+.menu-link ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .menu-link-open {
   padding-top: 10vh;
   width: 15vw;

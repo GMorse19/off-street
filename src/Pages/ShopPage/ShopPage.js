@@ -36,54 +36,48 @@ class ShopPage extends React.Component {
         />
 
         <InfoColumn
-          name=''
+          name='American Flag'
           backgroundColor='#000'
           backgroundColor2='#f3edbe'
-          backgroundUrl={stock.stock.junkyard}
-          fontSize2='5vh'
+          image={stock.stock.standardFlag}
+          fontSize2='4vh'
           y={[-20,20]}
           width='300'
-
-          content2=<span>Off Street Carpentry was born from over twenty five
-          years of witnessing continuous waste amongst the building trades.</span>
+          content2=<span>Check out our list of Hand crafted flags</span>
+          buttonContent='SHOP'
+          buttonLink='#item-shop/flag'
         />
 
         <InfoColumn
-          name='craft'
-          backgroundColor2='#e3e1e1'
+          name2='Bottle Opener'
+          backgroundColor2='#000'
           backgroundColor='#e3e1e1'
+          buttonContent='SHOP'
+          buttonLink='#item-shop/item'
+          fontSize='4vh'
+          width='300'
+          image2={stock.stock.bottleOpener}
+          content=<span>One of a kind bottle opener and hook set. Perfect for
+          any she shed or man cave.</span>
+        />
+
+        <InfoColumn
+          name='Bird House'
+          backgroundColor='#000'
+          backgroundColor2='#f3edbe'
+          buttonContent2='SHOP'
+          color2='#000'
+          buttonLink2='#item-shop/item'
           fontSize2='4vh'
           width='300'
-          image={stock.stock.jobSite}
-          content2=<span>Often times on job sites, shorter pieces of wood will
-          be disposed of. They clutter up the work area and are generally moved
-          around so much that they become a nuisance. It's just simply easier
-          to throw them in the dumpster.</span>
-        />
-
-        <InfoColumn
-          name2='craft'
-          backgroundColor2='#f3edbe'
-          backgroundColor='#f3edbe'
-          fontSize='4vh'
-          width2='300'
-          image2={stock.stock.jobSite}
-          content=<span>Knowing that there could be a better, creative way to
-          make use of this waste, Off Street's founder set out to find
-          different ways to rescue these forlorn timbers.</span>
+          image={stock.stock.birdHouse}
+          content2=<span>The Secret Byrd Houses make great gifts for the holidays.</span>
         />
 
         <InfoRow
-          header=<span>Hand made, individually burned and painted wooden flags.</span>
           sectionColor='#FFF'
-          headerFont='4vh'
-          content=''
-          image={stock.stock.standardFlag}
-          imageName='American Flag'
-          href='#item-shop/flag'
-          buttonContent='Shop'
           padding='7%'
-          backgroundUrl={stock.stock.oldBoards}
+          backgroundUrl={stock.stock.contactBanner}
         />
 
         <Connect />
