@@ -1,3 +1,10 @@
+.a-link-menu {
+  margin: 5px;
+  padding: 25px;
+  display: inline-block;
+  color: #fff;
+}
+
 .burger-menu {
   margin: 5px;
   width: 50px;
@@ -75,7 +82,7 @@
 .logo-menu-down {
   height: 100vh;
   background-color: #f3edbe;
-   -webkit-transition: height 3s;
+   -webkit-transition: height 2s;
 }
 
 .menu {
@@ -96,10 +103,10 @@
 
 .menu-link-open {
   padding-top: 10vh;
-  width: 10vw;
+  width: 15vw;
   height: 100vh;
-  font-size: 30px;
-  -webkit-transition: font-size 3s;
+  font-size: 20px;
+  -webkit-transition: font-size 1s;
 }
 
 .header {

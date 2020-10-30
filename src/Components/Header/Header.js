@@ -99,6 +99,7 @@ class Header extends React.Component {
                 <a name='contact' className='a-link-menu' onMouseOver={() => this.hoverButton('contact')} onClick={() => this.closeMenu()} href='#contact'>Contact</a>
                 <a name='gallery' className='a-link-menu' onMouseOver={() => this.hoverButton('gallery')} onClick={() => this.closeMenu()} href='#gallery'>Gallery</a>
                 <a name='donations' className='a-link-menu' onMouseOver={() => this.hoverButton('donations')} onClick={() => this.closeMenu()} href='#donations'>Donations</a>
+                <a name='how-to' className='a-link-menu' onMouseOver={() => this.hoverButton('how-to')} onClick={() => this.closeMenu()} href='#how-to'>How To</a>
               </div>
             </Col>
           </Row>

@@ -63,13 +63,13 @@ class ProductDescription extends React.Component {
             </Col>
           </Row>
           <Row className="justify-content-md-center description-row">
-            <Col lg={2} md={2} sm={6} xs={6}>
+            <Col lg={2} md={2} sm={4} xs={4}>
               <Button className='product-display-button' href='#shop'>Purchase</Button>
             </Col>
-            <Col lg={2} md={2} sm={6} xs={6}>
+            <Col lg={2} md={2} sm={4} xs={4}>
               <Button className='product-display-button' href={`#item-shop/${type}`}>{type} SHOP</Button>
             </Col>
-            <Col lg={2} md={2} sm={6} xs={6}>
+            <Col lg={2} md={2} sm={4} xs={4}>
               <Button className='product-display-button' href='#gallery'>Gallery</Button>
             </Col>
           </Row>
