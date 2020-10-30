@@ -1,11 +1,8 @@
 import React from 'react'
 
-// import SplashIntro from '../../Components/SplashIntro/SplashIntro'
 import Connect from '../../Components/Connect/Connect'
 import Footer from '../../Components/Footer/Footer'
 import Title from '../../Components/Title/Title'
-// import PromoBlurb from '../../Components/PromoBlurb/PromoBlurb'
-// import BestSellers from '../../Components/BestSellers/BestSellers'
 import InfoRow from '../../Components/InfoRow/InfoRow'
 
 import { stock } from '../../helpers/images/Stock/stockArray'
@@ -14,12 +11,16 @@ import './HomePage.scss'
 
 class HomePage extends React.Component {
 
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render () {
 
     return (
       <div className='home-page-div'>
         <Title
-          tagline='"Revive, Repurpose, and Reinvent."'
+          tagline='"Carpentry with a repurpose"'
         />
 
         <InfoRow
@@ -39,13 +40,13 @@ class HomePage extends React.Component {
         <InfoRow
           y={[-10,10]}
           header='Handmade wood burned flags'
-          sectionColor='#FFF'
+          sectionColor='#DBC2A0'
           headerFont='5vh'
           content='Browse through our extensive list of flags'
           buttonContent='Flags'
           href='#shop'
           padding='7%'
-          backgroundUrl={stock.stock.standardFlag}
+          backgroundUrl={stock.stock.redLine}
         />
 
         <InfoRow

@@ -78,31 +78,31 @@ class ShopPage extends React.Component {
         />
 
         <InfoColumn
-        name='Bird House'
-        name2=''
-        backgroundColor='#000'
-        backgroundColor2='#f3edbe'
-        backgroundImage=''
-        backgroundImage2=''
-        buttonBackground=''
-        buttonBackground2='#e3e1e1'
-        buttonColor=''
-        buttonColor2='#000'
-        buttonContent=''
-        buttonContent2='SHOP'
-        buttonLink=''
-        buttonLink2='#item-shop/item'
-        color=''
-        color2='#000'
-        content=''
-        content2=<span>The Secret Byrd Houses make great gifts for the holidays.</span>
-        fontSize=''
-        fontSize2='4vh'
-        image={stock.stock.birdHouse}
-        image2=''
-        x={[0,0]}
-        y={[0,0]}
-        width='300'
+          name='Bird House'
+          name2=''
+          backgroundColor='#000'
+          backgroundColor2='#f3edbe'
+          backgroundImage=''
+          backgroundImage2=''
+          buttonBackground=''
+          buttonBackground2='#e3e1e1'
+          buttonColor=''
+          buttonColor2='#000'
+          buttonContent=''
+          buttonContent2='SHOP'
+          buttonLink=''
+          buttonLink2='#item-shop/item'
+          color=''
+          color2='#000'
+          content=''
+          content2=<span>The Secret Byrd Houses make great gifts for the holidays.</span>
+          fontSize=''
+          fontSize2='4vh'
+          image={stock.stock.birdHouse}
+          image2=''
+          x={[0,0]}
+          y={[0,0]}
+          width='300'
         />
 
         <InfoRow

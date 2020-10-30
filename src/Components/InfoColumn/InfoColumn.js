@@ -11,7 +11,6 @@ import { Parallax } from 'react-scroll-parallax'
 
   backgroundUrl(2) -- background for column
   backgroundColor(2) -- background Color for column if no image
-  fontSize(2) -- Font Size of the content
   width(2) -- width of image
   image(2) -- url of image
   name(2) -- name is proveided for alt of image
@@ -59,6 +58,7 @@ class InfoColumn extends React.Component {
       <Container fluid className='infocol-container'>
         <Row>
           <Col
+            xs={12} lg={6}
             style={{
               backgroundColor: props.backgroundColor,
               backgroundImage: `url(${image})`
@@ -81,7 +81,6 @@ class InfoColumn extends React.Component {
               <p
                 style={{
                   color: props.color,
-                  fontSize: props.fontSize,
                   padding: '2%'
                 }}>
 
@@ -102,6 +101,7 @@ class InfoColumn extends React.Component {
             </Parallax>
           </Col>
           <Col
+            xs={12} lg={6}
             style={{
               backgroundColor: props.backgroundColor2,
               backgroundImage: `url(${image2})`
@@ -124,7 +124,6 @@ class InfoColumn extends React.Component {
             <p
               style={{
                 color: props.color2,
-                fontSize: props.fontSize2,
                 padding: '2%'
               }}
             >
