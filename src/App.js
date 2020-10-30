@@ -13,6 +13,7 @@ import ShopPage from './Pages/ShopPage/ShopPage'
 import Donations from './Pages/Donations/Donations'
 import ProductDescription from './Pages/ProductDescription/ProductDescription'
 import ItemShop from './Pages/ItemShop/ItemShop'
+import HowTo from './Pages/HowTo/HowTo'
 
 class App extends React.Component{
   state = {
@@ -66,6 +67,9 @@ class App extends React.Component{
                   <ItemShop
                     props={props}
                   />
+                )} />
+                <Route path='/how-to'  render={() => (
+                  <HowTo />
                 )} />
             </div>
         </div>
