@@ -21,6 +21,8 @@ import { Parallax } from 'react-scroll-parallax'
   be present.)
   buttonContent(2) -- Text for button
   buttonLink(2) -- Href path for button
+  buttonBackground(2) -- Button background color
+  buttonColor(2) -- Button Font Color
 */
 
 import './InfoColumn.scss'
@@ -87,7 +89,15 @@ class InfoColumn extends React.Component {
 
               </p>
 
-              {props.buttonLink && <Button href={props.buttonLink}>{props.buttonContent}</Button>}
+              {props.buttonLink &&
+                <Button
+                  href={props.buttonLink}
+                  style={{ backgroundColor: props.buttonBackground,
+                           borderColor: props.buttonBackground,
+                           color: props.buttonColor }}
+                >
+                  {props.buttonContent}
+                </Button>}
 
             </Parallax>
           </Col>
@@ -123,7 +133,15 @@ class InfoColumn extends React.Component {
 
             </p>
 
-            {props.buttonLink2 && <Button href={props.buttonLink2}>{props.buttonContent2}</Button>}
+            {props.buttonLink2 &&
+              <Button
+                href={props.buttonLink2}
+                style={{ backgroundColor: props.buttonBackground2,
+                         borderColor: props.buttonBackground2,
+                         color: props.buttonColor2 }}
+              >
+                {props.buttonContent2}
+              </Button>}
 
             </Parallax>
           </Col>

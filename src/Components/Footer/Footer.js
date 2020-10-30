@@ -14,6 +14,7 @@ const Footer = () => (
             <h6><a className='spacing a-link-menu' href='#item-shop/flag'>Flags</a></h6>
             <h6><a className='spacing a-link-menu' href='#shop'>Shop</a></h6>
             <h6><a className='spacing a-link-menu' href='#gallery'>Gallery</a></h6>
+            <h6><a className='spacing a-link-menu' href='#donations'>Donations</a></h6>
         </Col>
         <Col>
         <div className=''>

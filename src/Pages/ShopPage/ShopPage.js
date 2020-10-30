@@ -46,32 +46,63 @@ class ShopPage extends React.Component {
           content2=<span>Check out our list of Hand crafted flags</span>
           buttonContent='SHOP'
           buttonLink='#item-shop/flag'
+          buttonBackground='#e3e1e1'
+          buttonColor='#000'
         />
 
         <InfoColumn
+          name=''
           name2='Bottle Opener'
-          backgroundColor2='#000'
           backgroundColor='#e3e1e1'
+          backgroundColor2='#000'
+          backgroundImage=''
+          backgroundImage2=''
+          buttonBackground='#f3edbe'
+          buttonBackground2=''
+          buttonColor='#000'
+          buttonColor2=''
           buttonContent='SHOP'
+          buttonContent2=''
           buttonLink='#item-shop/item'
-          fontSize='4vh'
-          width='300'
-          image2={stock.stock.bottleOpener}
+          buttonLink2=''
           content=<span>One of a kind bottle opener and hook set. Perfect for
           any she shed or man cave.</span>
+          content2=''
+          fontSize='4vh'
+          fontSize2=''
+          image=''
+          image2={stock.stock.bottleOpener}
+          x={[0,0]}
+          y={[0,0]}
+          width='300'
         />
 
         <InfoColumn
-          name='Bird House'
-          backgroundColor='#000'
-          backgroundColor2='#f3edbe'
-          buttonContent2='SHOP'
-          color2='#000'
-          buttonLink2='#item-shop/item'
-          fontSize2='4vh'
-          width='300'
-          image={stock.stock.birdHouse}
-          content2=<span>The Secret Byrd Houses make great gifts for the holidays.</span>
+        name='Bird House'
+        name2=''
+        backgroundColor='#000'
+        backgroundColor2='#f3edbe'
+        backgroundImage=''
+        backgroundImage2=''
+        buttonBackground=''
+        buttonBackground2='#e3e1e1'
+        buttonColor=''
+        buttonColor2='#000'
+        buttonContent=''
+        buttonContent2='SHOP'
+        buttonLink=''
+        buttonLink2='#item-shop/item'
+        color=''
+        color2='#000'
+        content=''
+        content2=<span>The Secret Byrd Houses make great gifts for the holidays.</span>
+        fontSize=''
+        fontSize2='4vh'
+        image={stock.stock.birdHouse}
+        image2=''
+        x={[0,0]}
+        y={[0,0]}
+        width='300'
         />
 
         <InfoRow
