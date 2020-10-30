@@ -4,7 +4,7 @@ import './HowTo.scss'
 
 import Video from '../../Components/Video/Video'
 
-import video from '../../helpers/videos/OffStreet2.mp4'
+import video from '../../helpers/videos/OffStreet1.mp4'
 
 class HowTo extends React.Component {
   constructor () {
