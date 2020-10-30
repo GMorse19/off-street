@@ -1,0 +1,46 @@
+#donations {
+  height: 100vh;
+}
+
+#donations ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.donation-header {
+  height: 30vh;
+  font-size: 5vh;
+  padding: 10%;
+  color: #FFF;
+  background-image: url('../../helpers/images/Stock/wood-bg.jpg');
+}
+
+.donation-sub-header {
+  font-size: 3vh;
+  background-color: #000;
+  color: #FFF;
+  padding: 2%;
+}
+
+.donation-col {
+  border: solid;
+  margin: 5% 0 5% 0;
+  padding: 1%;
+}
+
+.donation-content {
+  height: 70vh;
+  background-color: #FFF;
+}
+
+@media screen and (max-width: 500px) {
+  .donation-header {
+    font-size: 4vh;
+    padding-top: 15%;
+  }
+
+  #donations {
+    padding-top: 30px;
+  }
+}

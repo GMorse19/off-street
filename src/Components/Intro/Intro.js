@@ -61,7 +61,7 @@ const Intro = () => (
 
         <Row className='row-padding'>
           <Col xs={12} md={6}>
-            <Parallax scrollAxis='horizontal' className="custom-class" x={[-50, 30]} tagOuter="figure">
+            <Parallax className="custom-class" y={[-50, 30]} tagOuter="figure">
               <div className='image-div-about'>
                 <img className='flag-image' src={flag.blackAndWhite.front} alt='Black and White Flag' />
               </div>

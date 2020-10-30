@@ -10,6 +10,10 @@ import HomePage from './Pages/HomePage/HomePage'
 import GalleryPage from './Pages/GalleryPage/GalleryPage'
 import ContactPage from './Pages/ContactPage/ContactPage'
 import ShopPage from './Pages/ShopPage/ShopPage'
+import Donations from './Pages/Donations/Donations'
+import ProductDescription from './Pages/ProductDescription/ProductDescription'
+import ItemShop from './Pages/ItemShop/ItemShop'
+import HowTo from './Pages/HowTo/HowTo'
 
 class App extends React.Component{
   state = {
@@ -17,9 +21,9 @@ class App extends React.Component{
   }
 
   listenScrollEvent = e => {
-    if (window.scrollY > 2000 && window.scrollY <= 3800) {
+    if (window.scrollY > 1000 && window.scrollY <= 2500) {
       this.setState({background: 'img2 App'})
-    } else if (window.scrollY > 3800) {
+    } else if (window.scrollY > 2500) {
       this.setState({background: 'img3 App'})
     } else {
       this.setState({background: 'img1 App'})
@@ -50,6 +54,22 @@ class App extends React.Component{
                 )} />
                 <Route path='/shop'  render={() => (
                   <ShopPage />
+                )} />
+                <Route path='/donations'  render={() => (
+                  <Donations />
+                )} />
+                <Route path='/description/:id'  render={(props) => (
+                  <ProductDescription
+                    props={props}
+                  />
+                )} />
+                <Route path='/item-shop/:id'  render={(props) => (
+                  <ItemShop
+                    props={props}
+                  />
+                )} />
+                <Route path='/how-to'  render={() => (
+                  <HowTo />
                 )} />
             </div>
         </div>

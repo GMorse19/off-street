@@ -1,6 +1,74 @@
+.contact-link-header {
+
+}
+
+.contact-page-link {
+  color: blue;
+}
+
+.contact-page-link:hover {
+  color: #857356;
+}
+
 .contact-page {
   height: 100vh;
-  padding-top: 50vh;
+  width: 100vw;
   background-color: #e3e1e1;
   color: #000;
+  position: absolute;
+}
+
+.contact-page-info {
+  padding-top: 5vh;
+}
+
+.heading-contact {
+  font-size: 70px;
+}
+
+.heading-contact-div {
+  background-image: url('../../helpers/images/Stock/carp-banner.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  padding: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-link-header {
+    font-size: 12px;
+  }
+
+  .contact-page h6 {
+    font-size: 10px;
+  }
+
+  .contact-page-link {
+    font-size: 10px;
+  }
+
+  .heading-contact {
+    font-size: 50px;
+  }
+
+  .heading-contact-div {
+    height: 50vh;
+    padding: 12% 0 12% 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact-link-header {
+    font-size: 10px;
+  }
+
+  .heading-contact {
+    font-size: 40px;
+  }
+
+  .heading-contact-div {
+    height: 40vh;
+    padding: 25% 2% 10% 2%;
+  }
 }

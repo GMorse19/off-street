@@ -1,12 +1,8 @@
-a {
+.a-link-menu {
   margin: 5px;
   padding: 25px;
   display: inline-block;
   color: #fff;
-}
-
-a:hover {
-  color: #f3edbe;
 }
 
 .burger-menu {
@@ -16,15 +12,81 @@ a:hover {
   border-radius: 20px;
 }
 
+.close-button {
+  background: none;
+  border: none;
+  float: right;
+  font-size: 20px;
+  padding: 2vh;
+}
+
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.image-menu {
+  width: 30%;
+  -webkit-transition: width 3s;
+}
+
+.image-menu-closed {
+  width: 40%;
+  -webkit-transition: width 3s;
+}
+
 .logo {
   height: 20px;
   border-radius: 20px;
 }
 
+.logofloat-padding {
+  padding-top: 25vh;
+}
+
+.logo-menu {
+  background-color: #f3edbe;
+  height: 0vh;
+  padding-top: 5vh;
+   -webkit-transition: height 3s;
+}
+
+.logo-menu-down {
+  height: 100vh;
+  background-color: #f3edbe;
+   -webkit-transition: height 3s;
+}
+
 .menu {
   background-color: #555;
-  padding-bottom: 20vh;
-  width: 10px;
   border: none;
   :focus {
     outline: none;
@@ -32,7 +94,19 @@ a:hover {
 }
 
 .menu-link {
-  font-size: 30px;
+  padding-top: 10vh;
+  width: 10vw;
+  height: 100vh;
+  font-size: 0px;
+  -webkit-transition: font-size 2s;
+}
+
+.menu-link-open {
+  padding-top: 10vh;
+  width: 15vw;
+  height: 100vh;
+  font-size: 20px;
+  -webkit-transition: font-size 1s;
 }
 
 .header {
@@ -43,5 +117,19 @@ a:hover {
   z-index: 1000;
   :focus {
     outline: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .a-link-menu {
+    font-size: 20px;
+    padding: 1vh 0 0 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .a-link-menu {
+    font-size: 30px;
+    padding: 1vh 0 0 0;
   }
 }

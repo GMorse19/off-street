@@ -1,0 +1,44 @@
+.itemshop {
+  margin: 5%;
+  border: solid;
+  background-color: rgba(134,131,105,1);
+  // background: linear-gradient(90deg, rgba(89,89,89,1) 0%, rgba(134,131,105,1) 48%, rgba(227,225,225,1) 89%);
+  box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.4), 0 26px 29px 0 rgba(0, 0, 0, 0.19);
+}
+
+.itemshop-button {
+  background-color: rgba(89,89,89,1);
+  border-color: rgba(89,89,89,1);
+}
+
+.itemshop-description {
+  font-size: 20px;
+}
+
+.itemshop-title {
+  margin: 2% 0 2% 0;
+}
+
+.itemshop-image {
+  width: 20vw;
+  box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.4), 0 26px 29px 0 rgba(0, 0, 0, 0.19);
+  margin: 5%;
+}
+
+.itemshop-jsx {
+  padding: 5%;
+}
+
+@media screen and (max-width: 1000px) {
+  .itemshop-description {
+    font-size: 15px;
+  }
+
+  .itemshop-image {
+    width: 50vw
+  }
+
+  .itemshop-title {
+    font-size: 25px;
+  }
+}

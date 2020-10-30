@@ -12,8 +12,7 @@ const Connect = () => (
     <Container fluid className='contact-container'>
       <Row className='row'>
         <Col className='cream' xs={12} md={6}>
-          <div>
-            <img className='carpenter' src={stock.stock.workShop} alt='carpenter' />
+          <div className='display'>
             <img className='carpenter' src={stock.stock.workShop} alt='carpenter' />
           </div>
         </Col>
