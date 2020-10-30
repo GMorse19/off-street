@@ -15,10 +15,12 @@ const Video = (props) => (
           </div>
         </Col>
       </Row>
-      <Row>
+      <Row className='video-player'>
         <Col lg={{ span: 8, offset: 2 }}>
           <ReactPlayer
             url={props.url}
+            width='100%'
+            height='100%'
             controls={true}
           />
         </Col>
