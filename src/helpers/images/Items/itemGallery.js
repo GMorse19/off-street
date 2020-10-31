@@ -185,7 +185,11 @@ export const itemGallery = [{
   src: process.env.PUBLIC_URL + '/Stock/BottleOpenerSet.jpg',
   gallery: [
     {
-
+      src: process.env.PUBLIC_URL + '/Stock/BottleOpenerCloseUp.jpg',
+      id: 1
+    },{
+      src: process.env.PUBLIC_URL + '/Stock/BottleOpenerParts.jpg',
+      id: 2
     }
   ]
 },

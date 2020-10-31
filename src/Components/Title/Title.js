@@ -18,7 +18,7 @@ const Title = (props) => (
           <Parallax className="custom-class" y={[-50, 50]} tagOuter="figure">
             <div className='title-div'>
               <h1 className='title'>Off Street</h1>
-              <h5 className='title-tagline'>Carpentry with a re-purpose</h5>
+              
             </div>
           </Parallax>
         </Col>

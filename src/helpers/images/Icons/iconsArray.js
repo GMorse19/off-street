@@ -6,5 +6,8 @@ export const icon = {
     facebook: process.env.PUBLIC_URL + '/Stock/facebook.svg',
     twitter: process.env.PUBLIC_URL + '/Stock/twitter.svg',
     pinterest: process.env.PUBLIC_URL + '/Stock/pinterest.svg',
+  },
+  logo: {
+    logo: process.env.PUBLIC_URL + '/Logo/OSLogo.png'
   }
 }

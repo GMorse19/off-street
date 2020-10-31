@@ -13,7 +13,7 @@ const Connect = () => (
       <Row className='row'>
         <Col className='cream' xs={12} md={6}>
           <div className='display'>
-            <img className='carpenter' src={stock.stock.workShop} alt='carpenter' />
+            <img className='carpenter' src={stock.stock.logo} alt='carpenter' />
           </div>
         </Col>
         <Col className='black' xs={12} md={6}>
