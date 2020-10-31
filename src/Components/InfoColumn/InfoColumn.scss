@@ -13,8 +13,16 @@
   background-color: green;
 }
 
+.infocol-container p {
+  font-size: 30px;
+}
+
 @media screen and (max-width: 500px) {
   .infocol-col {
     padding: 5vh 2vh 5vh 2vh;
+  }
+
+  .infocol-container p {
+    font-size: 20px;
   }
 }

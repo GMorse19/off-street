@@ -85,7 +85,8 @@ class Header extends React.Component {
             X
             </button>
               <div className={menuOpen ? 'menu-link-open' : 'menu-link'}>
-                <a
+              <ul>
+                <li><a
                    name='home'
                    className='a-link-menu'
                    onMouseOver={() => this.hoverButton('home')}
@@ -93,13 +94,14 @@ class Header extends React.Component {
                    href='#/'
                 >
                    Home
-                </a>
-                <a name='about' className='a-link-menu' onMouseOver={() => this.hoverButton('about')} onClick={() => this.closeMenu()} href='#about'>About</a>
-                <a name='shop' className='a-link-menu' onMouseOver={() => this.hoverButton('shop')} onClick={() => this.closeMenu()} href='#shop'>Shop</a>
-                <a name='contact' className='a-link-menu' onMouseOver={() => this.hoverButton('contact')} onClick={() => this.closeMenu()} href='#contact'>Contact</a>
-                <a name='gallery' className='a-link-menu' onMouseOver={() => this.hoverButton('gallery')} onClick={() => this.closeMenu()} href='#gallery'>Gallery</a>
-                <a name='donations' className='a-link-menu' onMouseOver={() => this.hoverButton('donations')} onClick={() => this.closeMenu()} href='#donations'>Donations</a>
-                <a name='how-to' className='a-link-menu' onMouseOver={() => this.hoverButton('how-to')} onClick={() => this.closeMenu()} href='#how-to'>How To</a>
+                </a></li>
+                <li><a name='about' className='a-link-menu' onMouseOver={() => this.hoverButton('about')} onClick={() => this.closeMenu()} href='#about'>About</a></li>
+                <li><a name='shop' className='a-link-menu' onMouseOver={() => this.hoverButton('shop')} onClick={() => this.closeMenu()} href='#shop'>Shop</a></li>
+                <li><a name='contact' className='a-link-menu' onMouseOver={() => this.hoverButton('contact')} onClick={() => this.closeMenu()} href='#contact'>Contact</a></li>
+                <li><a name='gallery' className='a-link-menu' onMouseOver={() => this.hoverButton('gallery')} onClick={() => this.closeMenu()} href='#gallery'>Gallery</a></li>
+                <li><a name='donations' className='a-link-menu' onMouseOver={() => this.hoverButton('donations')} onClick={() => this.closeMenu()} href='#donations'>Donations</a></li>
+                <li><a name='how-to' className='a-link-menu' onMouseOver={() => this.hoverButton('how-to')} onClick={() => this.closeMenu()} href='#how-to'>How To</a></li>
+                </ul>
               </div>
             </Col>
           </Row>

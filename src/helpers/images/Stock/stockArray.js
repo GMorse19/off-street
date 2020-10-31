@@ -14,5 +14,7 @@ export const stock = {
     junkyard: process.env.PUBLIC_URL + '/Stock/junkyard.jpg',
     jobSite: process.env.PUBLIC_URL + '/Stock/jobSite.jpg',
     woodBg: process.env.PUBLIC_URL + '/Stock/wood-bg.jpg',
+    bottleOpener: process.env.PUBLIC_URL + '/Stock/BottleOpenerSet.jpg',
+    logo: process.env.PUBLIC_URL + '/Logo/OSLogo.png',
   }
 }

@@ -3,6 +3,8 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 
 import './Donations.scss'
 
+import Footer from '../../Components/Footer/Footer'
+
 const Donations = () => (
   <div id='donations'>
   <div className='donation-header'>
@@ -104,6 +106,9 @@ const Donations = () => (
         </Col>
       </Row>
     </Container>
+    <div className='donation-footer'>
+      <Footer />
+    </div>
   </div>
   </div>
 )

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Title from '../../Components/Title/Title'
-import InfoRow from '../../Components/InfoRow/InfoRow'
+// import InfoRow from '../../Components/InfoRow/InfoRow'
 // import InfoColumn from '../../Components/InfoColumn/InfoColumn'
 import AboutContent from '../../Components/Products/AboutContent'
 import Connect from '../../Components/Connect/Connect'
