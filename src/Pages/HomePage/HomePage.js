@@ -30,11 +30,11 @@ class HomePage extends React.Component {
           contentColor='#000'
           contentFont='25px'
           content="Our mission at Off Street is to rescue the forgotten scraps and cutoffs from construction projects and save them from their inevitable trip to the depths of a dumpster. Re-purpose these forlorn timbers and return a quality hand crafted item with it's own unique history."
-          buttonColor='#DBC2A0'
-          buttonContent='SHOP'
-          href='#shop'
+          buttonColor='#111'
+          buttonContent='ABOUT'
+          href='#about'
           padding='2%'
-          backgroundUrl={stock.stock.workShop}
+          backgroundColor='#555'
         />
 
         <InfoRow
@@ -44,7 +44,7 @@ class HomePage extends React.Component {
           headerFont='5vh'
           content='Browse through our extensive list of flags'
           buttonContent='Flags'
-          href='#shop'
+          href='#item-shop/flag'
           padding='7%'
           backgroundUrl={stock.stock.redLine}
         />

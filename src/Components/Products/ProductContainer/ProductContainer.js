@@ -16,10 +16,13 @@ const ProductContainer = (props) => (
           <img className='flag-image' src={props.image} alt={props.alt} />
         </div>
 
+        <div className='product-container-description'>
         <ProductDescription
           title={props.title}
           description={props.description}
         />
+        </div>
+
 
         <LogoFloat
           left={props.left}
