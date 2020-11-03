@@ -3,6 +3,7 @@
 }
 
 .infocol-col {
+  min-height: 30vh;
   padding: 10vh 2vh 10vh 2vh;
   text-shadow: 9px 9px 16px #000;
   background-repeat: no-repeat;
@@ -15,6 +16,12 @@
 
 .infocol-container p {
   font-size: 30px;
+}
+
+@media screen and (max-height: 376px) {
+  .infocol-col {
+    min-height: 100vh;
+  }
 }
 
 @media screen and (max-width: 500px) {
