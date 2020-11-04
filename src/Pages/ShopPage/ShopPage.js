@@ -95,7 +95,7 @@ class ShopPage extends React.Component {
           color=''
           color2='#000'
           content=''
-          content2=<span>The Secret Byrd Houses make great gifts for the holidays.</span>
+          content2=<span>Browse through a catalog of our unique hand made items.</span>
           fontSize=''
           fontSize2='4vh'
           image={stock.stock.birdHouse}

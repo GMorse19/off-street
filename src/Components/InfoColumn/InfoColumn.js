@@ -77,13 +77,12 @@ class InfoColumn extends React.Component {
                 src={props.image}
                 alt={props.name}
               />
-
+              <h1>{props.header}</h1>
               <p
                 style={{
                   color: props.color,
                   padding: '2%'
                 }}>
-
                 {props.content}
 
               </p>

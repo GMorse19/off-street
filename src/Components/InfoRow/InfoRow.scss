@@ -5,7 +5,7 @@
   overflow-x: hidden;
   overflow-y: hidden;
   margin-top: -5vh;
-  text-shadow: 9px 9px 16px #000;
+  text-shadow: 3px 3px 16px #000;
 }
 
 .inforow-button {
@@ -53,6 +53,10 @@
     padding-top: 5%;
   }
 
+  .inforow-button {
+    margin: 1%;
+  }
+
   .inforow-div p {
     font-size: 20px;
   }
@@ -74,7 +78,7 @@
   }
 
   .inforow-div p {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .inforow-wrapper {

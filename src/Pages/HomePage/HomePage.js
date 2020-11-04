@@ -4,6 +4,7 @@ import Connect from '../../Components/Connect/Connect'
 import Footer from '../../Components/Footer/Footer'
 import Title from '../../Components/Title/Title'
 import InfoRow from '../../Components/InfoRow/InfoRow'
+import InfoColumn from '../../Components/InfoColumn/InfoColumn'
 
 import { stock } from '../../helpers/images/Stock/stockArray'
 
@@ -25,41 +26,42 @@ class HomePage extends React.Component {
 
         <InfoRow
           header='Rescue, Repurpose, Reinvent'
-          sectionColor='#FFF'
+          sectionColor='#e3e1e1'
           headerFont='5vh'
-          contentColor='#000'
+          contentColor='#DBC2A0'
           contentFont='25px'
           content="Our mission at Off Street is to rescue the forgotten scraps and cutoffs from construction projects and save them from their inevitable trip to the depths of a dumpster. Re-purpose these forlorn timbers and return a quality hand crafted item with it's own unique history."
-          buttonColor='#DBC2A0'
-          buttonContent='SHOP'
-          href='#shop'
+          buttonColor='#111'
+          buttonContent='ABOUT'
+          href='#about'
           padding='2%'
-          backgroundUrl={stock.stock.workShop}
+          backgroundColor='#555'
         />
 
         <InfoRow
           y={[-10,10]}
-          header='Handmade wood burned flags'
-          sectionColor='#DBC2A0'
-          headerFont='5vh'
-          content='Browse through our extensive list of flags'
-          buttonContent='Flags'
-          href='#shop'
-          padding='7%'
-          backgroundUrl={stock.stock.redLine}
-        />
-
-        <InfoRow
-          header='Submit your own designs.'
+          header='Unique, hand crafted items.'
           sectionColor='#000'
           headerFont='5vh'
-          content='One of a kind items listed weekly in our items shop.'
-          contentFont='25px'
-          buttonColor='#DBD4A0'
+          content='Visit our shop and browse through our one of a kind items, listed weekly.'
           buttonContent='SHOP'
-          href='#shop'
-          padding='10%'
+          href='#item-shop/flag'
+          padding='7%'
           backgroundUrl={stock.stock.birdHouse}
+        />
+
+        <InfoColumn
+          header='Become a donor.'
+          sectionColor='#000'
+          headerFont='5vh'
+          content='Have extra, unwanted material? Maybe you would like to contiribute by becoming an authenticated Off Street builder. Either way, contact Off Street to see how you can help.'
+          contentFont='25px'
+          buttonColor='#000'
+          buttonContent='DONATE'
+          href='#shop'
+          padding='6%'
+          backgroundColor='#e3e1e1'
+          backgroundUrl2={stock.stock.jobSite}
         />
 
         <Connect />
