@@ -54,7 +54,7 @@ class HomePage extends React.Component {
           header='Become a donor.'
           sectionColor='#000'
           headerFont='5vh'
-          content='Have extra, unwanted material? Maybe you would like to contiribute by becoming an authenticated Off Street builder. Either way, contact Off Street to see how you can help.'
+          content='Have extra, unwanted material? Maybe you would like to contribute by becoming an authenticated Off Street builder. Either way, contact Off Street to see how you can help.'
           contentFont='25px'
           buttonColor='#000'
           buttonContent='DONATE'

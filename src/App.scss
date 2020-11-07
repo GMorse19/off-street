@@ -21,6 +21,11 @@ html {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  height: 100%;
+  max-width: 100%;
 }
 
 .img1 {
@@ -70,28 +75,36 @@ html {
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .img2 {
-    background-size: cover !important;
-    background-image: url('./helpers/images/Flags/FlagCutOut2.png');
-  }
-
-  .img3 {
-    background-size: cover !important;
-  }
+@media (max-width: 991px) {
+    body.custom-background {
+        background-size: cover !important;
+        max-height: 100vh;
+        background-position: center top !important;
+    }
 }
 
-@media screen and (max-width: 500px) {
-  .img1 {
-    background-size: cover !important;
-  }
-
-  .img2 {
-    background-size: cover !important;
-    background-image: url('./helpers/images/Flags/FlagCutOut2.png');
-  }
-
-  .img3 {
-    background-size: cover !important;
-  }
-}
+// @media screen and (max-width: 1000px) {
+//   .img2 {
+//     background-size: cover !important;
+//     background-image: url('./helpers/images/Flags/FlagCutOut2.png');
+//   }
+//
+//   .img3 {
+//     background-size: cover !important;
+//   }
+// }
+//
+// @media screen and (max-width: 500px) {
+//   .img1 {
+//     background-size: cover !important;
+//   }
+//
+//   .img2 {
+//     background-size: cover !important;
+//     background-image: url('./helpers/images/Flags/FlagCutOut2.png');
+//   }
+//
+//   .img3 {
+//     background-size: cover !important;
+//   }
+// }
