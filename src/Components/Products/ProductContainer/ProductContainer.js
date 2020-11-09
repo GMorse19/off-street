@@ -23,7 +23,6 @@ const ProductContainer = (props) => (
         />
         </div>
 
-
         <LogoFloat
           left={props.left}
           right={props.right}
