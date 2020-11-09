@@ -19,7 +19,12 @@
 }
 
 @media screen and (max-width: 1000px) {
-
+  .footer {
+    padding-bottom: 0;
+  }
+  .footer-container {
+    width: 100vw;
+  }
 }
 
 @media screen and (max-width: 500px) {
