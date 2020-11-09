@@ -18,21 +18,33 @@ html {
 .App {
   text-align: center;
   box-shadow: inset 0 0 100px black;
+  background-attachment: scroll;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+}
+
+.img1 {
+  background-image: url('./helpers/images/debris2.jpg');
+  box-shadow: inset 0 0 100px black;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.img1 {
-  background-image: url('./helpers/images/debris2.jpg');
-}
-
 .img2 {
   background-image: url('./helpers/images/Flags/FlagCutOut2.png');
+  box-shadow: inset 0 0 100px black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .img3 {
   background-image: url('./helpers/images/Flags/FlagCutOut2.png');
+  box-shadow: inset 0 0 100px black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App-logo {
@@ -73,28 +85,21 @@ html {
 @media screen and (max-width: 1000px) {
   .img1 {
     background-size: 200vh !important;
-    // background-attachment: initial;
     background-position: center top !important;
+    background-attachment: initial;
   }
 
-  // .img1 {
-  //   background-size: cover !important;
-  //   background-attachment: initial;
-  //   max-height: 100vh;
-  // }
+  .img2 {
+    background-size: 200vh !important;
+    background-position: center top !important;
+    background-attachment: scroll;
+  }
 
-  // .img2 {
-  //   background-size: cover !important;
-  //   background-image: url('./helpers/images/Flags/FlagCutOut2.png');
-  //   background-attachment: initial;
-  //   max-height: 100vh;
-  // }
-
-  // .img3 {
-  //   background-size: cover !important;
-  //   background-attachment: initial;
-  //   max-height: 100vh;
-  // }
+  .img3 {
+    background-size: 200vh !important;
+    background-position: center top !important;
+    background-attachment: scroll;
+  }
 }
 
 @media screen and (max-width: 500px) {
