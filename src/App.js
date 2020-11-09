@@ -17,16 +17,16 @@ import HowTo from './Pages/HowTo/HowTo'
 
 class App extends React.Component{
   state = {
-    background: 'img1 App'
+    background: 'img1'
   }
 
   listenScrollEvent = e => {
-    if (window.scrollY > 1000 && window.scrollY <= 3000 && window.screen.width > 500) {
-      this.setState({background: 'img2 App'})
+    if (window.scrollY > 1000 && window.scrollY <= 3000) {
+      this.setState({background: 'img2'})
     } else if (window.scrollY > 3000) {
-      this.setState({background: 'img3 App'})
+      this.setState({background: 'img3'})
     } else {
-      this.setState({background: 'img1 App'})
+      this.setState({background: 'img1'})
     }
   }
 
@@ -38,6 +38,7 @@ class App extends React.Component{
   return (
       <ParallaxProvider>
         <div className={this.state.background}>
+          <div className='App'>
           <Header />
             <div>
                 <Route exact path='/'  render={() => (
@@ -71,6 +72,7 @@ class App extends React.Component{
                 <Route path='/how-to'  render={() => (
                   <HowTo />
                 )} />
+                </div>
             </div>
         </div>
       </ParallaxProvider>
