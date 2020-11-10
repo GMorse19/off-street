@@ -5,7 +5,21 @@ import './Donations.scss'
 
 import Footer from '../../Components/Footer/Footer'
 
-const Donations = () => (
+class Donations extends React.Component {
+  constructor() {
+    super()
+
+    this.state ={
+
+    }
+  }
+
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
+  render () {
+    return (
   <div id='donations'>
   <div className='donation-header'>
     <p>Acceptable Donations -- What Does Off Street Take?</p>
@@ -112,5 +126,7 @@ const Donations = () => (
   </div>
   </div>
 )
+}
+}
 
 export default Donations
