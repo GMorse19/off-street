@@ -25,18 +25,18 @@ class HomePage extends React.Component {
         />
 
         <InfoRow
-          header='Rescue, Repurpose, Reinvent'
-          sectionColor='#e3e1e1'
-          headerFont='5vh'
-          contentColor='#DBC2A0'
-          contentFont='25px'
-          content="Our mission at Off Street is to rescue the forgotten scraps and cutoffs from construction projects and save them from their inevitable trip to the depths of a dumpster. Re-purpose these forlorn timbers and return a quality hand crafted item with it's own unique history."
-          buttonColor='#111'
-          buttonContent='ABOUT'
-          href='#about'
-          padding='2%'
-          backgroundColor='#555'
-        />
+        header='Rescue, Repurpose, Reinvent'
+        sectionColor='#e3e1e1'
+        headerFont='5vh'
+        contentColor='#DBC2A0'
+        contentFont='25px'
+        content="Our mission at Off Street is to rescue the forgotten scraps and cutoffs from construction projects and save them from their inevitable trip to the depths of a dumpster. We then re-purpose and re-invent these forlorn timbers to return a quality hand crafted item with it's own unique history."
+        buttonColor='#111'
+        buttonContent='ABOUT'
+        href='#about'
+        padding='2%'
+        backgroundColor='#555'
+                />
 
         <InfoRow
           y={[-10,10]}
@@ -54,7 +54,7 @@ class HomePage extends React.Component {
           header='Become a donor.'
           sectionColor='#000'
           headerFont='5vh'
-          content='Have extra, unwanted material? Maybe you would like to contribute by becoming an authenticated Off Street builder. Either way, contact Off Street to see how you can help.'
+          content='Have extra, unwanted material? Maybe you would like to contribute by becoming an authenticated Off Street builder. There are many ways to contribute, please contact Off Street to see how you can help.'
           contentFont='25px'
           buttonColor='#000'
           buttonContent='DONATE'
