@@ -5,7 +5,21 @@ import { icon } from '../../helpers/images/Icons/iconsArray'
 
 import './ContactPage.scss'
 
-const ContactPage = () => (
+class ContactPage extends React.Component {
+  constructor() {
+    super()
+
+    this.state ={
+
+    }
+  }
+
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
+  render () {
+    return (
   <div className='contact-page'>
     <Container fluid>
       <Row>
@@ -45,5 +59,7 @@ const ContactPage = () => (
     </Container>
   </div>
 )
+}
+}
 
 export default ContactPage
