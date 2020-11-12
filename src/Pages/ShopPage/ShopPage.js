@@ -31,7 +31,7 @@ class ShopPage extends React.Component {
           headerFont='7vh'
           content=<span>Building a cleaner, brighter world one board at a time.</span>
           buttonContent='Shop'
-          href='#item-shop/item'
+          href='#item-shop/all'
           padding='7%'
         />
 
@@ -45,7 +45,7 @@ class ShopPage extends React.Component {
           width='300'
           content2=<span>Check out our list of Hand crafted flags</span>
           buttonContent='SHOP'
-          buttonLink='#item-shop/flag'
+          buttonLink='#item-shop/Flag'
           buttonBackground='#e3e1e1'
           buttonColor='#000'
         />
@@ -63,7 +63,7 @@ class ShopPage extends React.Component {
           buttonColor2=''
           buttonContent='SHOP'
           buttonContent2=''
-          buttonLink='#item-shop/item'
+          buttonLink='#item-shop/Item'
           buttonLink2=''
           content=<span>One of a kind bottle opener and hook set. Perfect for
           any she shed or man cave.</span>
@@ -91,7 +91,7 @@ class ShopPage extends React.Component {
           buttonContent=''
           buttonContent2='SHOP'
           buttonLink=''
-          buttonLink2='#item-shop/item'
+          buttonLink2='#item-shop/Item'
           color=''
           color2='#000'
           content=''
