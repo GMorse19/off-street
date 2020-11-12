@@ -45,7 +45,7 @@ class HomePage extends React.Component {
           headerFont='5vh'
           content='Visit our shop and browse through our one of a kind items, listed weekly.'
           buttonContent='SHOP'
-          href='#item-shop/flag'
+          href='#item-shop/all'
           padding='7%'
           backgroundUrl={stock.stock.birdHouse}
         />

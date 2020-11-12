@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const itemGallery = [{
-  type: 'flag',
+  type: 'Flag',
   style: 'standard',
   id: '1',
   class: 'one flag-image2',
@@ -30,7 +30,7 @@ export const itemGallery = [{
            ]
 },
 {
-  type: 'flag',
+  type: 'Flag gallery',
   style: 'standard',
   id: '2',
   class: 'two flag-image2',
@@ -38,7 +38,7 @@ export const itemGallery = [{
   src: process.env.PUBLIC_URL + '/Flags/RedWhite&Blue/Flag.jpg',
 },
 {
-  type: 'item',
+  type: 'Item',
   style: 'chalk board',
   id: '11',
   class: 'three flag-image2',
@@ -55,7 +55,7 @@ export const itemGallery = [{
   ]
 },
 {
-  type: 'item',
+  type: 'Item',
   style: 'bird house',
   id: '17',
   class: 'one flag-image2',
@@ -65,12 +65,9 @@ export const itemGallery = [{
   name: 'Byrd House',
   price: '$70.00',
   src: process.env.PUBLIC_URL + '/Stock/birdHouse.jpg',
-  gallery: [{
-
-  }]
 },
 {
-  type: 'flag',
+  type: 'Flag gallery',
   style: 'standard',
   id: '3',
   class: 'three flag-image2',
@@ -78,7 +75,7 @@ export const itemGallery = [{
   src: process.env.PUBLIC_URL + '/Flags/RedWhite&Blue/Flag2.jpg',
 },
 {
-  type: 'flag',
+  type: 'Flag gallery',
   style: 'standard',
   id: '4',
   class: 'two flag-image2',
@@ -86,7 +83,7 @@ export const itemGallery = [{
   src: process.env.PUBLIC_URL + '/Flags/RedWhite&Blue/Flag-flat.jpg',
 },
 {
-  type: 'flag',
+  type: 'Flag',
   style: 'fire',
   id: '5',
   class: 'four flag-image2',
@@ -106,7 +103,7 @@ export const itemGallery = [{
 ]
 },
 {
-  type: 'flag',
+  type: 'Flag gallery',
   style: 'fire',
   id: '6',
   class: 'three flag-image2',
@@ -114,12 +111,12 @@ export const itemGallery = [{
   src: process.env.PUBLIC_URL + '/Flags/RedLine/FireFlag.jpg',
 },
 {
-  type: 'flag',
+  type: 'Flag',
   style: 'blackAndWhite',
   id: '7',
   class: 'one flag-image2',
   description: <p>Black and white hand burned flag.</p>,
-  name: 'front',
+  name: 'Black and White',
   price: '$40.00',
   src: process.env.PUBLIC_URL + '/Flags/B&W/B&W.jpg',
   gallery: [
@@ -133,7 +130,7 @@ export const itemGallery = [{
 ]
 },
 {
-  type: 'flag',
+  type: 'Flag gallery',
   style: 'blackAndWhite',
   id: '8',
   class: 'four flag-image2',
@@ -141,7 +138,7 @@ export const itemGallery = [{
   src: process.env.PUBLIC_URL + '/Flags/B&W/B&W-angle.jpg',
 },
 {
-  type: 'flag',
+  type: 'Flag gallery',
   style: 'blackAndWhite',
   id: '9',
   class: 'two flag-image2',
@@ -149,7 +146,7 @@ export const itemGallery = [{
   src: process.env.PUBLIC_URL + '/Flags/B&W/B&W-back.jpg'
 },
 {
-  type: 'flag',
+  type: 'Flag gallery',
   style: 'random',
   id: '10',
   class: 'three flag-image2',
@@ -157,7 +154,7 @@ export const itemGallery = [{
   src: process.env.PUBLIC_URL + '/Flags/old-boards.jpg'
 },
 {
-  type: 'item',
+  type: 'Item',
   style: 'pumpkin',
   id: '16',
   class: 'three flag-image2',
@@ -165,14 +162,9 @@ export const itemGallery = [{
   name: 'Block Pumkin',
   price: '$10.00',
   src: process.env.PUBLIC_URL + '/Stock/4x4Pump.jpg',
-  gallery: [
-    {
-
-    }
-  ]
 },
 {
-  type: 'item',
+  type: 'Item',
   style: 'bottle opener',
   id: '12',
   class: 'two flag-image2',
@@ -194,7 +186,7 @@ export const itemGallery = [{
   ]
 },
 {
-  type: 'item',
+  type: 'Item gallery',
   style: 'chalk board',
   id: '13',
   class: 'one flag-image2',
@@ -202,7 +194,7 @@ export const itemGallery = [{
   src: process.env.PUBLIC_URL + '/Stock/ChalkSide.jpg'
 },
 {
-  type: 'item',
+  type: 'Item',
   style: 'pumkin',
   description: <p>One of a kind Pumkin cutout made with scrap plywood.</p>,
   id: '14',
@@ -210,25 +202,15 @@ export const itemGallery = [{
   name: 'Jack-O-Lantern',
   price: '$30.00',
   src: process.env.PUBLIC_URL + '/Stock/PlyWoodPump.jpg',
-  gallery: [
-    {
-
-    }
-  ]
 },
 {
-  type: 'item',
+  type: 'Item',
   style: 'table',
   id: '15',
   class: 'two flag-image2',
   name: 'Scrap Wood Table',
   price: '$99.95',
   src: process.env.PUBLIC_URL + '/Stock/TableMashup.jpg',
-  gallery: [
-    {
-
-    }
-  ]
 }
 
 ]

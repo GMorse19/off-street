@@ -22,8 +22,20 @@ class ItemShop extends React.Component {
 
   render () {
     const { type } = this.state
+    let tipo = ''
+    let itemList = []
 
-    const itemList = itemGallery.filter( product => product.type === type )
+    if (type === 'all') {
+      tipo = ''
+    } else {
+      tipo = type
+    }
+
+    if (type === 'all') {
+      itemList = (itemGallery.filter(product => product.type === 'Item' || product.type === 'Flag'))
+    } else {
+      itemList = (itemGallery.filter(product => product.type === type))
+    }
 
     const itemJsx = itemList.map(item => (
         <Row className="justify-content-md-center">
@@ -48,7 +60,7 @@ class ItemShop extends React.Component {
       <div>
         <ProductInfo
           props={itemJsx}
-          header={type}
+          header={tipo}
         />
       </div>
     )
