@@ -2,8 +2,6 @@ import React from 'react'
 import { Container, Col, Row, Button } from 'react-bootstrap'
 import { Parallax } from 'react-scroll-parallax'
 
-import { handleParallax } from '../../helpers/handleParallax'
-
 /*
   There are two columns provided with this component. Each with the same props.
   Column one is on the right side and Column two is to the left. Add '2' to any
@@ -38,11 +36,17 @@ class InfoColumn extends React.Component {
     }
   }
 
+  handleParallax = e => {
+    const windowSize = window.innerWidth
+    const parallaxBool = windowSize >= 800 ? true : false
+    this.setState({ parallax: parallaxBool })
+  };
+
   componentDidMount() {
-    window.addEventListener('resize', handleParallax)
+    window.addEventListener('resize', this.handleParallax)
   }
   componentWillUnmount() {
-    window.removeEventListener('resize', handleParallax)
+    window.removeEventListener('resize', this.handleParallax)
   }
 
   render () {
