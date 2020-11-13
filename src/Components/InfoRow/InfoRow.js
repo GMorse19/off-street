@@ -2,6 +2,8 @@ import React from 'react'
 import { Button, Container, Col, Row } from 'react-bootstrap'
 import { Parallax } from 'react-scroll-parallax'
 
+import { handleParallax } from '../../helpers/handleParallax'
+
 import './InfoRow.scss'
 
 /*
@@ -46,17 +48,11 @@ class InfoRow extends React.Component {
     }
   }
 
-  handleParallax = e => {
-    const windowSize = window.innerWidth
-    const parallaxBool = windowSize >= 800 ? true : false
-    this.setState({ parallax: parallaxBool })
-  };
-
   componentDidMount() {
-    window.addEventListener('resize', this.handleParallax)
+    window.addEventListener('resize', handleParallax)
   }
   componentWillUnmount() {
-    window.removeEventListener('resize', this.handleParallax)
+    window.removeEventListener('resize', handleParallax)
   }
 
   render () {
