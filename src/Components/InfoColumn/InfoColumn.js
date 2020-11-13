@@ -36,11 +36,11 @@ class InfoColumn extends React.Component {
     }
   }
 
-  handleParallax = e => {
+  handleParallax = () => {
     const windowSize = window.innerWidth
     const parallaxBool = windowSize >= 800 ? true : false
     this.setState({ parallax: parallaxBool })
-  };
+  }
 
   componentDidMount() {
     window.addEventListener('resize', this.handleParallax)
