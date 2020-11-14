@@ -22,7 +22,7 @@ class Donations extends React.Component {
     return (
   <div id='donations'>
   <div className='donation-header'>
-    <p>Acceptable Donations -- What Does Off Street Take?</p>
+    <p>Acceptable Donations -- What Does Off Street Take??</p>
   </div>
   <div className='donation-sub-header'>
 
