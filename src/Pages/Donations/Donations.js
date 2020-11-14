@@ -44,23 +44,23 @@ class Donations extends React.Component {
             <h1>Wood</h1>
 
             <p>
-              If you're running a construction project and have any excess materials
+              If you&apos;re running a construction project and have any excess materials
               that were destined for the landfill, please contact us. We are interested
-              in any cutoffs and scraps as long as they're at least two feet in length
+              in any cutoffs and scraps as long as they&apos;re at least two feet in length
               and any older pieces of scrap lumber from demolition. No need to remove Nails
               and screws. We can take care of that part. We just want to save the wood.
             </p>
 
             <p>
               Below, you can find examples of what Off Street is interested in. This is by no
-              means a complete list, so don't hesitate to contact us if you have any questions.
+              means a complete list, so don&apos;t hesitate to contact us if you have any questions.
             </p>
 
             <ul>
               <li>Dimensional lumber no shorter than two feet</li>
               <li>2x4 -- 2x12</li>
               <li>4X4 -- 6x6</li>
-              <li>Plywood no smaller than 2'x2'</li>
+              <li>Plywood no smaller than 2&apos;x2&apos;</li>
               <li>Strapping</li>
               <li>ledger board</li>
             </ul>
