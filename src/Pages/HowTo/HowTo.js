@@ -5,14 +5,6 @@ import './HowTo.scss'
 import Video from '../../Components/Video/Video'
 
 class HowTo extends React.Component {
-  constructor () {
-    super()
-
-    this.state = {
-
-    }
-  }
-
   componentDidMount() {
     window.scrollTo(0, 0)
   }

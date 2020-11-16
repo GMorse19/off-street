@@ -34,10 +34,6 @@ class Header extends React.Component {
     this.setState(state => ({ menuOpen: !state.menuOpen }))
   }
 
-  imageSelector = (event) => {
-    return event
-  }
-
    images = {
      home: stock.stock.standardFlag,
      about: stock.stock.workShop,
@@ -69,7 +65,7 @@ class Header extends React.Component {
                   right={30}
                 />
               </div>
-              <div className=''>
+              <div>
                 <img
                   key={image}
                   className={menuOpen ? 'image-menu fade-in' : 'image-menu-closed fade-in'}
@@ -79,23 +75,25 @@ class Header extends React.Component {
               </div>
             </Col>
             <Col lg={6} xs={6} className='page-menu'>
-            <button
-              onClick={this.closeMenu}
-              className='close-button'
-            >
-            X
-            </button>
-              <div className={menuOpen ? 'menu-link-open' : 'menu-link'}>
+              <button
+                onClick={this.closeMenu}
+                className='close-button'
+              >
+              X
+              </button>
+            <div className={menuOpen ? 'menu-link-open' : 'menu-link'}>
               <ul>
-                <li><a
-                   name='home'
-                   className='a-link-menu'
-                   onMouseOver={() => this.hoverButton('home')}
-                   onClick={() => this.closeMenu()}
-                   href='#/'
-                >
-                   Home
-                </a></li>
+                <li>
+                  <a
+                     name='home'
+                     className='a-link-menu'
+                     onMouseOver={() => this.hoverButton('home')}
+                     onClick={() => this.closeMenu()}
+                     href='#/'
+                  >
+                     Home
+                  </a>
+                </li>
                 <li><a name='about' className='a-link-menu' onMouseOver={() => this.hoverButton('about')} onClick={() => this.closeMenu()} href='#about'>About</a></li>
                 <li><a name='shop' className='a-link-menu' onMouseOver={() => this.hoverButton('shop')} onClick={() => this.closeMenu()} href='#shop'>Shop</a></li>
                 <li><a name='contact' className='a-link-menu' onMouseOver={() => this.hoverButton('contact')} onClick={() => this.closeMenu()} href='#contact'>Contact</a></li>
@@ -108,15 +106,15 @@ class Header extends React.Component {
           </Row>
           </Container>
         </Menu>
-        <button
-          className='burger-menu'
-        >
-          <img
-            src={icon.button.burger}
-            alt='logo'
-            className='logo'
-          />
-        </button>
+          <button
+            className='burger-menu'
+          >
+            <img
+              src={icon.button.burger}
+              alt='logo'
+              className='logo'
+            />
+          </button>
     </div>
   )
 }
