@@ -26,31 +26,33 @@ import { Parallax } from 'react-scroll-parallax'
 
 import './InfoColumn.scss'
 
+import handleWindowSize from '../../helpers/handleWindowSize'
+
 class InfoColumn extends React.Component {
   constructor(props) {
     super(props)
 
     this.state = {
       props: props,
-      parallax: window.innerWidth >= 800 ? true : false
+      windowSize: window.innerWidth >= 1000 ? true : false
     }
   }
 
   handleParallax = () => {
-    const windowSize = window.innerWidth
-    const parallaxBool = windowSize >= 800 ? true : false
-    this.setState({ parallax: parallaxBool })
+    this.setState(handleWindowSize)
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0)
     window.addEventListener('resize', this.handleParallax)
   }
+
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleParallax)
   }
 
   render () {
-    const { props, parallax } = this.state
+    const { props, windowSize } = this.state
     const image = props.backgroundUrl
     const image2 = props.backgroundUrl2
     return (
@@ -67,7 +69,7 @@ class InfoColumn extends React.Component {
           >
             <Parallax
               className="custom-class"
-              y={parallax ? props.y : props.x}
+              y={windowSize ? props.y : props.x}
               tagOuter="figure"
             >
 
@@ -109,7 +111,7 @@ class InfoColumn extends React.Component {
           >
           <Parallax
             className="custom-class"
-            y={parallax ? props.y2 : props.x2}
+            y={windowSize ? props.y2 : props.x2}
             tagOuter="figure"
           >
 
