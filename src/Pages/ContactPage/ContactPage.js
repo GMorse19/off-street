@@ -6,13 +6,6 @@ import { icon } from '../../helpers/images/Icons/iconsArray'
 import './ContactPage.scss'
 
 class ContactPage extends React.Component {
-  constructor() {
-    super()
-
-    this.state ={
-
-    }
-  }
 
   componentDidMount() {
     window.scrollTo(0, 0)
@@ -27,6 +20,7 @@ class ContactPage extends React.Component {
             <h1 className='heading-contact'>Contact Off Street</h1>
         </Col>
       </Row>
+
       <Row className='contact-page-info'>
         <Col>
           <h4 className='contact-link-header'>CUSTOMER SERVICE</h4>
@@ -38,11 +32,13 @@ class ContactPage extends React.Component {
             </h6>
             <h6>Donate</h6>
         </Col>
+
         <Col>
           <h4 className='contact-link-header'>OFFICE</h4>
           <h6>4567 West Belcherton St.</h6>
           <h6>Boston, MA 014560</h6>
         </Col>
+        
         <Col>
           <h4 className='contact-link-header'>CONNECT WITH US</h4>
           <a className='contact-page-link' href='/'>

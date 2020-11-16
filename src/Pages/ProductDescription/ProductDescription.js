@@ -48,8 +48,9 @@ class ProductDescription extends React.Component {
             <Col>
               <h1>{name}</h1>
             </Col>
-            </Row>
-            <Row className="justify-content-md-center description-row">
+          </Row>
+          
+          <Row className="justify-content-md-center description-row">
             <Col lg={8}>
               <div className='product-description'>
                 <span>{description}</span>
@@ -57,11 +58,13 @@ class ProductDescription extends React.Component {
               </div>
             </Col>
           </Row>
+
           <Row>
             <Col>
               <img className='product-image' src={src} alt={name}/>
             </Col>
           </Row>
+
           <Row className="justify-content-md-center description-row">
             <Col lg={2} md={2} sm={4} xs={4}>
               <Button className='product-display-button' href='#shop'>Purchase</Button>
@@ -73,10 +76,8 @@ class ProductDescription extends React.Component {
               <Button className='product-display-button' href='#gallery'>Gallery</Button>
             </Col>
           </Row>
-          <Row className="justify-content-md-center description-row">
 
-          </Row>
-          <Row>
+          <Row className='description-row'>
             <Col>
               {gallery && <Carousel>
                 {galleryJsx}

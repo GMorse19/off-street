@@ -6,14 +6,6 @@ import './Donations.scss'
 import Footer from '../../Components/Footer/Footer'
 
 class Donations extends React.Component {
-  constructor() {
-    super()
-
-    this.state ={
-
-    }
-  }
-
   componentDidMount() {
     window.scrollTo(0, 0)
   }
@@ -27,9 +19,9 @@ class Donations extends React.Component {
   <div className='donation-sub-header'>
 
     <p>
-    Off Street is constantly searching for new ways to re-purpose unwanted
-    materials. Our list of acceptable items will always be changing. Please
-    contact us with any questions about what we do and do not accept.
+      Off Street is constantly searching for new ways to re-purpose unwanted
+      materials. Our list of acceptable items will always be changing. Please
+      contact us with any questions about what we do and do not accept.
     </p>
 
     <Button variant='secondary' href='#contact'>Contact</Button>
@@ -73,9 +65,9 @@ class Donations extends React.Component {
             <h1>Hardware</h1>
 
             <p>
-            Are you removing old doors and windows? Random pieces of old furniture?
-            Any old or worn out hardware items that no longer function as they were
-            originally intended, Off Street is interested in re-purposing them.
+              Are you removing old doors and windows? Random pieces of old furniture?
+              Any old or worn out hardware items that no longer function as they were
+              originally intended, Off Street is interested in re-purposing them.
             </p>
 
             <p>Below are some examples of what we like to work with.</p>

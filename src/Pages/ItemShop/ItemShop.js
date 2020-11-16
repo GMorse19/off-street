@@ -39,19 +39,19 @@ class ItemShop extends React.Component {
 
     const itemJsx = itemList.map(item => (
         <Row className="justify-content-md-center">
-        <Col lg={6}>
-          <div key={item.id} className='itemshop'>
-            {
-              <div className='itemshop-jsx'>
-                <p className='itemshop-title'>{item.name}</p>
-                <a href={`#/description/${item.id}`}>
-                  <img className='itemshop-image' src={item.src} alt={item.name} />
-                </a>
-                <span className='itemshop-description'>{item.description}</span>
-                <p><Button href={`#/description/${item.id}`} className='itemshop-button'>Purchase</Button></p>
-              </div>
-            }
-          </div>
+          <Col lg={6}>
+            <div key={item.id} className='itemshop'>
+              {
+                <div className='itemshop-jsx'>
+                  <p className='itemshop-title'>{item.name}</p>
+                  <a href={`#/description/${item.id}`}>
+                    <img className='itemshop-image' src={item.src} alt={item.name} />
+                  </a>
+                  <span className='itemshop-description'>{item.description}</span>
+                  <p><Button href={`#/description/${item.id}`} className='itemshop-button'>Purchase</Button></p>
+                </div>
+              }
+            </div>
           </Col>
         </Row>
       ))

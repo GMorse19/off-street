@@ -17,8 +17,8 @@ class SignUp extends Component {
     this.setState({[event.target.name]: event.target.value})
   }
 
-  handleSubmit = () => {
-    console.log('Submit!')
+  handleSubmit = event => {
+    alert('Something went wrong, try again another time.')
   }
 
   render () {
