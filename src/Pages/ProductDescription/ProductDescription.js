@@ -4,6 +4,7 @@ import { Container, Col, Row, Button, Carousel } from 'react-bootstrap'
 import './ProductDescription.scss'
 
 import { itemGallery } from '../../helpers/images/Items/itemGallery'
+import handleWindowSize from '../../helpers/handleWindowSize'
 
 class ProductDescription extends React.Component {
   constructor (props) {
@@ -17,16 +18,26 @@ class ProductDescription extends React.Component {
       description: itemGallery.find(x => x.id === props.props.match.params.id).description,
       price: itemGallery.find(x => x.id === props.props.match.params.id).price,
       gallery: itemGallery.find(x => x.id === props.props.match.params.id).gallery,
+      windowSize: window.innerWidth >= 1000 ? true : false
     }
+  }
+
+  handleSize = () => {
+    this.setState(handleWindowSize)
   }
 
   componentDidMount() {
     window.scrollTo(0, 0)
+    window.addEventListener('resize', this.handleSize)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleSize)
   }
 
   render () {
 
-    const { src, name, description, price, gallery, type } = this.state
+    const { src, name, description, price, gallery, type, windowSize } = this.state
 
     let galleryJsx = []
 
@@ -49,7 +60,7 @@ class ProductDescription extends React.Component {
               <h1>{name}</h1>
             </Col>
           </Row>
-          
+
           <Row className="justify-content-md-center description-row">
             <Col lg={8}>
               <div className='product-description'>
@@ -79,7 +90,7 @@ class ProductDescription extends React.Component {
 
           <Row className='description-row'>
             <Col>
-              {gallery && <Carousel>
+              {gallery && <Carousel controls={windowSize} className='carousel'>
                 {galleryJsx}
               </Carousel>}
             </Col>
