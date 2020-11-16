@@ -6,14 +6,6 @@ import './Donations.scss'
 import Footer from '../../Components/Footer/Footer'
 
 class Donations extends React.Component {
-  constructor() {
-    super()
-
-    this.state ={
-
-    }
-  }
-
   componentDidMount() {
     window.scrollTo(0, 0)
   }
@@ -22,14 +14,14 @@ class Donations extends React.Component {
     return (
   <div id='donations'>
   <div className='donation-header'>
-    <p>Acceptable Donations -- What Does Off Street Take?</p>
+    <p>Acceptable Donations -- What Does Off Street Take??</p>
   </div>
   <div className='donation-sub-header'>
 
     <p>
-    Off Street is constantly searching for new ways to re-purpose unwanted
-    materials. Our list of acceptable items will always be changing. Please
-    contact us with any questions about what we do and do not accept.
+      Off Street is constantly searching for new ways to re-purpose unwanted
+      materials. Our list of acceptable items will always be changing. Please
+      contact us with any questions about what we do and do not accept.
     </p>
 
     <Button variant='secondary' href='#contact'>Contact</Button>
@@ -44,23 +36,23 @@ class Donations extends React.Component {
             <h1>Wood</h1>
 
             <p>
-              If you're running a construction project and have any excess materials
+              If you&apos;re running a construction project and have any excess materials
               that were destined for the landfill, please contact us. We are interested
-              in any cutoffs and scraps as long as they're at least two feet in length
+              in any cutoffs and scraps as long as they&apos;re at least two feet in length
               and any older pieces of scrap lumber from demolition. No need to remove Nails
               and screws. We can take care of that part. We just want to save the wood.
             </p>
 
             <p>
               Below, you can find examples of what Off Street is interested in. This is by no
-              means a complete list, so don't hesitate to contact us if you have any questions.
+              means a complete list, so don&apos;t hesitate to contact us if you have any questions.
             </p>
 
             <ul>
               <li>Dimensional lumber no shorter than two feet</li>
               <li>2x4 -- 2x12</li>
               <li>4X4 -- 6x6</li>
-              <li>Plywood no smaller than 2'x2'</li>
+              <li>Plywood no smaller than 2&apos;x2&apos;</li>
               <li>Strapping</li>
               <li>ledger board</li>
             </ul>
@@ -73,9 +65,9 @@ class Donations extends React.Component {
             <h1>Hardware</h1>
 
             <p>
-            Are you removing old doors and windows? Random pieces of old furniture?
-            Any old or worn out hardware items that no longer function as they were
-            originally intended, Off Street is interested in re-purposing them.
+              Are you removing old doors and windows? Random pieces of old furniture?
+              Any old or worn out hardware items that no longer function as they were
+              originally intended, Off Street is interested in re-purposing them.
             </p>
 
             <p>Below are some examples of what we like to work with.</p>

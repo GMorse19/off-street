@@ -51,26 +51,17 @@ class ShopPage extends React.Component {
         />
 
         <InfoColumn
-          name=''
           name2='Bottle Opener'
           backgroundColor='#e3e1e1'
           backgroundColor2='#000'
-          backgroundImage=''
-          backgroundImage2=''
           buttonBackground='#f3edbe'
           buttonBackground2=''
           buttonColor='#000'
-          buttonColor2=''
           buttonContent='SHOP'
-          buttonContent2=''
           buttonLink='#item-shop/Item'
-          buttonLink2=''
           content=<span>One of a kind bottle opener and hook set. Perfect for
           any she shed or man cave.</span>
-          content2=''
           fontSize='4vh'
-          fontSize2=''
-          image=''
           image2={stock.stock.bottleOpener}
           x={[0,0]}
           y={[0,0]}
@@ -79,27 +70,16 @@ class ShopPage extends React.Component {
 
         <InfoColumn
           name='Bird House'
-          name2=''
           backgroundColor='#000'
           backgroundColor2='#f3edbe'
-          backgroundImage=''
-          backgroundImage2=''
-          buttonBackground=''
           buttonBackground2='#e3e1e1'
-          buttonColor=''
           buttonColor2='#000'
-          buttonContent=''
           buttonContent2='SHOP'
-          buttonLink=''
           buttonLink2='#item-shop/Item'
-          color=''
           color2='#000'
-          content=''
           content2=<span>Browse through a catalog of our unique hand made items.</span>
-          fontSize=''
           fontSize2='4vh'
           image={stock.stock.birdHouse}
-          image2=''
           x={[0,0]}
           y={[0,0]}
           width='300'

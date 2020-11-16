@@ -8,13 +8,6 @@ import Footer from '../../Components/Footer/Footer'
 import './AboutPage.scss'
 
 class AboutPage extends React.Component {
-  constructor() {
-    super()
-
-    this.state = {
-
-    }
-  }
 
   componentDidMount() {
     window.scrollTo(0, 0)
