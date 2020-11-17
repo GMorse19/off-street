@@ -1,5 +1,6 @@
 # Off Street Carpentry
-(Work in progress)
+
+![image](OffStreetHomePage.png)
 
 ## Carpentry with a re-purpose
 
@@ -14,6 +15,9 @@ I knew these scraps could be useful somehow and decided to make it a mission of
 mine to find ways to put these forlorn scraps and cutoffs to good use.
 
 More to come...
+
+"Off Street Carpentry" Deployed Site [here](https://gmorse19.github.io/off-street/#/).
+
 
 ## Install
 
