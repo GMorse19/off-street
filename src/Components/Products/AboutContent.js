@@ -6,6 +6,8 @@ import { item } from '../../helpers/images/Items/itemsArray'
 import ProductContainer from './ProductContainer/ProductContainer'
 import content from './ProductDescription/Content'
 
+import { logo } from '../../helpers/images/Logos/logosArray'
+
 import './Products.scss'
 
 const AboutContent = () => (
@@ -28,6 +30,7 @@ const AboutContent = () => (
         alt='Boards under American Flag'
         left='-90'
         right='100'
+        logo={logo[3]}
       />
 
       <ProductContainer
@@ -46,6 +49,7 @@ const AboutContent = () => (
         alt='Bird House'
         left='-90'
         right='100'
+        logo={logo[3]}
       />
 
       <ProductContainer

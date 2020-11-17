@@ -26,6 +26,7 @@ const ProductContainer = (props) => (
         <LogoFloat
           left={props.left}
           right={props.right}
+          logo={props.logo}
         />
       </div>
     </Col>

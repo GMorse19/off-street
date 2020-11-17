@@ -13,7 +13,7 @@ const Title = (props) => (
 
         <Col>
         <Parallax className="custom-class" y={[-50, 50]} tagOuter="figure">
-          <img className='home-logo' src={logo[1]} alt='rustic'/>
+          <img className='home-logo' src={logo[3]} alt='rustic'/>
         </Parallax>
           <Parallax className="custom-class" y={[-50, 50]} tagOuter="figure">
             <div className='title-div'>
