@@ -9,7 +9,7 @@
 
 .home-logo {
   margin-top: 10vh;
-  width: 600px;
+  width: 300px;
   z-index: 100000;
 }
 
@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 1000px) {
   .home-logo {
-    width: 40vw;
+    width: 20vw;
     padding-top: 10vh;
   }
 
@@ -84,7 +84,7 @@
 
 @media screen and (max-width: 500px) {
   .home-logo {
-    width: 80vw;
+    width: 40vw;
     padding-top: 2vh;
   }
 
