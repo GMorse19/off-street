@@ -1,8 +1,6 @@
 import React from 'react'
 import { Parallax } from 'react-scroll-parallax'
 
-// import { logo } from '../../helpers/images/Logos/logosArray'
-
 import './LogoFloat.scss'
 
 const LogoFloat = (props) => (
