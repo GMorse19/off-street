@@ -5,6 +5,7 @@ import { Row, Col, Container } from 'react-bootstrap'
 
 import { icon } from '../../helpers/images/Icons/iconsArray'
 import { stock} from '../../helpers/images/Stock/stockArray'
+import { logo } from '../../helpers/images/Logos/logosArray'
 import LogoFloat from '../LogoFloat/LogoFloat'
 
 import './Header.scss'
@@ -63,6 +64,7 @@ class Header extends React.Component {
                 <LogoFloat
                   left={-30}
                   right={30}
+                  logo={logo[2]}
                 />
               </div>
               <div>
