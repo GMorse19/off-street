@@ -41,7 +41,7 @@ class ContactPage extends React.Component {
 
         <Col>
           <h4 className='contact-link-header'>CONNECT WITH US</h4>
-          <a className='contact-page-link' href='/'>
+          <a className='contact-page-link' href='https://www.facebook.com/Off-Street-Carpentry-100202445271783/'>
             <img src={icon.media.facebook} alt='facebook' width='30px'/>
           </a><br />
           <a className='contact-page-link' href='https://twitter.com/offstreetbuild'>
