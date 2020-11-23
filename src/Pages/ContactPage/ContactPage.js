@@ -38,13 +38,13 @@ class ContactPage extends React.Component {
           <h6>4567 West Belcherton St.</h6>
           <h6>Boston, MA 014560</h6>
         </Col>
-        
+
         <Col>
           <h4 className='contact-link-header'>CONNECT WITH US</h4>
           <a className='contact-page-link' href='/'>
             <img src={icon.media.facebook} alt='facebook' width='30px'/>
           </a><br />
-          <a className='contact-page-link' href='/'>
+          <a className='contact-page-link' href='https://twitter.com/offstreetbuild'>
             <img src={icon.media.twitter} alt='twitter' width='30px'/>
           </a><br />
           <a className='contact-page-link' href='/'>
