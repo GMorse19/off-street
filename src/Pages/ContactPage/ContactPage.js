@@ -40,17 +40,35 @@ class ContactPage extends React.Component {
         </Col>
 
         <Col>
-          <h4 className='contact-link-header'>CONNECT WITH US</h4>
-          <a className='contact-page-link' href='https://www.facebook.com/Off-Street-Carpentry-100202445271783/'>
-            <img src={icon.media.facebook} alt='facebook' width='30px'/>
-          </a><br />
-          <a className='contact-page-link' href='https://twitter.com/offstreetbuild'>
-            <img src={icon.media.twitter} alt='twitter' width='30px'/>
-          </a><br />
-          <a className='contact-page-link' href='https://www.youtube.com/channel/UCHLzxuKSKxElBsdP6c8Kwvw'>
-            <img src={icon.media.pinterest} alt='pinterest' width='30px'/>
-          </a><br />
+        <h4 className='contact-link-header'>CONNECT WITH US</h4>
+          <Container>
+          <Row className="justify-content-md-center">
+          <Col lg={2}>
+            <a className='contact-page-link' href='https://www.facebook.com/Off-Street-Carpentry-100202445271783/'>
+              <img src={icon.media.facebook} alt='facebook' width='30px'/>
+            </a><br />
+
+            <a className='contact-page-link' href='https://twitter.com/offstreetbuild'>
+              <img src={icon.media.twitter} alt='twitter' width='30px'/>
+            </a><br />
+
+            <a className='contact-page-link' href='https://www.youtube.com/channel/UCHLzxuKSKxElBsdP6c8Kwvw'>
+              <img src={icon.media.youtube} alt='pinterest' width='30px'/>
+            </a><br />
+          </Col>
+          <Col lg={2}>
+            <a className='contact-page-link' href='https://pin.it/5PPEqFm'>
+              <img src={icon.media.pinterest} alt='You Tube' width='30px'/>
+            </a><br />
+
+            <a className='contact-page-link' href='https://www.instagram.com/offstreetcarpentry/'>
+              <img src={icon.media.instagram} alt='instagram' width='30px'/>
+            </a><br />
+          </Col>
+          </Row>
+          </Container>
         </Col>
+
       </Row>
     </Container>
   </div>
