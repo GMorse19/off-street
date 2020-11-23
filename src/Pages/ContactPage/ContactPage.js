@@ -47,7 +47,7 @@ class ContactPage extends React.Component {
           <a className='contact-page-link' href='https://twitter.com/offstreetbuild'>
             <img src={icon.media.twitter} alt='twitter' width='30px'/>
           </a><br />
-          <a className='contact-page-link' href='/'>
+          <a className='contact-page-link' href='https://www.youtube.com/channel/UCHLzxuKSKxElBsdP6c8Kwvw'>
             <img src={icon.media.pinterest} alt='pinterest' width='30px'/>
           </a><br />
         </Col>
