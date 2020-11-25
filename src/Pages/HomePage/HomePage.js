@@ -26,16 +26,17 @@ class HomePage extends React.Component {
 
         <InfoRow
           header='Rescue, Repurpose, Reinvent'
-          sectionColor='#e3e1e1'
+          sectionColor='#60791f'
           headerFont='5vh'
-          contentColor='#DBC2A0'
+          contentColor='#e3e1e1'
           contentFont='25px'
           content="Our mission at Off Street is to rescue the forgotten scraps and cutoffs from construction projects and save them from their inevitable trip to the depths of a dumpster. We then re-purpose and re-invent these forlorn timbers to return a quality hand crafted item with it's own unique history."
-          buttonColor='#111'
+          buttonColor='#60791f'
           buttonContent='ABOUT'
           href='#about'
           padding='2%'
-          backgroundColor='#555'
+          backgroundColor='#5f3d26'
+          backgroundUrl={stock.stock.woodBg}
         />
 
         <InfoRow
@@ -44,6 +45,7 @@ class HomePage extends React.Component {
           sectionColor='#000'
           headerFont='5vh'
           content='Visit our shop and browse through our one of a kind items, listed weekly.'
+          buttonColor='#000'
           buttonContent='SHOP'
           href='#item-shop/all'
           padding='7%'
@@ -52,7 +54,7 @@ class HomePage extends React.Component {
 
         <InfoColumn
           header='Become a donor.'
-          sectionColor='#000'
+          color='#e3e1e1'
           headerFont='5vh'
           content='Have extra, unwanted material? Maybe you would like to contribute by becoming an authenticated Off Street builder. There are many ways to contribute, please contact Off Street to see how you can help.'
           contentFont='25px'
@@ -60,7 +62,7 @@ class HomePage extends React.Component {
           buttonContent='DONATE'
           href='#shop'
           padding='6%'
-          backgroundColor='#e3e1e1'
+          backgroundUrl={stock.stock.woodBg}
           backgroundUrl2={stock.stock.jobSite}
         />
 
