@@ -115,6 +115,9 @@ class Header extends React.Component {
                 <a href='#/'>Home</a>
               </Col>
               <Col className='header-link'>
+                <a href='#about'>About</a>
+              </Col>
+              <Col className='header-link'>
                 <a href='#shop'>Shop</a>
               </Col>
               <Col className='header-link'>

@@ -36,31 +36,35 @@ class ShopPage extends React.Component {
         />
 
         <InfoColumn
+          color2='#e3e1e1'
           name='American Flag'
           backgroundColor='#000'
-          backgroundColor2='#f3edbe'
+          backgroundColor2='#5f3d26'
+          backgroundUrl2={stock.stock.standardFlag}
           image={stock.stock.standardFlag}
           fontSize2='4vh'
           y={[-20,20]}
           width='300'
           content2=<span>Check out our list of Hand crafted flags</span>
-          buttonContent='SHOP'
+          buttonContent='FLAGS'
           buttonLink='#item-shop/Flag'
           buttonBackground='#e3e1e1'
           buttonColor='#000'
         />
 
         <InfoColumn
+          color='#e3e1e1'
           name2='Bottle Opener'
           backgroundColor='#e3e1e1'
+          backgroundUrl={stock.stock.woodBg}
           backgroundColor2='#000'
-          buttonBackground='#f3edbe'
+          buttonBackground='#e3e1e1'
           buttonBackground2=''
           buttonColor='#000'
           buttonContent='SHOP'
           buttonLink='#item-shop/Item'
           content=<span>One of a kind bottle opener and hook set. Perfect for
-          any she shed or man cave.</span>
+          any she-shed or man-cave.</span>
           fontSize='4vh'
           image2={stock.stock.bottleOpener}
           x={[0,0]}
@@ -69,14 +73,15 @@ class ShopPage extends React.Component {
         />
 
         <InfoColumn
+          color2='#e3e1e1'
           name='Bird House'
           backgroundColor='#000'
           backgroundColor2='#f3edbe'
+          backgroundUrl2={stock.stock.chalkBoard}
           buttonBackground2='#e3e1e1'
           buttonColor2='#000'
           buttonContent2='SHOP'
           buttonLink2='#item-shop/Item'
-          color2='#000'
           content2=<span>Browse through a catalog of our unique hand made items.</span>
           fontSize2='4vh'
           image={stock.stock.birdHouse}
