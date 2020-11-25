@@ -20,7 +20,7 @@
 }
 
 .itemshop-image {
-  width: 20vw;
+  width: 90%;
   box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.4), 0 26px 29px 0 rgba(0, 0, 0, 0.19);
   margin: 5%;
 }
@@ -32,10 +32,6 @@
 @media screen and (max-width: 1000px) {
   .itemshop-description {
     font-size: 15px;
-  }
-
-  .itemshop-image {
-    width: 50vw
   }
 
   .itemshop-title {

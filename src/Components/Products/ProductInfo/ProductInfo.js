@@ -9,7 +9,9 @@ const ProductInfo = (props) => (
       <Row>
         <Col lg={12}><h1>{props.header} Shop</h1></Col>
       </Row>
-        <h1>{props.props}</h1>
+        <Row>
+            {props.props}
+        </Row>
     </Container>
   </div>
 )
