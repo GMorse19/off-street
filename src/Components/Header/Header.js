@@ -51,6 +51,7 @@ class Header extends React.Component {
 
     return(
     <div className='header'>
+
         <Menu
           className='menu'
           isOpen={this.state.menuOpen}
@@ -108,15 +109,19 @@ class Header extends React.Component {
           </Row>
           </Container>
         </Menu>
-          <button
-            className='burger-menu'
-          >
-            <img
-              src={icon.button.burger}
-              alt='logo'
-              className='logo'
-            />
-          </button>
+        <Container>
+            <Row>
+              <Col className='header-link'>
+                <a href='/'>Home</a>
+              </Col>
+              <Col className='header-link'>
+                <a href='#shop'>Shop</a>
+              </Col>
+              <Col className='header-link'>
+                <a href='#contact'>Contact</a>
+              </Col>
+            </Row>
+        </Container>
     </div>
   )
 }
