@@ -1,5 +1,5 @@
 .page-heading {
-  color: #f3edbe;
+  color: #e3e1e1;
   font-size: 20vh;
   font-style: italic;
   position: absolute;
@@ -28,7 +28,8 @@
 }
 
 .tagline {
-  color: #f3edbe;
+  color: #e3e1e1;
+  font-family: Helvetica;
   font-size: 70px;
   font-style: italic;
   padding-top: 35vh;
@@ -36,12 +37,13 @@
 }
 
 .title {
+  font-family: 'Special Elite';
   font-size: 100px;
-  font-style: oblique;
+  // font-style: oblique;
 }
 
 .title-div {
-  color: #f3edbe;
+  color: #56595e;
   margin-bottom: 30vh;
   text-shadow: 3px 3px 0 #000;
 }
