@@ -38,8 +38,8 @@ class ItemShop extends React.Component {
     }
 
     const itemJsx = itemList.map(item => (
-        <Row className="justify-content-md-center">
-          <Col lg={6}>
+
+          <Col xs={12} md={12} lg={4}>
             <div key={item.id} className='itemshop'>
               {
                 <div className='itemshop-jsx'>
@@ -53,7 +53,7 @@ class ItemShop extends React.Component {
               }
             </div>
           </Col>
-        </Row>
+
       ))
 
     return (
