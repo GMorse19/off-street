@@ -1,6 +1,6 @@
 {
   "name": "off-street",
-  "homepage": "http://offstreetcarpentry.com",
+  "homepage": "https://offstreetcarpentry.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
