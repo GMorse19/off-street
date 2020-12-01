@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Button } from 'react-bootstrap'
+import { Col, Button } from 'react-bootstrap'
 
 import ProductInfo from '../../Components/Products/ProductInfo/ProductInfo'
 
@@ -38,7 +38,6 @@ class ItemShop extends React.Component {
     }
 
     const itemJsx = itemList.map(item => (
-
           <Col xs={12} md={12} lg={4}>
             <div key={item.id} className='itemshop'>
               {
@@ -53,7 +52,6 @@ class ItemShop extends React.Component {
               }
             </div>
           </Col>
-
       ))
 
     return (

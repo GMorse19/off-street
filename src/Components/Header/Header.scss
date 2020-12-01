@@ -4,10 +4,26 @@
   display: inline-block;
   color: #fff;
 }
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 20px;
+  top: 15px;
+}
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #56595e;
+}
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #60791f;
+}
 
 .burger-menu {
   margin: 5px;
-  padding: .1%;
+  padding: 0.1%;
   width: 50px;
   height: 50px;
   border-radius: 20px;
@@ -28,30 +44,50 @@
   -o-animation: fadeIn ease 2s;
   -ms-animation: fadeIn ease 2s;
 }
-
 @keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
+  0% {
+    opacity: 0;
+  }
 
+  100% {
+    opacity: 1;
+  }
+}
 @-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
+  0% {
+    opacity: 0;
+  }
 
+  100% {
+    opacity: 1;
+  }
+}
 @-webkit-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
+  0% {
+    opacity: 0;
+  }
 
+  100% {
+    opacity: 1;
+  }
+}
 @-o-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
+  0% {
+    opacity: 0;
+  }
 
+  100% {
+    opacity: 1;
+  }
+}
 @-ms-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .header {
@@ -60,6 +96,7 @@
   background-color: #000;
   position: fixed;
   z-index: 1000;
+
   :focus {
     outline: none;
   }
@@ -100,20 +137,21 @@
 
 .logo-menu {
   background-color: #f3edbe;
-  height: 0vh;
+  height: 0;
   padding-top: 5vh;
-   -webkit-transition: height 3s;
+  -webkit-transition: height 3s;
 }
 
 .logo-menu-down {
   height: 100vh;
   background-color: #f3edbe;
-   -webkit-transition: height 2s;
+  -webkit-transition: height 2s;
 }
 
 .menu {
   background-color: #56595e;
   border: none;
+
   :focus {
     outline: none;
   }
@@ -123,7 +161,7 @@
   padding-top: 10vh;
   width: 15vw;
   height: 100vh;
-  font-size: 0px;
+  font-size: 0;
   -webkit-transition: font-size 2s;
 }
 
@@ -146,29 +184,9 @@
   padding: 0;
   margin: 0;
 }
-
-/* Position and sizing of burger button */
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 20px;
-  top: 15px;
-}
-
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-  background: #56595e;
-}
-
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-  background: #60791f;
-}
-
 @media screen and (max-width: 1000px) {
   .a-link-menu {
-    padding: 1vh 0 0 0;
+    padding: 1vh 0 0;
   }
 
   .header-link {
@@ -185,9 +203,8 @@
     font-size: 18px;
   }
 }
-
 @media screen and (max-width: 500px) {
   .a-link-menu {
-    padding: 1vh 0 0 0;
+    padding: 1vh 0 0;
   }
 }

@@ -2,8 +2,7 @@
   background: #000;
   display: flex;
   justify-content: center;
-  padding: 15px;
-  padding-bottom: 5vh;
+  padding: 15px 15px 5vh;
 }
 
 .black-div {
@@ -24,32 +23,24 @@
   font-size: 30px;
 }
 
+.contact-container {}
+
+.contact-div {
+  margin-bottom: 80vh;
+}
+
 .cream {
   background: #f3edbe;
   display: flex;
   justify-content: center;
 }
 
-.contact-container {
-
-}
-
-.contact-div {
-  margin-bottom: 80vh;
-}
-
 .pad {
   margin: 25%;
 }
-
 @media screen and (max-width: 1000px) {
   .contact-div {
     margin-bottom: 0;
   }
 }
-
-@media screen and (max-width: 500px) {
-  // .display {
-  //   display: flex;
-  // }
-}
+@media screen and (max-width: 500px) {}

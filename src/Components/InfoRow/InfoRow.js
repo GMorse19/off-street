@@ -64,21 +64,46 @@ class InfoRow extends React.Component {
 
     return (
       <div className='inforow-wrapper'>
-        <Parallax className="custom-class" y={parallax ? props.y : props.x} tagOuter="figure">
+        <Parallax
+          className="custom-class"
+          y={parallax ? props.y : props.x}
+          tagOuter="figure"
+        >
         <Container fluid>
 
           <Row
             className='inforow-div parallax'
-            style={{ padding: props.padding, color: props.sectionColor, backgroundImage: `url(${backgroundImage})`, backgroundColor: props.backgroundColor }}
+            style={{
+              padding: props.padding,
+              color: props.sectionColor,
+              backgroundImage: `url(${backgroundImage})`,
+              backgroundColor: props.backgroundColor }}
           >
             <Col lg={12}>
-              <h1 style={{ color: props.headerColor }}>{props.header}</h1>
+              <h1 style={{ color: props.headerColor }}>
+                {props.header}
+              </h1>
 
-              <p className='inforow-content' style={{ color: props.contentColor }}>{props.content}</p>
+              <p
+                className='inforow-content'
+                style={{ color: props.contentColor }}
+              >
+                {props.content}
+              </p>
 
-              {props.image && <img width={300} src={props.image} alt={props.imageName}/>}
+              {props.image &&
+                <img
+                  width={300}
+                  src={props.image}
+                  alt={props.imageName}
+                />}
 
-              {props.href && <p><Button className='inforow-button' style={{ backgroundColor: props.buttonColor }} href={props.href}>{props.buttonContent}</Button></p>}
+              {props.href && <p>
+                <Button
+                  className='inforow-button'
+                  style={{ backgroundColor: props.buttonColor }}
+                  href={props.href}>{props.buttonContent}
+                </Button></p>}
             </Col>
 
           </Row>

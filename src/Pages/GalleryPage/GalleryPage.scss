@@ -27,8 +27,7 @@
 .gallery-background {
   height: 100vh;
   position: absolute;
-  background-image: linear-gradient(rgba(243, 237, 190, .9), rgba(227, 225, 225, .75)),
-  url('../../helpers/images/Stock/carp-banner.jpg');
+  background-image: linear-gradient(rgba(243, 237, 190, .9), rgba(227, 225, 225, .75)), url("../../helpers/images/Stock/carp-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   left: 0;
@@ -71,16 +70,18 @@ body {
 .one {
   margin-top: 50vh;
 }
+
 .two {
   margin-top: 20vh;
 }
+
 .three {
   margin-top: 35vh;
 }
+
 .four {
   margin-top: 55vh;
 }
-
 @media screen and (max-width: 1000px) {
   .flag-image2 {
     width: 30vh;
@@ -94,7 +95,4 @@ body {
     font-size: 20vw;
   }
 }
-
-@media screen and (max-width: 500px) {
-
-}
+@media screen and (max-width: 500px) {}

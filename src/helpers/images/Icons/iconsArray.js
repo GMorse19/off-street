@@ -1,6 +1,6 @@
 export const icon = {
   button: {
-    burger: process.env.PUBLIC_URL + '/burger.png',
+    burger: process.env.PUBLIC_URL + '/Icons/burger.png',
   },
   media: {
     facebook: process.env.PUBLIC_URL + '/Stock/facebook.svg',
