@@ -37,7 +37,6 @@
 .parallax::after {
   /* Display and position the pseudo-element */
   content: " ";
-  // position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -51,7 +50,6 @@
   /* Keep the image from overlapping sibling elements. */
   z-index: -1;
 }
-
 @media screen and (max-width: 1000px) {
   .inforow-div h1 {
     font-size: 40px;
@@ -70,13 +68,11 @@
     max-height: 100vh;
   }
 }
-
 @media screen and (max-height: 500px) {
   .inforow-wrapper {
     height: 100vh;
   }
 }
-
 @media screen and (max-width: 500px) {
   .inforow-div h1 {
     font-size: 30px;

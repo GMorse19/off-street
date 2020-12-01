@@ -10,8 +10,12 @@ const Video = (props) => (
       <Row>
         <Col>
           <div>
-            <p className='video-header'>{props.header}</p>
-            <p className='video-description'>{props.description}</p>
+            <p className='video-header'>
+              {props.header}
+            </p>
+            <p className='video-description'>
+              {props.description}
+            </p>
           </div>
         </Col>
       </Row>
@@ -28,7 +32,10 @@ const Video = (props) => (
       <Row>
         <Col>
           <div className='video-pdf-div'>
-            {props.pdf && <a href={props.pdf}>{props.pdfName}</a>}
+            {props.pdf &&
+              <a href={props.pdf}>
+                {props.pdfName}
+              </a>}
           </div>
         </Col>
       </Row>

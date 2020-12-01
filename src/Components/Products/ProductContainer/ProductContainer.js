@@ -9,11 +9,19 @@ import './ProductContainer.scss'
 
 const ProductContainer = (props) => (
   <Row className='rows'>
-    <Col xs={{ span: 6, offset: 3 }} md={{ span: 6, offset: 4 }} lg={{ span: 6, offset: 4 }}>
+    <Col
+      xs={{ span: 6, offset: 3 }}
+      md={{ span: 6, offset: 4 }}
+      lg={{ span: 6, offset: 4 }}
+    >
       <div className='image-wrapper'>
 
         <div className='image-div'>
-          <img className='flag-image' src={props.image} alt={props.alt} />
+          <img
+            className='flag-image'
+            src={props.image}
+            alt={props.alt}
+          />
         </div>
 
         <div className='product-container-description'>

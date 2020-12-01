@@ -3,7 +3,6 @@ import React from 'react'
 import { fallDown as Menu } from 'react-burger-menu'
 import { Row, Col, Container } from 'react-bootstrap'
 
-import { icon } from '../../helpers/images/Icons/iconsArray'
 import { stock} from '../../helpers/images/Stock/stockArray'
 import { logo } from '../../helpers/images/Logos/logosArray'
 import LogoFloat from '../LogoFloat/LogoFloat'
@@ -97,12 +96,72 @@ class Header extends React.Component {
                      Home
                   </a>
                 </li>
-                <li><a name='about' className='a-link-menu' onMouseOver={() => this.hoverButton('about')} onClick={() => this.closeMenu()} href='#about'>About</a></li>
-                <li><a name='shop' className='a-link-menu' onMouseOver={() => this.hoverButton('shop')} onClick={() => this.closeMenu()} href='#shop'>Shop</a></li>
-                <li><a name='contact' className='a-link-menu' onMouseOver={() => this.hoverButton('contact')} onClick={() => this.closeMenu()} href='#contact'>Contact</a></li>
-                <li><a name='gallery' className='a-link-menu' onMouseOver={() => this.hoverButton('gallery')} onClick={() => this.closeMenu()} href='#gallery'>Gallery</a></li>
-                <li><a name='donations' className='a-link-menu' onMouseOver={() => this.hoverButton('donations')} onClick={() => this.closeMenu()} href='#donations'>Donations</a></li>
-                <li><a name='how-to' className='a-link-menu' onMouseOver={() => this.hoverButton('howto')} onClick={() => this.closeMenu()} href='#how-to'>How To</a></li>
+                <li>
+                  <a
+                    name='about'
+                    className='a-link-menu'
+                    onMouseOver={() => this.hoverButton('about')}
+                    onClick={() => this.closeMenu()}
+                    href='#about'
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    name='shop'
+                    className='a-link-menu'
+                    onMouseOver={() => this.hoverButton('shop')}
+                    onClick={() => this.closeMenu()}
+                    href='#shop'
+                  >
+                    Shop
+                  </a>
+                </li>
+                <li>
+                  <a
+                    name='contact'
+                    className='a-link-menu'
+                    onMouseOver={() => this.hoverButton('contact')}
+                    onClick={() => this.closeMenu()}
+                    href='#contact'
+                  >
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <a
+                    name='gallery'
+                    className='a-link-menu'
+                    onMouseOver={() => this.hoverButton('gallery')}
+                    onClick={() => this.closeMenu()}
+                    href='#gallery'
+                  >
+                    Gallery
+                  </a>
+                </li>
+                <li>
+                  <a
+                    name='donations'
+                    className='a-link-menu'
+                    onMouseOver={() => this.hoverButton('donations')}
+                    onClick={() => this.closeMenu()}
+                    href='#donations'
+                  >
+                    Donations
+                  </a>
+                </li>
+                <li>
+                  <a
+                    name='how-to'
+                    className='a-link-menu'
+                    onMouseOver={() => this.hoverButton('howto')}
+                    onClick={() => this.closeMenu()}
+                    href='#how-to'
+                  >
+                    How To
+                  </a>
+                </li>
                 </ul>
               </div>
             </Col>
