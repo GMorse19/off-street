@@ -74,7 +74,7 @@ class InfoColumn extends React.Component {
             >
 
               <img
-                className='about-image'
+                className='infocol-image'
                 width={props.width}
                 src={props.image}
                 alt={props.name}
@@ -116,7 +116,7 @@ class InfoColumn extends React.Component {
           >
 
             <img
-              className='about-image'
+              className='infocol-image'
               width={props.width2}
               src={props.image2}
               alt={props.name2}

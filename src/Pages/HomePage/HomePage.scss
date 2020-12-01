@@ -22,6 +22,7 @@
 
 .image-wrapper:hover {
   background-color: #f3edbe;
+
   .flag-image {
     width: 21vw;
   }
@@ -45,7 +46,6 @@
   background-color: #fbf9ea;
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.4), 20px 6px 20px 20px rgba(0, 0, 0, 0.19);
 }
-
 @media screen and (max-width: 1000px) {
   .home-logo {
     margin-top: 10px;
@@ -58,7 +58,6 @@
     right: 5px;
   }
 }
-
 @media screen and (max-width: 500px) {
   .home-logo {
     margin-top: 10px;

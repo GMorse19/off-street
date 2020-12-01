@@ -7,11 +7,13 @@ const ProductInfo = (props) => (
   <div className='product-info'>
     <Container>
       <Row>
-        <Col lg={12}><h1>{props.header} Shop</h1></Col>
+        <Col lg={12}>
+          <h1>{props.header} Shop</h1>
+        </Col>
       </Row>
-        <Row>
-            {props.props}
-        </Row>
+      <Row>
+          {props.props}
+      </Row>
     </Container>
   </div>
 )

@@ -39,41 +39,41 @@ class App extends React.Component{
       <ParallaxProvider>
         <div className={this.state.background}>
           <div className='App'>
-          <Header />
+            <Header />
             <div>
-                <Route exact path='/'  render={() => (
-                  <HomePage />
-                )} />
-                <Route path='/about'  render={() => (
-                  <AboutPage />
-                )} />
-                <Route path='/gallery'  render={() => (
-                  <GalleryPage />
-                )} />
-                <Route path='/contact'  render={() => (
-                  <ContactPage />
-                )} />
-                <Route path='/shop'  render={() => (
-                  <ShopPage />
-                )} />
-                <Route path='/donations'  render={() => (
-                  <Donations />
-                )} />
-                <Route path='/description/:id'  render={(props) => (
-                  <ProductDescription
-                    props={props}
-                  />
-                )} />
-                <Route path='/item-shop/:id'  render={(props) => (
-                  <ItemShop
-                    props={props}
-                  />
-                )} />
-                <Route path='/how-to'  render={() => (
-                  <HowTo />
-                )} />
-                </div>
+              <Route exact path='/'  render={() => (
+                <HomePage />
+              )} />
+              <Route path='/about'  render={() => (
+                <AboutPage />
+              )} />
+              <Route path='/gallery'  render={() => (
+                <GalleryPage />
+              )} />
+              <Route path='/contact'  render={() => (
+                <ContactPage />
+              )} />
+              <Route path='/shop'  render={() => (
+                <ShopPage />
+              )} />
+              <Route path='/donations'  render={() => (
+                <Donations />
+              )} />
+              <Route path='/description/:id'  render={(props) => (
+                <ProductDescription
+                  props={props}
+                />
+              )} />
+              <Route path='/item-shop/:id'  render={(props) => (
+                <ItemShop
+                  props={props}
+                />
+              )} />
+              <Route path='/how-to'  render={() => (
+                <HowTo />
+              )} />
             </div>
+          </div>
         </div>
       </ParallaxProvider>
   )

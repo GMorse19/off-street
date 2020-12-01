@@ -43,12 +43,12 @@ class ProductDescription extends React.Component {
 
     if (gallery) { galleryJsx = gallery.map(gallery => (
       <Carousel.Item key={gallery.id}>
-            {
-              <div>
-                <img className='product-image-jsx' src={gallery.src} alt={gallery.name} />
-                <h1>{gallery.name}</h1>
-              </div>
-            }
+        {
+          <div>
+            <img className='product-image-jsx' src={gallery.src} alt={gallery.name} />
+            <h1>{gallery.name}</h1>
+          </div>
+        }
       </Carousel.Item>
     ))}
 
