@@ -211,6 +211,34 @@ export const itemGallery = [{
   name: 'Scrap Wood Table',
   price: '$99.95',
   src: process.env.PUBLIC_URL + '/Stock/TableMashup.jpg',
-}
+},
+{
+  type: 'Item',
+  style: 'table',
+  description: <p>Folding flag table hand crafted from 100% reclaimed scrap wood.</p>,
+  id: '18',
+  class: 'two flag-image2',
+  name: 'Folding Flag Table',
+  price: '$75.99',
+  src: process.env.PUBLIC_URL + '/Stock/folding-table.jpg',
+  gallery: [
+    {
+      src: process.env.PUBLIC_URL + '/Stock/folding-table.jpg',
+      id: 1
+    },
+    {
+      src: process.env.PUBLIC_URL + '/Stock/folded-table.jpg',
+      id: 2
+    }
+  ]
+},
+{
+  type: 'Flag gallery',
+  style: 'blackAndWhite',
+  id: '19',
+  class: 'four flag-image2',
+  name: 'Military Flag',
+  src: process.env.PUBLIC_URL + '/Flags/B&W/military-flags.jpg',
+},
 
 ]
