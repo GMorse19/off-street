@@ -17,5 +17,7 @@ export const stock = {
     bottleOpener: process.env.PUBLIC_URL + '/Stock/BottleOpenerSet.jpg',
     logo: process.env.PUBLIC_URL + '/Logo/OSLogo.png',
     logo2: process.env.PUBLIC_URL + '/Logo/OS-logo-no-back.png',
+    foldingTable: process.env.PUBLIC_URL + '/Stock/folding-table.jpg',
+    foldedTable: process.env.PUBLIC_URL + '/Stock/folded-table.jpg',
   }
 }
