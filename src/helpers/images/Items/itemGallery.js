@@ -239,6 +239,6 @@ export const itemGallery = [{
   class: 'four flag-image2',
   name: 'Military Flag',
   src: process.env.PUBLIC_URL + '/Flags/B&W/military-flags.jpg',
-},
+}
 
 ]
