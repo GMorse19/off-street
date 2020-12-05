@@ -278,7 +278,7 @@ export const itemGallery = [{
   src: process.env.PUBLIC_URL + '/Stock/folded-table.jpg',
 },
 {
-  type: 'Flag gallery',
+  type: 'Flag',
   style: 'blackAndWhite',
   id: '19',
   imgId: '19',
