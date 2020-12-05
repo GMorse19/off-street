@@ -10,7 +10,7 @@ const flagJsx = galleryList.map(flag => (
     <div key={flag.id} className='box'>
       {
         <div>
-          <a href={`#/description/${flag.id}`}>
+          <a href={`#/description/${flag.imgId}`}>
             <img className={flag.class} src={flag.src} alt={flag.name} />
           </a>
         </div>
