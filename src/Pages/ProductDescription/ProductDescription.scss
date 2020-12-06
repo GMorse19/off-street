@@ -27,7 +27,7 @@
 }
 
 .product-image-jsx {
-  width: 200px;
+  width: 20vw;
   box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.4), 0 26px 29px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -45,7 +45,7 @@
   }
 
   .product-image-jsx {
-    width: 50vw;
+    width: 20vw;
   }
 
   .product-description {
@@ -58,5 +58,11 @@
 
   .right.carousel-control, .left.carousel-control {
     display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .product-image-jsx {
+    width: 50vw;
   }
 }

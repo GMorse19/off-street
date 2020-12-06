@@ -21,7 +21,7 @@ class ProductDescription extends React.Component {
       description: itemGallery.find(x => x.id === props.props.match.params.id).description,
       price: itemGallery.find(x => x.id === props.props.match.params.id).price,
       gallery: itemGallery.find(x => x.id === props.props.match.params.id).gallery,
-      windowSize: window.innerWidth >= 1000 ? true : false
+      windowSize: window.innerWidth >= 1000 ? true : false,
     }
   }
 
@@ -42,22 +42,6 @@ class ProductDescription extends React.Component {
 
     const { src, name, description, price, gallery, type, windowSize } = this.state
 
-    const settings =
-    {
-      className: "center",
-      dots: windowSize ? false : true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: windowSize ? 3 : 1,
-      slidesToScroll: 1,
-      centerMode: true,
-      centerPadding: "60px",
-      autoplay: true,
-      autoplaySpeed: 2000,
-      swipeToSlide: true,
-      arrows: windowSize ? true : false,
-    }
-
     let galleryJsx = []
 
     if (gallery) { galleryJsx = gallery.map(gallery => (
@@ -69,6 +53,24 @@ class ProductDescription extends React.Component {
         }
       </div>
     ))}
+
+    let slideCount = galleryJsx.length > 2 && windowSize
+
+    const settings =
+      {
+        className: "center",
+        dots: windowSize ? false : true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: slideCount ? 3 : 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: "60px",
+        autoplay: true,
+        autoplaySpeed: 2000,
+        swipeToSlide: true,
+        arrows: windowSize ? true : false,
+      }
 
     return (
       <div className='product-display'>
