@@ -1,7 +1,10 @@
 import React from 'react'
-import { Container, Col, Row, Button, Carousel } from 'react-bootstrap'
+import { Container, Col, Row, Button } from 'react-bootstrap'
+import Slider from "react-slick";
 
 import './ProductDescription.scss'
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 import { itemGallery } from '../../helpers/images/Items/itemGallery'
 import handleWindowSize from '../../helpers/handleWindowSize'
@@ -39,17 +42,32 @@ class ProductDescription extends React.Component {
 
     const { src, name, description, price, gallery, type, windowSize } = this.state
 
+    const settings =
+    {
+      className: "center",
+      dots: windowSize ? false : true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: windowSize ? 3 : 1,
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: "60px",
+      autoplay: true,
+      autoplaySpeed: 2000,
+      swipeToSlide: true,
+      arrows: windowSize ? true : false,
+    }
+
     let galleryJsx = []
 
     if (gallery) { galleryJsx = gallery.map(gallery => (
-      <Carousel.Item key={gallery.id}>
+      <div key={gallery.id}>
         {
-          <div>
+          <div className='jsx-img-div'>
             <img className='product-image-jsx' src={gallery.src} alt={gallery.name} />
-            <h1>{gallery.name}</h1>
           </div>
         }
-      </Carousel.Item>
+      </div>
     ))}
 
     return (
@@ -90,9 +108,9 @@ class ProductDescription extends React.Component {
 
           <Row className='description-row'>
             <Col>
-              {gallery && <Carousel controls={windowSize} className='carousel'>
+              <Slider {...settings}>
                 {galleryJsx}
-              </Carousel>}
+              </Slider>
             </Col>
           </Row>
         </Container>

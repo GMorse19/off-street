@@ -27,8 +27,12 @@
 }
 
 .product-image-jsx {
-  width: 20vw;
+  width: 200px;
   box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.4), 0 26px 29px 0 rgba(0, 0, 0, 0.19);
+}
+
+.jsx-img-div img {
+  margin: 0 auto;
 }
 
 .description-row {
