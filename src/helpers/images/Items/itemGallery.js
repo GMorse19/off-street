@@ -106,6 +106,9 @@ export const itemGallery = [{
   },{
     src: process.env.PUBLIC_URL + '/Flags/B&W/B&W-back.jpg',
     id: 2
+  },{
+    src: process.env.PUBLIC_URL + '/Flags/RedLine/FireFlagCutOut.jpg',
+    id: 3
   }
 ]
 },
