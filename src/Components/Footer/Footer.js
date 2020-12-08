@@ -3,10 +3,13 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { icon } from '../../helpers/images/Icons/iconsArray'
 
+import Connect2 from '../Connect/Connect2'
+
 import './Footer.scss'
 
 const Footer = () => (
     <div className='footer'>
+    <Connect2 />
     <Container fluid className='footer-container'>
     <div>
       <Row>
