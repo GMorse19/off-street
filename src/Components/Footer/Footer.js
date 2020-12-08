@@ -39,9 +39,8 @@ const Footer = () => (
             href='https://www.facebook.com/Off-Street-Carpentry-100202445271783/'
           >
             <img
-              src={icon.media.facebook}
+              src={icon.media.facebookBW}
               alt='facebook'
-              width='30px'
             />
           </a>
 
@@ -50,9 +49,8 @@ const Footer = () => (
             href='https://twitter.com/offstreetbuild'
           >
             <img
-              src={icon.media.twitter}
+              src={icon.media.twitterBW}
               alt='twitter'
-              width='30px'
             />
           </a>
 
@@ -61,9 +59,8 @@ const Footer = () => (
             href='https://www.youtube.com/channel/UCHLzxuKSKxElBsdP6c8Kwvw'
           >
             <img
-              src={icon.media.youtube}
+              src={icon.media.youtubeBW}
               alt='pinterest'
-              width='30px'
             />
           </a>
 
@@ -72,9 +69,8 @@ const Footer = () => (
             href='https://pin.it/5PPEqFm'
           >
             <img
-              src={icon.media.pinterest}
+              src={icon.media.pinterestBW}
               alt='You Tube'
-              width='30px'
             />
           </a>
           <a
@@ -82,9 +78,8 @@ const Footer = () => (
             href='https://www.instagram.com/offstreetcarpentry/'
           >
             <img
-              src={icon.media.instagram}
+              src={icon.media.instagramBW}
               alt='instagram'
-              width='30px'
             />
           </a>
           </div>
