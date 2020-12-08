@@ -50,7 +50,6 @@ class Header extends React.Component {
 
     return(
     <div className='header'>
-
         <Menu
           className='menu'
           isOpen={this.state.menuOpen}
@@ -169,6 +168,13 @@ class Header extends React.Component {
           </Container>
         </Menu>
         <Container>
+            <Row>
+              <Col>
+                <div className='header-logo'>
+                  <span style={{ fontSize: '40px', paddingBottom: '0px' }}>Off Street</span>
+                </div>
+              </Col>
+            </Row>
             <Row>
               <Col className='header-link'>
                 <a href='#/'>Home</a>
