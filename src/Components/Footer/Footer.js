@@ -3,12 +3,16 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { icon } from '../../helpers/images/Icons/iconsArray'
 
+import Connect from '../Connect/Connect'
+
 import './Footer.scss'
 
 const Footer = () => (
     <div className='footer'>
+
     <Container fluid className='footer-container'>
     <div>
+    <Connect />
       <Row>
         <Col xs={8} sm={5} lg={5} className='footer-col-contact'>
           <div>
@@ -23,19 +27,18 @@ const Footer = () => (
         </Col>
         <Col xs={4} sm={2} lg={2} className='footer-col-links'>
           <div className='footer-link-div'>
-            <p><a className='spacing a-link-menu' href='#shop'>Shop</a></p>
-            <p><a className='spacing a-link-menu' href='#gallery'>Gallery</a></p>
-            <p><a className='spacing a-link-menu' href='#donations'>Donations</a></p>
-            <p><a className='spacing a-link-menu' href='#contact'>Contact</a></p>
-            <p><a className='spacing a-link-menu' href='#how-to'>Media</a></p>
-            <p><a className='spacing a-link-menu' href='#about'>About</a></p>
+            <p><a href='#shop'>Shop</a></p>
+            <p><a href='#gallery'>Gallery</a></p>
+            <p><a href='#donations'>Donations</a></p>
+            <p><a href='#contact'>Contact</a></p>
+            <p><a href='#how-to'>Media</a></p>
+            <p><a href='#about'>About</a></p>
           </div>
         </Col>
         <Col sm={5} lg={5} className='footer-col-media'>
         <p>Off Street</p>
           <div>
           <a
-            className='contact-page-link'
             href='https://www.facebook.com/Off-Street-Carpentry-100202445271783/'
           >
             <img
@@ -45,7 +48,6 @@ const Footer = () => (
           </a>
 
           <a
-            className='contact-page-link'
             href='https://twitter.com/offstreetbuild'
           >
             <img
@@ -55,7 +57,6 @@ const Footer = () => (
           </a>
 
           <a
-            className='contact-page-link'
             href='https://www.youtube.com/channel/UCHLzxuKSKxElBsdP6c8Kwvw'
           >
             <img
@@ -65,7 +66,6 @@ const Footer = () => (
           </a>
 
           <a
-            className='contact-page-link'
             href='https://pin.it/5PPEqFm'
           >
             <img
@@ -74,7 +74,6 @@ const Footer = () => (
             />
           </a>
           <a
-            className='contact-page-link'
             href='https://www.instagram.com/offstreetcarpentry/'
           >
             <img

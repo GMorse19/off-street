@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import { Form, Button } from 'react-bootstrap'
+import { Form, Button, Col } from 'react-bootstrap'
 
-import './Connect.scss'
+import './ConnectForm.scss'
 
 class SignUp extends Component {
   constructor () {
@@ -25,23 +25,29 @@ class SignUp extends Component {
     const { value } = this.state
     return (
       <Form onSubmit={this.handleSubmit}>
-        <Form.Group>
-        <Form.Control
-            autoComplete='off'
-            className='form-input'
-            type='email'
-            name='email'
-            placeholder='email'
-            value={value}
-            onChange={this.handleChange}
-          />
-        </Form.Group>
-        <Button
-          type='submit'
-          className='form-button'
-        >
-          Submit
-        </Button>
+        <Form.Row className='justify-content-center'>
+          <Col lg={{ span: 4 }}>
+              <Form.Group>
+              <Form.Control
+                  autoComplete='off'
+                  className='connect-form'
+                  type='email'
+                  name='email'
+                  placeholder='email'
+                  value={value}
+                  onChange={this.handleChange}
+                />
+            </Form.Group>
+            </Col>
+            <Col lg={{ span: 2 }}>
+            <Button
+              className='connect-button'
+              type='submit'
+            >
+              Join Now
+            </Button>
+          </Col>
+        </Form.Row>
       </Form>
     )
   }
