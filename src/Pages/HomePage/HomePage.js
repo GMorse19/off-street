@@ -19,9 +19,15 @@ class HomePage extends React.Component {
 
     return (
       <div className='home-page-div'>
-        <Title
-          tagline='"Carpentry with a repurpose"'
-        />
+
+        <div className='home-title-div'>
+          <div className='home-title-image'>
+            <div className='home-title-header'>
+              <p>Carpentry With A Repurpose</p>
+            </div>
+          </div>
+        </div>
+        
 
         <InfoRow
           header='Rescue, Repurpose, Reinvent'
@@ -51,18 +57,14 @@ class HomePage extends React.Component {
           backgroundUrl={stock.stock.birdHouse}
         />
 
-        <InfoColumn
-          header='Become a donor.'
-          color='#e3e1e1'
-          headerFont='5vh'
+        <InfoRow
+          header='Extra Material?'
+          backgroundColor='#B7C590'
+          headerColor='#5F3D26'
+          headerFont='48px'
           content='Have extra, unwanted material? Maybe you would like to contribute by becoming an authenticated Off Street builder. There are many ways to contribute, please contact Off Street to see how you can help.'
-          contentFont='25px'
-          buttonColor='#000'
-          buttonContent='DONATE'
-          href='#shop'
-          padding='6%'
-          backgroundUrl={stock.stock.woodBg}
-          backgroundUrl2={stock.stock.jobSite}
+          contentFont='18px'
+          padding='10%'
         />
 
         <Footer />
