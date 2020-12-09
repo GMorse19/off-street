@@ -25,8 +25,8 @@ class SignUp extends Component {
     const { value } = this.state
     return (
       <Form onSubmit={this.handleSubmit}>
-        <Form.Row>
-          <Col md={{ span: 5, offset: 2 }}>
+        <Form.Row className='justify-content-center'>
+          <Col lg={{ span: 4 }}>
               <Form.Group>
               <Form.Control
                   autoComplete='off'
@@ -39,12 +39,12 @@ class SignUp extends Component {
                 />
             </Form.Group>
             </Col>
-            <Col md={{ span: 3 }}>
+            <Col lg={{ span: 2 }}>
             <Button
               className='connect-button'
               type='submit'
             >
-              Submit
+              Join Now
             </Button>
           </Col>
         </Form.Row>

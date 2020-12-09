@@ -1,5 +1,6 @@
 .footer {
   color: #000;
+  background-color: rgba(248, 247, 216, 0.4);
 }
 
 .footer-col-contact {
@@ -48,15 +49,13 @@
 .footer-container {
   min-height: 558px;
   width: 100vw;
-  padding: 5%;
+  padding: 15% 5% 5% 5%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #554032 54.17%);
 }
 
 .footer-link-div {
   width: 33%;
 }
-
-.footer-column-div {}
 
 .spacing {
   margin: 0 !important;
@@ -113,4 +112,3 @@
     width: 100vw;
   }
 }
-

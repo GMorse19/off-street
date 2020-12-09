@@ -96,7 +96,6 @@ class ShopPage extends React.Component {
           backgroundUrl={stock.stock.contactBanner}
         />
 
-        <Connect />
         <Footer />
       </div>
     )

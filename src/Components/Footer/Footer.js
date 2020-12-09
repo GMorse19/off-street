@@ -9,9 +9,10 @@ import './Footer.scss'
 
 const Footer = () => (
     <div className='footer'>
-    <Connect2 />
+
     <Container fluid className='footer-container'>
     <div>
+    <Connect2 />
       <Row>
         <Col xs={8} sm={5} lg={5} className='footer-col-contact'>
           <div>

@@ -8,11 +8,11 @@ import SignUp from './ConnectForm'
 import './Connect2.scss'
 
 const Connect2 = () => (
-  <Container>
+  <Container fluid className='connect'>
     <Row>
       <Col>
-        <p>Let's Connect</p>
-        <p>Join our newsletter and stay informed about new products and special
+        <p className='connect-title'>Let's Connect</p>
+        <p className='connect-content'>Join our newsletter and stay informed about new products and special
            sales</p>
       </Col>
     </Row>
