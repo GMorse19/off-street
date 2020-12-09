@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Connect from '../../Components/Connect/Connect'
 import Footer from '../../Components/Footer/Footer'
 import Title from '../../Components/Title/Title'
 import InfoRow from '../../Components/InfoRow/InfoRow'
