@@ -1,9 +1,11 @@
 import React from 'react'
 
 import Footer from '../../Components/Footer/Footer'
-import Title from '../../Components/Title/Title'
+// import Title from '../../Components/Title/Title'
 import InfoRow from '../../Components/InfoRow/InfoRow'
 import InfoColumn from '../../Components/InfoColumn/InfoColumn'
+import HomePageHeader from './HomePageHeader'
+import HomePageIntro from './HomePageIntro/HomePageIntro'
 
 import { stock } from '../../helpers/images/Stock/stockArray'
 
@@ -20,29 +22,9 @@ class HomePage extends React.Component {
     return (
       <div className='home-page-div'>
 
-        <div className='home-title-div'>
-          <div className='home-title-image'>
-            <div className='home-title-header'>
-              <p>Carpentry With A Repurpose</p>
-            </div>
-          </div>
-        </div>
+        <HomePageHeader />
         
-
-        <InfoRow
-          header='Rescue, Repurpose, Reinvent'
-          sectionColor='#60791f'
-          headerFont='5vh'
-          contentColor='#e3e1e1'
-          contentFont='25px'
-          content="Our mission at Off Street is to rescue the forgotten scraps and cutoffs from construction projects and save them from their inevitable trip to the depths of a dumpster. We then re-purpose and re-invent these forlorn timbers to return a quality hand crafted item with it's own unique history."
-          buttonColor='#60791f'
-          buttonContent='ABOUT'
-          href='#about'
-          padding='2%'
-          backgroundColor='#5f3d26'
-          backgroundUrl={stock.stock.woodBg}
-        />
+        <HomePageIntro />
 
         <InfoRow
           y={[-10,10]}

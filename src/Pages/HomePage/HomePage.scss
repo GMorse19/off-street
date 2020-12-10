@@ -7,46 +7,28 @@
 }
 
 .home-title-div {
-  // position: absolute;
-  // width: 1440px;
+  width: 100%;
   padding-top: 180px;
   height: 672px;
-  left: 0px;
-  top: 167px;
   background: #F2EDE2;
 }
 
 .home-title-image {
   /* Rectangle 15 */
-
-// position: absolute;
-width: 1013px;
-height: 588px;
-left: 150px;
-top: 251px;
-
-background: #C4C4C4;
-
+  width: 100%;
 }
 
 .home-title-header {
   /* Carpentry with a repurpose */
 
-// position: absolute;
-width: 258px;
-height: 144px;
-left: 1016px;
-top: 695px;
+  padding-top: 295px;
+  text-align: left;
+  margin-left: -90px;
 
-font-family: Special Elite;
-font-style: normal;
-font-weight: normal;
-font-size: 48px;
-line-height: 48px;
-
-color: #FFFFFF;
-
-
+  font-family: Special Elite;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
 }
 
 .image-div {
@@ -94,6 +76,22 @@ color: #FFFFFF;
     margin-top: 10px;
   }
 
+  .home-title-div {
+    height: 150%;
+    padding-top: 80px;
+  }
+
+  .home-title-header {
+    padding-top: 1vh;
+    font-size: 32px;
+    line-height: normal;
+    margin-left: 0;
+  }
+
+  // .home-title-image {
+  //   height: 50%;
+  // }
+
   .info-div {
     font-size: 10px;
     top: 40vh;
@@ -104,6 +102,20 @@ color: #FFFFFF;
 @media screen and (max-width: 500px) {
   .home-logo {
     margin-top: 10px;
+  }
+
+  .home-title-div {
+    height: 50%;
+  }
+
+  .home-title-image {
+    height: 50%;
+  }
+
+  .home-title-header {
+    padding-top: 0;
+    font-size: 22px;
+    line-height: normal;
   }
 
   .info-div {
