@@ -272,7 +272,7 @@ export const itemGallery = [{
   ]
 },
 {
-  type: 'Flag gallery',
+  type: 'Item gallery',
   style: 'blackAndWhite',
   id: '20',
   imgId: '18',
@@ -289,6 +289,80 @@ export const itemGallery = [{
   description: <p>Hand made American flag representing military, fire department, and police department.</p>,
   name: 'First Responders Flag',
   src: process.env.PUBLIC_URL + '/Flags/B&W/military-flags.jpg',
+  gallery: [
+    {
+      src: process.env.PUBLIC_URL + '/Flags/multi-flag.jpg',
+      id: 1
+    },
+    {
+      src: process.env.PUBLIC_URL + '/Flags/half-flag.jpg',
+      id: 2
+    },
+    {
+      src: process.env.PUBLIC_URL + '/Flags/3flags.jpg',
+      id: 3
+    }
+  ]
+},
+{
+  type: 'Flag',
+  style: 'blackAndWhite',
+  id: '24',
+  imgId: '19',
+  class: 'four flag-image2',
+  name: 'First Responders Flag',
+  src: process.env.PUBLIC_URL + '/Flags/multi-flag.jpg',
+},
+{
+  type: 'Flag',
+  style: 'blackAndWhite',
+  id: '25',
+  imgId: '19',
+  class: 'four flag-image2',
+  name: 'First Responders Flag',
+  src: process.env.PUBLIC_URL + '/Flags/half-flag.jpg',
+},
+{
+  type: 'Flag',
+  style: 'blackAndWhite',
+  id: '26',
+  imgId: '19',
+  class: 'four flag-image2',
+  name: 'First Responders Flag',
+  src: process.env.PUBLIC_URL + '/Flags/3flags.jpg',
+},
+{
+  type: 'Item',
+  style: 'log',
+  description: <p>Log snow men made from fallen tree limbs.</p>,
+  id: '27',
+  imgId: '27',
+  class: 'three flag-image2',
+  name: 'Snow Men',
+  price: '',
+  src: process.env.PUBLIC_URL + '/Stock/snow-men.jpg',
+},
+{
+  type: 'Item',
+  style: 'log',
+  description: <p>Rudolph made from fallen tree limbs.</p>,
+  id: '28',
+  imgId: '28',
+  class: 'three flag-image2',
+  name: 'Rudolph',
+  price: '',
+  src: process.env.PUBLIC_URL + '/Stock/rudolph.jpg',
+},
+{
+  type: 'Item',
+  style: 'radiator',
+  description: <p>Radiator cover made from left over scraps from a remodeling job.</p>,
+  id: '29',
+  imgId: '29',
+  class: 'three flag-image2',
+  name: 'Radiator Cover',
+  price: '',
+  src: process.env.PUBLIC_URL + '/Stock/radiator.jpg',
 },
 
 ]
