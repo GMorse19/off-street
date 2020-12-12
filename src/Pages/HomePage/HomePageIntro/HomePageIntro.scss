@@ -22,3 +22,29 @@
   border-radius: 30px;
   float: left;
 }
+
+@media screen and (max-width: 1000px) {
+  .home-page-blurb {
+    font-size: 12px;
+    padding-top: 2%;
+  }
+  .home-page-mission {
+    font-size: 20px;
+  }
+  .home-page-intro-button {
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-page-blurb {
+    font-size: 12px;
+    padding-top: 2%;
+  }
+  .home-page-mission {
+    font-size: 20px;
+  }
+  .home-page-intro-button {
+    margin-bottom: 15%;
+  }
+}
