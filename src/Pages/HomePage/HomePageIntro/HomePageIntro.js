@@ -9,7 +9,7 @@ const HomePageIntro = () => (
   <Container fluid className='home-page-intro'>
     <Row className='justify-content-center'>
 
-      <Col className='home-page-mission' lg={{ span: 4, offset: 2 }}>
+      <Col className='home-page-mission' lg={{ span: 4, offset: 2 }} xs={6}>
         <p><img width={40} src={stock.stock.logo2} alt='offstreet logo'/>Rescue</p>
         <p><img width={40} src={stock.stock.logo2} alt='offstreet logo'/>Repurpose</p>
         <p><img width={40} src={stock.stock.logo2} alt='offstreet logo'/>Reinvent</p>

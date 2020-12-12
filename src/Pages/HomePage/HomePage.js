@@ -23,7 +23,7 @@ class HomePage extends React.Component {
       <div className='home-page-div'>
 
         <HomePageHeader />
-        
+
         <HomePageIntro />
 
         <InfoRow
