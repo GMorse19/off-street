@@ -8,7 +8,7 @@ import HomePageHeader from './HomePageHeader'
 import HomePageShop from './HomePageShop/HomePageShop'
 import HomePageIntro from './HomePageIntro/HomePageIntro'
 
-import { stock } from '../../helpers/images/Stock/stockArray'
+// import { stock } from '../../helpers/images/Stock/stockArray'
 
 import './HomePage.scss'
 
