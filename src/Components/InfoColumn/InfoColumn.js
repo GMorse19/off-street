@@ -79,10 +79,11 @@ class InfoColumn extends React.Component {
                 src={props.image}
                 alt={props.name}
               />
-              <h1 style={{ color: props.color, fontFamily: 'Special Elite' }}>{props.header}</h1>
+              <p style={{ color: props.color, fontFamily: 'Special Elite', fontSize: props.headerFont }}>{props.header}</p>
               <p
                 style={{
                   color: props.color,
+                  fontSize: props.fontSize,
                   padding: '2%'
                 }}>
                 {props.content}
@@ -101,6 +102,7 @@ class InfoColumn extends React.Component {
 
             </Parallax>
           </Col>
+
           <Col
             xs={12} lg={6}
             style={{
@@ -121,10 +123,11 @@ class InfoColumn extends React.Component {
               src={props.image2}
               alt={props.name2}
             />
-
+            <p style={{ color: props.color, fontFamily: 'Special Elite', fontSize: props.headerFont2 }}>{props.header2}</p>
             <p
               style={{
                 color: props.color2,
+                fontSize: props.fontSize2,
                 padding: '2%'
               }}
             >

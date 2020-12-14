@@ -1,46 +1,33 @@
-.black {
-  background: #000;
-  display: flex;
-  justify-content: center;
-  padding: 15px 15px 5vh;
+.connect {
+
 }
 
-.black-div {
-  color: #e3e1e1;
-  margin-top: 5vh;
+.connect-title {
+  font-size: 48px;
+  font-family: Special Elite;
 }
 
-.black-para {
-  font-size: 20px;
+.connect-content {
+  font-size: 18px;
+  font-family: Helvetica;
 }
 
-.carpenter {
-  margin: 5%;
-  width: 40vw;
-}
-
-.connect-header {
-  font-size: 30px;
-}
-
-.contact-container {}
-
-.contact-div {
-  margin-bottom: 80vh;
-}
-
-.cream {
-  background: #f3edbe;
-  display: flex;
-  justify-content: center;
-}
-
-.pad {
-  margin: 25%;
-}
 @media screen and (max-width: 1000px) {
-  .contact-div {
-    margin-bottom: 0;
+  .connect-title {
+    font-size: 48px;
+  }
+
+  .connect-content {
+    font-size: 18px;
   }
 }
-@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 500px) {
+  .connect-title {
+    font-size: 28px;
+  }
+
+  .connect-content {
+    font-size: 12px;
+  }
+}

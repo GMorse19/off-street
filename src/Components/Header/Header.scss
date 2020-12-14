@@ -91,9 +91,11 @@
 }
 
 .header {
-  width: 100vw;
-  height: 60px;
-  background-color: #000;
+  color: #000;
+  font-family: Special Elite;
+  width: 100%;
+  padding-bottom: 1%;
+  background-color: #FFF;
   position: fixed;
   z-index: 1000;
 
@@ -108,7 +110,7 @@
 
 .header-link a {
   color: #56595e;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -187,6 +189,10 @@
 @media screen and (max-width: 1000px) {
   .a-link-menu {
     padding: 1vh 0 0;
+  }
+
+  .header {
+    height: 60px;
   }
 
   .header-link {
