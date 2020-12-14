@@ -89,12 +89,6 @@ class ShopPage extends React.Component {
           width='300'
         />
 
-        <InfoRow
-          sectionColor='#FFF'
-          padding='7%'
-          backgroundUrl={stock.stock.contactBanner}
-        />
-
         <Footer />
       </div>
     )

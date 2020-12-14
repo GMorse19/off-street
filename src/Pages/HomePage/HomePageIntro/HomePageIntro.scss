@@ -23,6 +23,10 @@
   float: left;
 }
 
+.home-page-intro-button:hover {
+  background: #303e0f;
+}
+
 @media screen and (max-width: 1000px) {
   .home-page-blurb {
     font-size: 12px;
