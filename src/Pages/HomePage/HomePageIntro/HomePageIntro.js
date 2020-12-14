@@ -24,7 +24,7 @@ const HomePageIntro = () => (
           forlorn timbers to return a quality hand crafted item with it's own
           unique history.
         </p>
-        <Button className='home-page-intro-button'>About Us</Button>
+        <Button href='#about' className='home-page-intro-button'>About Us</Button>
       </Col>
 
     </Row>

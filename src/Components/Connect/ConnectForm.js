@@ -18,7 +18,7 @@ class SignUp extends Component {
   }
 
   handleSubmit = event => {
-    alert('Something went wrong, try again another time.')
+    alert('Sorry, this feature is not yet available.')
   }
 
   render () {
