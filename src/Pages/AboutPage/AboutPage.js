@@ -1,7 +1,7 @@
 import React from 'react'
 
 // import Title from '../../Components/Title/Title'
-import AboutContent from '../../Components/Products/AboutContent'
+import AboutContent from './AboutContent/AboutContent'
 import Footer from '../../Components/Footer/Footer'
 import AboutPageHeader from './AboutPageHeader/AboutPageHeader'
 
