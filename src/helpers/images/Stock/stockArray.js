@@ -19,5 +19,6 @@ export const stock = {
     logo2: process.env.PUBLIC_URL + '/Logo/OS-logo-no-back.png',
     foldingTable: process.env.PUBLIC_URL + '/Stock/folding-table.jpg',
     foldedTable: process.env.PUBLIC_URL + '/Stock/folded-table.jpg',
+    plankWall: process.env.PUBLIC_URL + '/Stock/plank-wall.jpeg',
   }
 }

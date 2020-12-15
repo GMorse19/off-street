@@ -1,18 +1,21 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container'
+import { Container } from 'react-bootstrap'
 
-import { flag } from '../../helpers/images/Flags/flagsArray'
-import { item } from '../../helpers/images/Items/itemsArray'
-import ProductContainer from './ProductContainer/ProductContainer'
-import content from './ProductDescription/Content'
+import { flag } from '../../../helpers/images/Flags/flagsArray'
+import { item } from '../../../helpers/images/Items/itemsArray'
+// import { stock } from '../../../helpers/images/Stock/stockArray'
+import ProductContainer from '../../../Components/Products/ProductContainer/ProductContainer'
+// import InfoRow from '../../../Components/InfoRow/InfoRow'
+import content from '../../../Components/Products/ProductDescription/Content'
 
-import { logo } from '../../helpers/images/Logos/logosArray'
+import { logo } from '../../../helpers/images/Logos/logosArray'
 
-import './Products.scss'
+import './AboutContent.scss'
+import '../../../Components/Products/Products.scss'
 
 const AboutContent = () => (
   <div className='info-section'>
-    <Container className='shop-container'>
+    <Container className='about-content-container'>
 
       <ProductContainer
         image={flag.standard.cutout}
