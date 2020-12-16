@@ -12,7 +12,7 @@ const HomePageShop = () => (
         <p className='home-page-shop-unique'>
           Unique & Handcrafted Items
         </p>
-        <Button href='#shop' className='home-page-shop-button'>Shop</Button>
+        <Button href='#item-shop/all' className='home-page-shop-button'>Shop</Button>
       </Col>
       <Col lg={8} className='image-stack'>
         <Col><img className='home-page-shop-image1' src={stock.stock.foldingTable} alt='Folding Table' /></Col>

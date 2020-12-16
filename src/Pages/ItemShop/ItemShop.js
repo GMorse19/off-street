@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Button, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 
 import ProductInfo from '../../Components/Products/ProductInfo/ProductInfo'
 import Footer from '../../Components/Footer/Footer'
@@ -19,6 +19,11 @@ class ItemShop extends React.Component {
 
   componentDidMount() {
     window.scrollTo(0, 0)
+  }
+
+  handleClick = (event) => {
+      window.scrollTo(0, 0)
+    this.setState({ type: event.target.name })
   }
 
   render () {
@@ -50,8 +55,8 @@ class ItemShop extends React.Component {
                   </div>
                   <p className='itemshop-title'>{item.name}</p>
                   <Row>
-                    <Col xs={8} lg={8}>
-                      <p className='itemshop-description'>{item.description}</p>
+                    <Col xs={8} lg={8} className='itemshop-description'>
+                      {item.description}
                     </Col>
                     <Col>
                       <p className='itemshop-price'>{item.price}</p>
@@ -68,7 +73,9 @@ class ItemShop extends React.Component {
         <ProductInfo
           props={itemJsx}
           header={tipo}
+          handleClick={this.handleClick}
         />
+
         <Footer />
       </div>
     )

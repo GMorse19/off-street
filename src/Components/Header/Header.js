@@ -112,7 +112,7 @@ class Header extends React.Component {
                     className='a-link-menu'
                     onMouseOver={() => this.hoverButton('shop')}
                     onClick={() => this.closeMenu()}
-                    href='#shop'
+                    href='#item-shop/all'
                   >
                     Shop
                   </a>
@@ -183,7 +183,7 @@ class Header extends React.Component {
                 <a href='#about'>About</a>
               </Col>
               <Col className='header-link'>
-                <a href='#shop'>Shop</a>
+                <a href='#item-shop/all'>Shop</a>
               </Col>
               <Col className='header-link'>
                 <a href='#donations'>Donate</a>
