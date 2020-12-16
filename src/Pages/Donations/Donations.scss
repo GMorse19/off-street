@@ -1,4 +1,5 @@
 #donations {
+  background: #F2EDE2;
   min-height: 100vh;
 }
 
@@ -13,11 +14,13 @@
 }
 
 .donation-header {
-  height: 30vh;
+  // height: 30vh;
+  font-family: Special Elite;
   font-size: 5vh;
-  padding: 10%;
-  color: #FFF;
-  background-image: url("../../helpers/images/Stock/wood-bg.jpg");
+  padding-top: 10%;
+  // color: #FFF;
+  background: #F2EDE2;
+  // background-image: url("../../helpers/images/Stock/wood-bg.jpg");
 }
 
 .donation-sub-header {

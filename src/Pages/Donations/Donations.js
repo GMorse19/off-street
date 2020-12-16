@@ -3,6 +3,8 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 
 import './Donations.scss'
 
+import DonationBucket from './DonationBucket/DonationBucket'
+
 import Footer from '../../Components/Footer/Footer'
 
 class Donations extends React.Component {
@@ -13,10 +15,11 @@ class Donations extends React.Component {
   render () {
     return (
       <div id='donations'>
-        <div className='donation-header'>
-          <p>Acceptable Donations -- What Does Off Street Take??</p>
+        <div>
+          <p className='donation-header'>Acceptable Donations</p>
+          <p>What does Off Street take?</p>
         </div>
-        <div className='donation-sub-header'>
+        <div>
 
           <p>
             Off Street is constantly searching for new ways to re-purpose unwanted
@@ -27,7 +30,47 @@ class Donations extends React.Component {
           <Button variant='secondary' href='#contact'>Contact</Button>
 
         </div>
-        <div className='donation-content'>
+        <DonationBucket
+          title='Wood'
+          content={<ul>
+          <li>Dimensional lumber no shorter than two feet</li>
+          <li>2x4 -- 2x12</li>
+          <li>4X4 -- 6x6</li>
+          <li>Plywood no smaller than 2&apos;x2&apos;</li>
+          <li>Strapping</li>
+          <li>ledger board</li>
+        </ul>}
+        />
+
+        <DonationBucket
+          title='Hardware'
+          content={
+            <ul>
+                    <li>Hinges/ hinge pins</li>
+                    <li>Door knobs</li>
+                    <li>Strike plates</li>
+                    <li>Latches, hooks</li>
+                    <li>Bolts, Screws, Nails</li>
+                    <li>Anything that looks cool or unique</li>
+                  </ul>
+          }
+        />
+
+        <DonationBucket
+          title='Tools'
+          content={
+            <ul>
+                    <li>Wrenches</li>
+                    <li>Hammers</li>
+                    <li>Screw Drivers</li>
+                    <li>Hand Saws</li>
+                    <li>Chisels</li>
+                    <li>Putty Knives/ Trowels</li>
+                    <li></li>
+                  </ul>
+          }
+        />
+        <div>
           <Container>
             <Row>
               <Col lg={6} sm={6} xs={12}>
