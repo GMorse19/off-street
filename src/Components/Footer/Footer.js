@@ -27,7 +27,7 @@ const Footer = () => (
         </Col>
         <Col xs={4} sm={2} lg={2} className='footer-col-links'>
           <div className='footer-link-div'>
-            <p><a href='#shop'>Shop</a></p>
+            <p><a href='#item-shop/all'>Shop</a></p>
             <p><a href='#gallery'>Gallery</a></p>
             <p><a href='#donations'>Donations</a></p>
             <p><a href='#contact'>Contact</a></p>
