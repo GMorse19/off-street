@@ -46,7 +46,6 @@ class ItemShop extends React.Component {
                   <a href={`#/description/${item.id}`}>
                     <img className='itemshop-image' src={item.src} alt={item.name} />
                   </a>
-                  <span className='itemshop-description'>{item.description}</span>
                   <p><Button href={`#/description/${item.id}`} className='itemshop-button'>Purchase</Button></p>
                 </div>
               }
