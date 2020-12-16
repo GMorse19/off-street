@@ -1,7 +1,8 @@
 import React from 'react'
-import { Col, Button } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 
 import ProductInfo from '../../Components/Products/ProductInfo/ProductInfo'
+import Footer from '../../Components/Footer/Footer'
 
 import './ItemShop.scss'
 
@@ -18,6 +19,11 @@ class ItemShop extends React.Component {
 
   componentDidMount() {
     window.scrollTo(0, 0)
+  }
+
+  handleClick = (event) => {
+      window.scrollTo(0, 0)
+    this.setState({ type: event.target.name })
   }
 
   render () {
@@ -38,15 +44,23 @@ class ItemShop extends React.Component {
     }
 
     const itemJsx = itemList.map(item => (
-          <Col xs={12} md={12} lg={4}>
+          <Col xs={12} md={6} lg={4}>
             <div key={item.id} className='itemshop'>
               {
                 <div className='itemshop-jsx'>
-                  <p className='itemshop-title'>{item.name}</p>
-                  <a href={`#/description/${item.id}`}>
-                    <img className='itemshop-image' src={item.src} alt={item.name} />
-                  </a>
-                  <p><Button href={`#/description/${item.id}`} className='itemshop-button'>Purchase</Button></p>
+                  <div className='itemshop-image-div'>
+                    <a href={`#/description/${item.id}`}>
+                      <img className='itemshop-image' src={item.src} alt={item.name} />
+                    </a>
+                  </div>
+                  <Row>
+                    <Col xs={8} lg={8} className='itemshop-title'>
+                      {item.name}
+                    </Col>
+                    <Col>
+                      <p>{item.price}</p>
+                    </Col>
+                  </Row>
                 </div>
               }
             </div>
@@ -58,7 +72,10 @@ class ItemShop extends React.Component {
         <ProductInfo
           props={itemJsx}
           header={tipo}
+          handleClick={this.handleClick}
         />
+
+        <Footer />
       </div>
     )
   }

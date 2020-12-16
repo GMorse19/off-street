@@ -1,7 +1,23 @@
 .product-info {
   min-height: 100vh;
   padding-top: 20vh;
-  background: linear-gradient(90deg, rgba(89,89,89,1) 0%, rgba(134,131,105,1) 48%, rgba(227,225,225,1) 89%);
+  background: #F2EDE2;
+  padding-bottom: 15%;
+}
+
+.product-info h1 {
+  font-family: Special Elite;
+}
+
+.product-shop-link {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 24px;
+  padding: 5%;
+}
+
+.product-shop-link:hover {
+  color: #60791f;
 }
 
 .description-row {

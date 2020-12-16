@@ -1,8 +1,10 @@
 .itemshop {
+  // height: 45vh;
   margin: 5%;
-  border: solid;
-  background-color: rgba(134,131,105,1);
-  box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.4), 0 26px 29px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #000000;
+  border-radius: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .itemshop-button {
@@ -11,29 +13,76 @@
 }
 
 .itemshop-description {
-  font-size: 20px;
+  font-size: 2vh;
+  height: 2.5vh;
+  line-height: 2.5vh;
+  overflow: scroll;
+  text-align: left;
+}
+
+.itemshop-link {
+  margin: 3% 0 0 0;
+}
+
+.itemshop-price {
+  display: block;
+  text-align: right;
 }
 
 .itemshop-title {
-  margin: 2% 0 2% 0;
+  // font-size: 3vh;
+  font-style: Helvetica;
+  font-weight: bold;
+  min-height: 8vh;
+  line-height: 4vh;
+  overflow: scroll;
+  // padding-bottom: 0;
+  text-align: left;
 }
 
 .itemshop-image {
-  width: 90%;
-  box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.4), 0 26px 29px 0 rgba(0, 0, 0, 0.19);
-  margin: 5%;
+  width: 100%;
+  height: 100%;
+  float: left;
+  object-fit: contain;
+}
+
+.itemshop-image-div {
+  height: 30vh;
+  margin-bottom: 1%;
 }
 
 .itemshop-jsx {
   padding: 5%;
 }
 
-@media screen and (max-width: 1000px) {
-  .itemshop-description {
-    font-size: 15px;
+@media screen and (max-height: 390px) {
+  .itemshop {
+    // height: 80vh;
   }
 
-  .itemshop-title {
-    font-size: 25px;
+  .itemshop-description {
+    font-size: 15px;
+    height: 18px;
+    line-height: 18px;
+  }
+
+  .itemshop-image-div {
+    height: 50vh;
+  }
+
+  // .itemshop-title {
+  //   font-size: 25px;
+  //   height: 28px;
+  //   line-height: 28px;
+  // }
+}
+@media screen and (max-width: 500px) {
+  .itemshop {
+    // height: 50vh;
+  }
+
+  .itemshop-image-div {
+    height: 30vh;
   }
 }
