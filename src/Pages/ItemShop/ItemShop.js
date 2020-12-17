@@ -53,13 +53,12 @@ class ItemShop extends React.Component {
                       <img className='itemshop-image' src={item.src} alt={item.name} />
                     </a>
                   </div>
-                  <p className='itemshop-title'>{item.name}</p>
                   <Row>
-                    <Col xs={8} lg={8} className='itemshop-description'>
-                      {item.description}
+                    <Col xs={8} lg={8} className='itemshop-title'>
+                      {item.name}
                     </Col>
                     <Col>
-                      <p className='itemshop-price'>{item.price}</p>
+                      <p>{item.price}</p>
                     </Col>
                   </Row>
                 </div>
