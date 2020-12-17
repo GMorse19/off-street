@@ -7,7 +7,7 @@ import './DonationBucket.scss'
      <div>
          <Container className='donation-bucket'>
              <Row className='justify-content-center'>
-                 <Col className='donation-bucket-title'>
+                 <Col xs={12} md={5}className='donation-bucket-title'>
                     {props.title}
                  </Col>
                  <Col className='donation-bucket-content'>

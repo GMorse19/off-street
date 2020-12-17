@@ -4,23 +4,20 @@
 }
 
 #donations ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  list-style-type: dot;
+  margin: 1;
+  padding: 1;
 }
 
 .donation-footer {
-  margin-top: 10vh;
+  margin-top: 12vh;
 }
 
 .donation-header {
-  // height: 30vh;
   font-family: Special Elite;
   font-size: 5vh;
   padding-top: 10%;
-  // color: #FFF;
   background: #F2EDE2;
-  // background-image: url("../../helpers/images/Stock/wood-bg.jpg");
 }
 
 .donation-sub-header {
@@ -31,19 +28,26 @@
 }
 
 .donation-col {
+  background: #FFF;
   border: solid;
+  border-radius: 15px;
   margin: 5% 0;
   padding: 1%;
 }
 
 .donation-content {
-  min-height: 70vh;
-  background-color: #FFF;
+    font-family: Helvetica;
+    font-size: 24px;
+    text-align: left;
 }
 @media screen and (max-width: 500px) {
   .donation-header {
     font-size: 4vh;
     padding-top: 15%;
+  }
+
+  .donation-content {
+    font-size: 18px;
   }
 
   #donations {

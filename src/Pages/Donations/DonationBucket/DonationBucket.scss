@@ -4,13 +4,14 @@
     background-color: #FFF;
     padding: 5%;
     margin-top: 5%;
+    width: 90%;
 }
 
 .donation-bucket-title {
     font-family: Helvetica;
     font-size: 48px;
     font-weight: bold;
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 .donation-bucket-content {
@@ -18,4 +19,10 @@
     font-size: 24px;
     line-height: 48px;
     text-align: left;
+}
+
+@media screen and (max-width: 500px) {
+  .donation-bucket-content {
+    font-size: 18px;
+  }
 }
