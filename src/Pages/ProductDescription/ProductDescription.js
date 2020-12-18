@@ -29,6 +29,10 @@ class ProductDescription extends React.Component {
     this.setState(handleWindowSize)
   }
 
+  handlePurchase = () => {
+    alert('Sorry, this feature is not yet available.')
+  }
+
   componentDidMount() {
     window.scrollTo(0, 0)
     window.addEventListener('resize', this.handleSize)
@@ -98,7 +102,7 @@ class ProductDescription extends React.Component {
 
           <Row className="justify-content-md-center description-row">
             <Col lg={2} md={2} sm={4} xs={4}>
-              <Button className='product-display-button' href='#shop'>Purchase</Button>
+              <Button className='product-display-button' onClick={this.handlePurchase}>Purchase</Button>
             </Col>
             <Col lg={2} md={2} sm={4} xs={4}>
               <Button className='product-display-button' href={`#item-shop/${type}`}>{type} SHOP</Button>
