@@ -49,10 +49,14 @@ class ProductDescription extends React.Component {
     let galleryJsx = []
 
     if (gallery) { galleryJsx = gallery.map(gallery => (
-      <div key={gallery.id}>
+      <div className='productjsx' key={gallery.id}>
         {
-          <div className='jsx-img-div'>
-            <img className='product-image-jsx' src={gallery.src} alt={gallery.name} />
+          <div className='productshop'>
+            <div className='productshop-jsx'>
+                  <div className='product-image-div'>
+                    <img className='product-image' src={gallery.src} alt={gallery.name} />
+                  </div>
+            </div>
           </div>
         }
       </div>
@@ -85,35 +89,48 @@ class ProductDescription extends React.Component {
             </Col>
           </Row>
 
-          <Row className="justify-content-md-center description-row">
+          <Row className='justify-content-center'>
+          <Col lg={2} md={2} sm={12} xs={12} className='button-pad'>
+              <Button className='product-display-button' onClick={this.handlePurchase}>Purchase</Button>
+            
+              <Button className='product-display-button' href={`#item-shop/${type}`}>SHOP</Button>
+           
+              <Button className='product-display-button' href='#gallery'>Gallery</Button>
+            </Col>
+
+          <Col xs={12} md={6} lg={4}>
+            <div className='itemshop'>
+              {
+                <div className='itemshop-jsx'>
+                  <div className='itemshop-image-div'>
+                   
+                      <img className='itemshop-image' src={src} alt={name} />
+                  
+                  </div>
+                  <Row>
+                    <Col xs={8} lg={8} className='itemshop-title'>
+                      {name}
+                    </Col>
+                    <Col>
+                      <p>{price}</p>
+                    </Col>
+                  </Row>
+                </div>
+              }
+            </div>
+          </Col>
+         </Row>
+
+         <Row className="justify-content-md-center description-row">
             <Col lg={8}>
               <div className='product-description'>
                 <span>{description}</span>
-                <p>Price: {price}</p>
               </div>
             </Col>
           </Row>
 
-          <Row>
-            <Col>
-              <img className='product-image' src={src} alt={name}/>
-            </Col>
-          </Row>
-
-          <Row className="justify-content-md-center description-row">
-            <Col lg={2} md={2} sm={4} xs={4}>
-              <Button className='product-display-button' onClick={this.handlePurchase}>Purchase</Button>
-            </Col>
-            <Col lg={2} md={2} sm={4} xs={4}>
-              <Button className='product-display-button' href={`#item-shop/${type}`}>{type} SHOP</Button>
-            </Col>
-            <Col lg={2} md={2} sm={4} xs={4}>
-              <Button className='product-display-button' href='#gallery'>Gallery</Button>
-            </Col>
-          </Row>
-
-          <Row className='description-row'>
-            <Col>
+          <Row className='justify-content-center'>
+            <Col lg={8} md={8}>
               <Slider {...settings}>
                 {galleryJsx}
               </Slider>
