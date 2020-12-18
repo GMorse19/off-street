@@ -29,6 +29,10 @@ class ProductDescription extends React.Component {
     this.setState(handleWindowSize)
   }
 
+  handlePurchase = () => {
+    alert('Sorry, this feature is not yet available.')
+  }
+
   componentDidMount() {
     window.scrollTo(0, 0)
     window.addEventListener('resize', this.handleSize)
@@ -45,13 +49,13 @@ class ProductDescription extends React.Component {
     let galleryJsx = []
 
     if (gallery) { galleryJsx = gallery.map(gallery => (
-      <div key={gallery.id}>
+      <Col className='productshop' key={gallery.id}>
         {
-          <div className='jsx-img-div'>
-            <img className='product-image-jsx' src={gallery.src} alt={gallery.name} />
-          </div>
+
+            <img className='product-image' src={gallery.src} alt={gallery.name} />
+
         }
-      </div>
+      </Col>
     ))}
 
     let slideCount = galleryJsx.length > 2 && windowSize
@@ -62,7 +66,7 @@ class ProductDescription extends React.Component {
         dots: windowSize ? false : true,
         infinite: true,
         speed: 500,
-        slidesToShow: slideCount ? 3 : 1,
+        slidesToShow: slideCount ? 3 : 2,
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: "60px",
@@ -81,34 +85,48 @@ class ProductDescription extends React.Component {
             </Col>
           </Row>
 
-          <Row className="justify-content-md-center description-row">
-            <Col lg={8}>
+          <Row className='justify-content-center'>
+
+          <Col xs={12} md={6} lg={4}>
+            <div className='itemshop'>
+                <div className='itemshop-jsx'>
+                  <div className='itemshop-image-div'>
+                      <img className='itemshop-image' src={src} alt={name} />
+                  </div>
+                  <Row>
+
+                    <Col xs={8} lg={8} className='itemshop-title'>
+                      {name}
+                    </Col>
+
+                    <Col>
+                      <p>{price}</p>
+                    </Col>
+
+                  </Row>
+                </div>
+            </div>
+          </Col>
+
+          <Col lg={2} md={2} sm={12} xs={12} className='button-pad'>
+              <Button className='product-display-button' onClick={this.handlePurchase}>Purchase</Button>
+
+              <Button className='product-display-button' href={`#item-shop/${type}`}>SHOP</Button>
+
+              <Button className='product-display-button' href='#gallery'>Gallery</Button>
+          </Col>
+
+         </Row>
+
+         <Row className="justify-content-md-center description-row">
+            <Col lg={6}>
               <div className='product-description'>
                 <span>{description}</span>
-                <p>Price: {price}</p>
               </div>
             </Col>
           </Row>
 
-          <Row>
-            <Col>
-              <img className='product-image' src={src} alt={name}/>
-            </Col>
-          </Row>
-
-          <Row className="justify-content-md-center description-row">
-            <Col lg={2} md={2} sm={4} xs={4}>
-              <Button className='product-display-button' href='#shop'>Purchase</Button>
-            </Col>
-            <Col lg={2} md={2} sm={4} xs={4}>
-              <Button className='product-display-button' href={`#item-shop/${type}`}>{type} SHOP</Button>
-            </Col>
-            <Col lg={2} md={2} sm={4} xs={4}>
-              <Button className='product-display-button' href='#gallery'>Gallery</Button>
-            </Col>
-          </Row>
-
-          <Row className='description-row'>
+          <Row className='justify-content-center'>
             <Col>
               <Slider {...settings}>
                 {galleryJsx}
