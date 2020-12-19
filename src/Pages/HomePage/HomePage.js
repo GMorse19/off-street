@@ -1,14 +1,10 @@
 import React from 'react'
 
 import Footer from '../../Components/Footer/Footer'
-// import Title from '../../Components/Title/Title'
 import InfoRow from '../../Components/InfoRow/InfoRow'
-// import InfoColumn from '../../Components/InfoColumn/InfoColumn'
-import HomePageHeader from './HomePageHeader'
+import HomePageHeader from './HomePageHeader/HomePageHeader'
 import HomePageShop from './HomePageShop/HomePageShop'
 import HomePageIntro from './HomePageIntro/HomePageIntro'
-
-// import { stock } from '../../helpers/images/Stock/stockArray'
 
 import './HomePage.scss'
 

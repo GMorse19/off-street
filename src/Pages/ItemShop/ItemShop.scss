@@ -1,5 +1,4 @@
 .itemshop {
-  // height: 45vh;
   margin: 5%;
   border: 1px solid #000000;
   border-radius: 20px;
@@ -30,13 +29,11 @@
 }
 
 .itemshop-title {
-  // font-size: 3vh;
   font-style: Helvetica;
   font-weight: bold;
   min-height: 8vh;
   line-height: 4vh;
   overflow: scroll;
-  // padding-bottom: 0;
   text-align: left;
 }
 
@@ -57,10 +54,6 @@
 }
 
 @media screen and (max-height: 390px) {
-  .itemshop {
-    // height: 80vh;
-  }
-
   .itemshop-description {
     font-size: 15px;
     height: 18px;
@@ -70,18 +63,8 @@
   .itemshop-image-div {
     height: 50vh;
   }
-
-  // .itemshop-title {
-  //   font-size: 25px;
-  //   height: 28px;
-  //   line-height: 28px;
-  // }
 }
 @media screen and (max-width: 500px) {
-  .itemshop {
-    // height: 50vh;
-  }
-
   .itemshop-image-div {
     height: 30vh;
   }
