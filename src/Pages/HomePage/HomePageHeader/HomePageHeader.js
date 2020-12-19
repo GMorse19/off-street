@@ -1,9 +1,9 @@
 import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
 
-import { stock } from '../../helpers/images/Stock/stockArray'
+import { stock } from '../../../helpers/images/Stock/stockArray'
 
-import './HomePage.scss'
+import './HomePageHeader.scss'
 
 const HomePageHeader = () => (
   <Container fluid className='home-title-div'>

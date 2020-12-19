@@ -6,31 +6,6 @@
   background-size: cover;
 }
 
-.home-title-div {
-  width: 100%;
-  padding-top: 180px;
-  height: 672px;
-  background: #F2EDE2;
-}
-
-.home-title-image {
-  /* Rectangle 15 */
-  width: 100%;
-}
-
-.home-title-header {
-  /* Carpentry with a repurpose */
-
-  padding-top: 295px;
-  text-align: left;
-  margin-left: -90px;
-
-  font-family: Special Elite;
-  font-size: 48px;
-  line-height: 48px;
-  color: #FFFFFF;
-}
-
 .image-div {
   margin: 30%;
 }
@@ -70,7 +45,6 @@
 
 .info-section {
   background-color: #F2EDE2;
-  // box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.4), 20px 6px 20px 20px rgba(0, 0, 0, 0.19);
 }
 @media screen and (max-width: 1000px) {
   .home-logo {
@@ -88,10 +62,6 @@
     line-height: normal;
     margin-left: 0;
   }
-
-  // .home-title-image {
-  //   height: 50%;
-  // }
 
   .info-div {
     font-size: 10px;

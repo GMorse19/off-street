@@ -3,9 +3,7 @@ import { Container } from 'react-bootstrap'
 
 import { flag } from '../../../helpers/images/Flags/flagsArray'
 import { item } from '../../../helpers/images/Items/itemsArray'
-// import { stock } from '../../../helpers/images/Stock/stockArray'
 import ProductContainer from '../../../Components/Products/ProductContainer/ProductContainer'
-// import InfoRow from '../../../Components/InfoRow/InfoRow'
 import content from '../../../Components/Products/ProductDescription/Content'
 
 import { logo } from '../../../helpers/images/Logos/logosArray'
