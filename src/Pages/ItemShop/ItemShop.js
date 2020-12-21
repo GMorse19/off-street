@@ -32,8 +32,8 @@ class ItemShop extends React.Component {
     const tipo = handleType(type)
 
     const itemJsx = itemList.map(item => (
-          <Col xs={12} md={6} lg={4}>
-            <div key={item.id} className='itemshop'>
+          <Col key={item.id} xs={12} md={6} lg={4}>
+            <div className='itemshop'>
               {
                 <div className='itemshop-jsx'>
                   <div className='itemshop-image-div'>
@@ -54,7 +54,7 @@ class ItemShop extends React.Component {
             </div>
           </Col>
       ))
-console.log(itemJsx)
+
     return (
       <div>
         <ProductInfo

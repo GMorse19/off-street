@@ -110,7 +110,7 @@ class ProductDescription extends React.Component {
 
           <Col lg={2} md={2} sm={12} xs={12} className='button-pad'>
               <Button className='product-display-button' onClick={this.handlePurchase}>Purchase</Button>
-              <Button className='product-display-button' href={`#item-shop/${type}`}>SHOP</Button>
+              <Button className='product-display-button' href={`#item-shop/${type}`}>Shop</Button>
               <Button className='product-display-button' href='#gallery'>Gallery</Button>
           </Col>
 
