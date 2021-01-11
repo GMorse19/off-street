@@ -21,16 +21,23 @@
 
 .home-page-shop-image1 {
   width: 40%;
+  position: relative;
+  z-index: 10;
 }
 
 .home-page-shop-image2 {
   margin-top: -15%;
   float: right;
   width: 40%;
+  position: relative;
+  z-index: 9;
 }
 
 .home-page-shop-image3 {
+  margin-top: -5%;
   width: 40%;
+  position: relative;
+  z-index: 11;
 }
 
 .image-stack {

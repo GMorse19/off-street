@@ -17,7 +17,7 @@ const HomePageShop = () => (
       <Col lg={8} className='image-stack'>
         <Col><img className='home-page-shop-image1' src={stock.stock.foldingTable} alt='Folding Table' /></Col>
         <Col><img className='home-page-shop-image2' src={stock.stock.birdHouse} alt='Bird House' /></Col>
-        <Col><img className='home-page-shop-image3' src={stock.stock.chalkBoard} alt='Chalk Board' /></Col>
+        <Col><img className='home-page-shop-image3' src={stock.stock.bottleOpener} alt='Chalk Board' /></Col>
       </Col>
     </Row>
   </Container>
