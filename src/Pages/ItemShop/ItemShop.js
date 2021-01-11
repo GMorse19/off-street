@@ -6,7 +6,7 @@ import Footer from '../../Components/Footer/Footer'
 
 import './ItemShop.scss'
 
-import { itemGallery } from '../../helpers/images/Items/itemGallery'
+import { handleType, handleItemList } from '../../helpers/handleType'
 
 class ItemShop extends React.Component {
   constructor(props) {
@@ -22,30 +22,18 @@ class ItemShop extends React.Component {
   }
 
   handleClick = (event) => {
-      window.scrollTo(0, 0)
+    window.scrollTo(0, 0)
     this.setState({ type: event.target.name })
   }
 
   render () {
     const { type } = this.state
-    let tipo = ''
-    let itemList = []
-
-    if (type === 'all') {
-      tipo = ''
-    } else {
-      tipo = type
-    }
-
-    if (type === 'all') {
-      itemList = (itemGallery.filter(product => product.type === 'Item' || product.type === 'Flag'))
-    } else {
-      itemList = (itemGallery.filter(product => product.type === type))
-    }
+    const itemList = handleItemList(type)
+    const tipo = handleType(type)
 
     const itemJsx = itemList.map(item => (
-          <Col xs={12} md={6} lg={4}>
-            <div key={item.id} className='itemshop'>
+          <Col key={item.id} xs={12} md={6} lg={4}>
+            <div className='itemshop'>
               {
                 <div className='itemshop-jsx'>
                   <div className='itemshop-image-div'>
