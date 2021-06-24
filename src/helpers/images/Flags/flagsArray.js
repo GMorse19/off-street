@@ -16,6 +16,8 @@ export const flag =
       back: process.env.PUBLIC_URL + '/Flags/B&W/B&W-back.jpg'
     },
     random: {
-      oldBoards: process.env.PUBLIC_URL + '/Flags/old-boards.jpg'
+      oldBoards: process.env.PUBLIC_URL + '/Flags/old-boards.jpg',
+      jamaican: process.env.PUBLIC_URL + '/JamaicanFlag.jpg',
+      irishJamaican: process.env.PUBLIC_URL + '/IrishJamaican.jpg'
     }
   }
