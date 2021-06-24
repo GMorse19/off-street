@@ -364,5 +364,23 @@ export const itemGallery = [{
   price: '',
   src: process.env.PUBLIC_URL + '/Stock/radiator.jpg',
 },
+{
+  type: 'Flag',
+  style: 'standard',
+  id: '30',
+  imgId: '30',
+  class: 'four flag-image2',
+  name: 'Jamaican Flag',
+  src: process.env.PUBLIC_URL + '/Stock/JamaicanFlag.jpg',
+},
+{
+  type: 'Flag gallery',
+  style: 'standard',
+  id: '31',
+  imgId: '31',
+  class: 'four flag-image2',
+  name: 'Jamaican Irish Flag',
+  src: process.env.PUBLIC_URL + '/Stock/IrishJamaican.jpg',
+},
 
 ]
