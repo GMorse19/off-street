@@ -391,5 +391,4 @@ export const itemGallery = [{
   name: 'Puerto Rico Flag',
   src: process.env.PUBLIC_URL + '/Stock/PuertoRico.jpg',
 },
-
 ]
