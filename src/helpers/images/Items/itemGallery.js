@@ -382,5 +382,14 @@ export const itemGallery = [{
   name: 'Jamaican Irish Flag',
   src: process.env.PUBLIC_URL + '/Stock/IrishJamaican.jpg',
 },
+{
+  type: 'Flag',
+  style: 'standard',
+  id: '32',
+  imgId: '32',
+  class: 'four flag-image2',
+  name: 'Puerto Rico Flag',
+  src: process.env.PUBLIC_URL + '/Stock/PuertoRico.jpg',
+},
 
 ]
