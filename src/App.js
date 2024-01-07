@@ -14,6 +14,7 @@ import Donations from './Pages/Donations/Donations'
 import ProductDescription from './Pages/ProductDescription/ProductDescription'
 import ItemShop from './Pages/ItemShop/ItemShop'
 import HowTo from './Pages/HowTo/HowTo'
+import Portfolio from './Pages/Portfolio/Portfolio'
 
 class App extends React.Component{
   state = {
@@ -71,6 +72,9 @@ class App extends React.Component{
               )} />
               <Route path='/how-to'  render={() => (
                 <HowTo />
+              )} />
+              <Route path='/portfolio'  render={() => (
+                <Portfolio />
               )} />
             </div>
           </div>
