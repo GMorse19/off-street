@@ -1,6 +1,6 @@
 # Off Street Carpentry
 
-![image](OffStreetHomePage.png)
+<kbd>![image](OffStreetHome.png)</kbd>
 
 ## Carpentry with a re-purpose
 
