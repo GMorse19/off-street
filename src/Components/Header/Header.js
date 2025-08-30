@@ -125,7 +125,7 @@ class Header extends React.Component {
                     onClick={() => this.closeMenu()}
                     href='#contact'
                   >
-                    Contact
+                    Connect
                   </a>
                 </li>
                 <li>
@@ -139,28 +139,7 @@ class Header extends React.Component {
                     Gallery
                   </a>
                 </li>
-                <li>
-                  <a
-                    name='donations'
-                    className='a-link-menu'
-                    onMouseOver={() => this.hoverButton('donations')}
-                    onClick={() => this.closeMenu()}
-                    href='#donations'
-                  >
-                    Donations
-                  </a>
-                </li>
-                <li>
-                  <a
-                    name='how-to'
-                    className='a-link-menu'
-                    onMouseOver={() => this.hoverButton('howto')}
-                    onClick={() => this.closeMenu()}
-                    href='#how-to'
-                  >
-                    How To
-                  </a>
-                </li>
+              
                 </ul>
               </div>
             </Col>
@@ -185,14 +164,12 @@ class Header extends React.Component {
               <Col className='header-link'>
                 <a href='#item-shop/all'>Shop</a>
               </Col>
-              <Col className='header-link'>
-                <a href='#donations'>Donate</a>
-              </Col>
+             
               <Col className='header-link'>
                 <a href='#gallery'>Gallery</a>
               </Col>
               <Col className='header-link'>
-                <a href='#contact'>Contact</a>
+                <a href='#contact'>Connect</a>
               </Col>
             </Row>
         </Container>

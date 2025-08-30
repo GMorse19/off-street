@@ -17,12 +17,8 @@ const HomePageIntro = () => (
 
       <Col lg={6}>
         <p className='home-page-blurb'><span style={{ fontSize: '24px' }}>
-          Our mission at Off Street </span>
-          is to rescue the forgotten scraps and
-          cutoffs from construction projects and save them from their inevitable
-          trip to the depths of a dumpster. We then re-purpose and re-invent these
-          forlorn timbers to return a quality hand crafted item with it's own
-          unique history.
+          Every board has a story. </span>
+         At Off Street, we salvage overlooked scraps and cut-offs from construction projects and re-invent them into handcrafted pieces with character. Each item reflects not only the wood’s past but also the care and creativity that bring it back to life.
         </p>
         <Button href='#about' className='home-page-intro-button'>About Us</Button>
       </Col>

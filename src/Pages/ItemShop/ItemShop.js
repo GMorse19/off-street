@@ -46,7 +46,7 @@ class ItemShop extends React.Component {
                       {item.name}
                     </Col>
                     <Col>
-                      <p>{item.price}</p>
+                      <p></p>
                     </Col>
                   </Row>
                 </div>
