@@ -13,6 +13,7 @@ export const icon = {
     youtubeBW: process.env.PUBLIC_URL + '/Icons/youtubeBW.svg',
     instagram: process.env.PUBLIC_URL + '/Icons/instagram.svg',
     instagramBW: process.env.PUBLIC_URL + '/Icons/instagramBW.svg',
+    etsy: process.env.PUBLIC_URL + '/Icons/etsy.svg',
   },
   logo: {
     logo: process.env.PUBLIC_URL + '/Logo/OSLogo.png'

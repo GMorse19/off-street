@@ -12,26 +12,18 @@ const Footer = () => (
 
     <Container fluid className='footer-container'>
     <div>
-    <Connect />
+    
       <Row>
         <Col xs={8} sm={5} lg={5} className='footer-col-contact'>
-          <div>
-            <p>Monday - Friday</p>
-            <p>9am - 5pm EST</p>
-            <p>T: (617)-555-5555</p>
-            <p>E: offstreetcarpentry@notreal.com</p>
-            <br />
-            <p>1436 West Belchertown</p>
-            <p>Boston MA 01110</p>
-          </div>
+        
         </Col>
         <Col xs={4} sm={2} lg={2} className='footer-col-links'>
           <div className='footer-link-div'>
             <p><a href='#item-shop/all'>Shop</a></p>
             <p><a href='#gallery'>Gallery</a></p>
-            <p><a href='#donations'>Donations</a></p>
+            
             <p><a href='#contact'>Contact</a></p>
-            <p><a href='#how-to'>Media</a></p>
+            
             <p><a href='#about'>About</a></p>
           </div>
         </Col>
@@ -61,16 +53,16 @@ const Footer = () => (
           >
             <img
               src={icon.media.youtubeBW}
-              alt='pinterest'
+              alt='YouTube'
             />
           </a>
 
           <a
-            href='https://pin.it/5PPEqFm'
+            href='https://www.pinterest.com/offstreetcarp'
           >
             <img
               src={icon.media.pinterestBW}
-              alt='You Tube'
+              alt='Pinterest'
             />
           </a>
           <a

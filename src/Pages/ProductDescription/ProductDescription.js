@@ -30,7 +30,8 @@ class ProductDescription extends React.Component {
   }
 
   handlePurchase = () => {
-    alert('Sorry, this feature is not yet available.')
+    // window.location.href = 'https://www.etsy.com/shop/OffStreetCarpentry';
+    window.open('https://www.etsy.com/shop/OffStreetCarpentry', '_blank', 'noopener');
   }
 
   componentDidMount() {

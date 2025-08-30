@@ -7,12 +7,11 @@ export default {
     re - purpose,
     re - invent.Off Street is committed to
     utilizing left over and forgotten construction debris to create beautifully
-    unique hand crafted items. < /p>
+    unique hand crafted items. </p>
   },
   two: {
     title: 'Tells a story...',
-    description: < p > Authenticated Off Street brand products come
-    with their own unique history.Each piece has a story to tell. < /p>
+    description: < p > No two Off Street creations are alike. Authenticated with the Off Street brand, every item carries a past, a purpose, and a story worth sharing. </p>
   },
   three: {
     title: 'Green...',
@@ -35,30 +34,14 @@ export default {
   },
   six: {
     title: 'Waste Not Want Not.',
-    description: < p > Often times on job sites,
-    shorter pieces of wood will
-    be disposed of .They clutter up the work area and are generally moved
-    around so much that they become a nuisance.It 's just simply easier
-    and more productive
-    for workers to
-    throw them in the dumpster. < /p>
+    description: < p > On job sites, shorter pieces of wood are often tossed aside. They clutter the workspace, get shifted around, and quickly become a nuisance. For efficiency’s sake, workers usually send them straight to the dumpster. < /p>
   },
   seven: {
     title: 'One Humans Trash...',
-    description: < p > Knowing that there could be a better,
-    more creative way to
-    make use of this waste,
-    Off Street made it their mission to find
-    different ways to rescue and re - purpose these forlorn timbers. < /p>
+    description: <p> What others see as waste, we see as possibility. Off Street was founded on the belief that every piece of wood deserves a second chance. By rescuing and re-purposing these overlooked scraps, we create items that are both useful and full of character. </p>
   },
   eight: {
     title: 'That\'s the Spirit!',
-    description: < p > Good old fashioned American entrepreneurship sparked the
-    first product off the line,
-    Ole ' Glory herself. The stars and stripes
-    began the journey,
-    but the possibilities are endless and Off Street 's
-    mission is to find a use
-    for all forgotten and discarded wood. < /p>
+    description: < p > The journey began with a single spark of American craftsmanship, Ole’ Glory, our handmade version of the stars and stripes. From that first flag to countless new ideas, our mission remains the same: finding purpose in every piece of forgotten wood. </p>
   }
 }
