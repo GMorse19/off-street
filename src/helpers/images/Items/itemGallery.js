@@ -341,7 +341,7 @@ export const itemGallery = [{
   class: 'four flag-image2',
   description: <p>Hand made American flag representing military, fire department, and police department.</p>,
   name: 'First Responders Flag',
-  src: process.env.PUBLIC_URL + '/Flags/B&W/military-flags.jpg',
+  src: process.env.PUBLIC_URL + '/Flags/B&W/military-flags.JPG',
   gallery: [
     {
       src: process.env.PUBLIC_URL + '/Flags/multi-flag.jpg',
@@ -442,6 +442,6 @@ export const itemGallery = [{
   imgId: '32',
   class: 'four flag-image2',
   name: 'Puerto Rico Flag',
-  src: process.env.PUBLIC_URL + '/Stock/PuertoRico.jpg',
+  src: process.env.PUBLIC_URL + '/Stock/PuertoRico.JPG',
 },
 ]
